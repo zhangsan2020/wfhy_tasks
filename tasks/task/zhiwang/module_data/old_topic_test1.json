@@ -1,0 +1,33 @@
+{
+	"model": "主题",
+	"keywords": {
+		"病": [{
+			"search_origin": "病",
+			"name": "冠心病",
+			"have_spider_2022": "202211101331",
+			"have_spider_2021": "202211101333"
+		}, {
+			"search_origin": "病",
+			"name": "病理学",
+			"have_spider_2022": 0
+		}, {
+			"search_origin": "病",
+			"name": "病死率",
+			"have_spider_2022": 0
+		}],
+		"病例": [{
+			"search_origin": "病例",
+			"name": "病例报告",
+			"have_spider_2022": "202211101332",
+			"have_spider_2021": "202211101334"
+		}, {
+			"search_origin": "病例",
+			"name": "病例资料",
+			"have_spider_2022": 0
+		}, {
+			"search_origin": "病例",
+			"name": "病例对比",
+			"have_spider_2022": 0
+		}]
+	}
+}

@@ -1,0 +1,1242 @@
+<form method="post" name="gridTableForm">
+    <div id="gridTable" class="search-result">
+<div class='toolbar'><div id="countPageDiv" class="result-con-r"><span class='pagerTitleCell'>共找到<em>9,359,302</em>条结果</span><span class='countPageMark'>1/300</span><span class='topTurnSpan'><a id='Page_next_top' title='键盘的“← →”可以实现快速翻页' data-curPage='2'>>></a></span></div><div class='toolbar-col'>
+        <div class="checkcount">
+            <label class="checkAll"><input type="checkbox" name="selectCheckbox" id="selectCheckAll1" onclick="$(this).filenameClick()">全选</label>
+            <span>已选：</span>
+            <em title='点击查看所选文献' id='selectCount' name='selectCount' onclick='window.open(APPPATH + "/manage.html"+(GetQueryStringByName("subject")?"?subject="+GetQueryStringByName("subject"):""))'>0</em>
+            <a href="javascript:$.filenameClear();">清除</a>
+          </div>         
+          <ul class="dropdown-analysis-btns" id="batchOpsBox">
+			<li class="bulkdownload export"><a href="javascript:void(0)">批量下载</a></li>
+              <li>
+                <a href="javascript:void(0)">导出与分析</a><i class="icon-d"></i>
+                <ul>
+                  <li class="export">
+                    <a href="javascript:void(0)">导出文献</a>
+                    <i class="icon-r"></i>
+                    <ul class="secondUl">
+                      <li><a href="javascript:void(0)" exportType="GBTREFER">GB/T 7714-2015 格式引文</a></li>
+                      <li><a href="javascript:void(0)" exportType="elearning" >知网研学（原E-Study）</a></li>
+                      <li><a href="javascript:void(0)" exportType="REFER" >CAJ-CD 格式引文</a></li>
+                       <li><a href="javascript:void(0)" exportType="MLA" >MLA格式引文</a></li>
+                       <li><a href="javascript:void(0)" exportType="APA" >APA格式引文</a></li>
+                      <li><a href="javascript:void(0)" exportType="NEW" >查新（引文格式）</a></li>
+                      <li><a href="javascript:void(0)" exportType="newdefine" >查新（自定义引文格式）</a></li>
+                      <li><a href="javascript:void(0)" exportType="Refworks" >Refworks</a></li>
+                      <li><a href="javascript:void(0)" exportType="EndNote" >EndNote</a></li>
+                      <li><a href="javascript:void(0)" exportType="NoteExpress" >NoteExpress</a></li>
+                      <li><a href="javascript:void(0)" exportType="NodeFirst" >NoteFirst</a></li>
+                      <li><a href="javascript:void(0)" exportType="selfDefine">自定义</a></li>
+                    </ul>
+                  </li>
+                  <li id="analysisLi">
+                    <a href="javascript:void(0)">可视化分析</a><i class="icon-r"></i>
+                    <ul class="secondUl">
+                      <li id="anisys_select"><a href="javascript:void(0)">已选结果分析(<span>0</span>)</a></li>
+                      <li id="anisys_all"><a href="javascript:void(0)">全部检索结果分析</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+              </li>
+            </ul>
+          <ul class="change-list" id="DivDisplayMode"><li  title="详情" data-obj="result-piclist" data-mode="custommode"><i class="icon-detail"></i></li><li class="active" title="列表" data-obj="result-table-list" data-mode="listmode"><i class="icon-table"></i></li></ul><div class="statistic"><div id="id_grid_display_num"  class="page-show-count">显示<div class="sort" id="perPageDiv"><div class="sort-default"><span>20</span><i class="icon icon-sort"></i></div><ul class="sort-list"><li  data-val="10"><a href="javascript:void(0);">10</a></li><li data-val="20" class="cur"><a href="javascript:void(0);" >20</a></li> <li  data-val="50"><a href="javascript:void(0);" >50</a></li></ul></div></div></div><div class="order-group" id="sortList"><span> 排序：</span><ul class="order" id="orderList"><li data-sorttype="relevant%2c(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)"  data-k="RELEVANT"  data-sort="RELEVANT-%e7%9b%b8%e5%85%b3%e5%ba%a6%2frelevant%2c(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)" data-onlydesc="true">相关度</li><li class='descend cur' title='只在800万条记录以内有效' data-k="PT" data-sorttype="(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)" data-sort="PT-%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2f(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)" data-onlydesc="false">发表时间</li><li data-sorttype="(%e8%a2%ab%e5%bc%95%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)"  data-k="CITY"  data-sort="CITY-%e8%a2%ab%e5%bc%95%2f(%e8%a2%ab%e5%bc%95%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)" data-onlydesc="false">被引</li><li data-sorttype="(%e4%b8%8b%e8%bd%bd%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)"  data-k="DOWNLOAD"  data-sort="DOWNLOAD-%e4%b8%8b%e8%bd%bd%2f(%e4%b8%8b%e8%bd%bd%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)" data-onlydesc="false">下载</li><li data-sorttype="relevant%2c(ffd%2c%27NUM1000%27)"  data-k="ALL"  data-sort="ALL-%e7%bb%bc%e5%90%88%2frelevant%2c(ffd%2c%27NUM1000%27)" data-onlydesc="true">综合</li></ul></div></div></div><table class="result-table-list"> <thead><tr><th></th><th>题名</th><th>作者</th><th>来源</th><th>发表时间</th><th>数据库</th><th>被引</th><th>下载</th><th>操作</th></tr></thead><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=1 name=CookieName  value="CAPJLASTDAY!SXSZ20230305003!1!0"  onclick="$(this).filenameClick()"  >1</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=1&recid=&FileName=SXSZ20230305003&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=61.1071.N.20230306.1331.002' target='_blank'>青少年特发性胸段脊柱侧弯腹壁肌群厚度与弹性的超声学特征</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e4%bb%a4%e5%b2%ad&scode=000020896321&acode=000020896321' target="knet">李令岭</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e4%bb%98%e5%a8%89%e5%a9%b7&scode=000051351622&acode=000051351622' target="knet">付娉婷</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%a2%9c%e6%bb%a8&scode=000037936815&acode=000037936815' target="knet">颜滨</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%86%e6%98%95%e6%b5%b7&scode=000048040514&acode=000048040514' target="knet">陆昕海</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%b1%9d%e9%a6%96%e8%88%aa&scode=000051215368&acode=000051215368' target="knet">汝首航</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%9f%ab%e7%8e%ae&scode=000036781010&acode=000036781010' target="knet">矫玮</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=SXSZ'>陕西师范大学学报(自然科学版)</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:58
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTVhmQSVDVUhVeW5mTx9mSsNzRN1kTjR3ToJmNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dSXSZ20230305003%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="SXSZ20230305003"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=2 name=CookieName  value="CAPJLASTDAY!SXSZ20230305001!2!0"  onclick="$(this).filenameClick()"  >2</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=2&recid=&FileName=SXSZ20230305001&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=61.1071.N.20230306.1331.001' target='_blank'>北京冬奥会近地医院救治滑雪运动员膝关节急性损伤情况分析</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%b5%a9%e7%84%b6&scode=000049343314&acode=000049343314' target="knet">李浩然</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e4%bd%b3%e5%ae%81&scode=000037177988&acode=000037177988' target="knet">王佳宁</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e6%b3%93%e5%ae%87&scode=000050585443&acode=000050585443' target="knet">陈泓宇</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e4%be%af%e8%b0%a6&scode=000024807783&acode=000024807783' target="knet">侯谦</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%95%96%e8%8b%b1%e8%8a%b3&scode=000036855511&acode=000036855511' target="knet">敖英芳</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%a8%e6%b8%9d%e5%b9%b3&scode=000025617500&acode=000025617500' target="knet">杨渝平</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=SXSZ'>陕西师范大学学报(自然科学版)</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:57
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTXhmQSVDVUhVeW5mTx9mSsNzRN1kTjR3ToJmNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dSXSZ20230305001%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="SXSZ20230305001"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=3 name=CookieName  value="CAPJLASTDAY!SYZY20230306002!3!0"  onclick="$(this).filenameClick()"  >3</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=3&recid=&FileName=SYZY20230306002&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=21.1187.R.20230307.0859.002' target='_blank'>从中医“气机”谈脑卒中诊疗指南的药物应用</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e8%8f%8a%e6%9e%9a&scode=000043690471&acode=000043690471' target="knet">王菊枚</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e4%bb%bb%e9%9b%a8%e6%9f%94&scode=000048788348&acode=000048788348' target="knet">任雨柔</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%86%af%e4%b8%9d%e4%b8%9d&scode=000043690470&acode=000043690470' target="knet">冯丝丝</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e6%b3%89&scode=000038475404&acode=000038475404' target="knet">吴泉</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%95%e7%8e%89%e5%85%b0&scode=000000791535&acode=000000791535' target="knet">吕玉兰</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%a8%e5%9b%bd%e9%a1%ba&scode=000048788349&acode=000048788349' target="knet">杨国顺</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9b%be%e6%b6%9b&scode=000048788350&acode=000048788350' target="knet">曾涛</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%a1%be%e5%8a%9b%e5%8d%8e&scode=000025717113&acode=000025717113' target="knet">顾力华</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=SYZY'>实用中医内科杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:55
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTVVHWOxUVGRjMp9idnlHV0hXV1UGWtl0YoJmNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCAPJ%26filename%3dSYZY20230306002' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="SYZY20230306002"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=4 name=CookieName  value="CAPJLASTDAY!YIKE2023030700P!4!0"  onclick="$(this).filenameClick()"  >4</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=4&recid=&FileName=YIKE2023030700P&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1065.R.20230307.1350.025' target='_blank'>Lorenz散点图矢量角联合B线斜率在心律失常中的诊断价值</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e6%9c%88%e5%a8%a5&scode=000039368207&acode=000039368207' target="knet">吴月娥</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e8%83%a1%e6%b3%bd%e5%b9%b3&scode=000038389948&acode=000038389948' target="knet">胡泽平</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e8%8f%a1&scode=000047896235&acode=000047896235' target="knet">李菡</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%a9%ac%e5%85%b0&scode=000032460811&acode=000032460811' target="knet">马兰</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%83%91%e6%9e%97%e6%9e%97&scode=000005538650&acode=000005538650' target="knet">郑林林</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e4%bb%99%e4%ba%91&scode=000023335360&acode=000023335360' target="knet">王仙云</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=YIKE'>安徽医科大学学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:52
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTNd2QtdDRrUmaOdTeHhjNm9SRQF0KRhjbCNkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dYIKE2023030700P%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="YIKE2023030700P"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=5 name=CookieName  value="CAPJLASTDAY!SJZA20230303001!5!0"  onclick="$(this).filenameClick()"  >5</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=5&recid=&FileName=SJZA20230303001&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=11.5529.R.20230303.1840.002' target='_blank'>中医药通过肺淋巴管系统干预间质性肺疾病的研究进展</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%bb%84%e6%80%a1&scode=000026927334&acode=000026927334' target="knet">黄怡</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%9f%b3%e6%80%a1&scode=000005812320&acode=000005812320' target="knet">石怡</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9c%a8%e5%85%b6%e5%b0%94&scode=000005505323&acode=000005505323' target="knet">木其尔</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e4%bc%9f&scode=000031640315&acode=000031640315' target="knet">陈伟</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=SJZA'>世界中医药</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:51
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GT0o0SGFWS5MHUv1me3NVOwYkNChWcpVDMnJmNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dSJZA20230303001%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="SJZA20230303001"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=6 name=CookieName  value="CAPJLASTDAY!ZRSZ20230306001!6!0"  onclick="$(this).filenameClick()"  >6</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=6&recid=&FileName=ZRSZ20230306001&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=35.1284.R.20230306.1454.002' target='_blank'>基于16S rDNA高通量测序探讨肠道菌群对疟原虫感染小鼠的保护性作用</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%94%b0%e7%88%bd&scode=000007870454&acode=000007870454' target="knet">田爽</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e5%8f%8c&scode=000050572886&acode=000050572886' target="knet">吴双</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%ac%a3&scode=000048091328&acode=000048091328' target="knet">李欣</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bb%96%e5%9b%bd%e7%87%95&scode=000050572884&acode=000050572884' target="knet">廖国燕</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%9c%e4%ba%91%e5%a9%b7&scode=000021977104&acode=000021977104' target="knet">杜云婷</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e5%85%89&scode=000033892508&acode=000033892508' target="knet">陈光</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=ZRSZ'>中国人兽共患病学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:51
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTGJDRZdVUNllQ5ZFMFJGMHRmYTJDa0AFd5NkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dZRSZ20230306001%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="ZRSZ20230306001"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=7 name=CookieName  value="CAPJLASTDAY!SYZY20230306003!7!0"  onclick="$(this).filenameClick()"  >7</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=7&recid=&FileName=SYZY20230306003&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=21.1187.R.20230307.0914.004' target='_blank'>围绝经期肥胖的中西医治疗进展</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e8%8e%b9&scode=000053406948&acode=000053406948' target="knet">李莹</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e8%bd%b6%e8%93%89&scode=000025382651&acode=000025382651' target="knet">王轶蓉</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=SYZY'>实用中医内科杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:49
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTWVHWOxUVGRjMp9idnlHV0hXV1UGWtl0YoJmNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCAPJ%26filename%3dSYZY20230306003' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="SYZY20230306003"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=8 name=CookieName  value="CAPJLASTDAY!XAYX20230303002!8!0"  onclick="$(this).filenameClick()"  >8</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=8&recid=&FileName=XAYX20230303002&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=61.1399.R.20230303.1657.004' target='_blank'>儿童新型冠状病毒感染的临床诊疗建议</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e4%be%af%e4%bc%9f&scode=000029695509&acode=000029695509' target="knet">侯伟</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e9%9d%99&scode=000031820268&acode=000031820268' target="knet">李静</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e8%80%bf%e5%a6%8d&scode=000000130938&acode=000000130938' target="knet">耿妍</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e6%b4%8b&scode=000035261705&acode=000035261705' target="knet">张洋</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e4%b8%b9&scode=000031076303&acode=000031076303' target="knet">李丹</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e9%9b%aa%e8%8e%b9&scode=000026629737&acode=000026629737' target="knet">王雪莹</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%a8%e7%90%b3&scode=000034505805&acode=000034505805' target="knet">杨琳</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=XAYX'>西安交通大学学报(医学版)</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:49
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTzlnWadzYww2dMlDTnhHbJdUN4YGWtZDaKNkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dXAYX20230303002%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="XAYX20230303002"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=9 name=CookieName  value="CAPJLASTDAY!AHYY20230306019!9!0"  onclick="$(this).filenameClick()"  >9</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=9&recid=&FileName=AHYY20230306019&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1229.R.20230306.1250.088' target='_blank'>基于网络药理学探讨清心滋肾汤治疗围绝经期综合征的作用机制</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%83%ad%e5%80%a9&scode=000028667231&acode=000028667231' target="knet">郭倩</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e7%a7%a6&scode=000041171114&acode=000041171114' target="knet">张秦</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%ae%a1%e7%be%a4&scode=000006941323&acode=000006941323' target="knet">管群</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=AHYY'>安徽医药</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:48
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTwM1T2hzaw8kV5NFa28kTMVmaL5mdvVDeaFnNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dAHYY20230306019%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="AHYY20230306019"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=10 name=CookieName  value="CAPJLASTDAY!ZYXN20230306001!10!0"  onclick="$(this).filenameClick()"  >10</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=10&recid=&FileName=ZYXN20230306001&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=23.1194.R.20230306.1330.002' target='_blank'>芍药苷抑制NF-κB通路减少银屑病HaCaT细胞炎症的作用研究</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e8%8b%97%e6%b7%bc&scode=000053399100&acode=000053399100' target="knet">苗淼</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e4%bd%b3&scode=000031428165&acode=000031428165' target="knet">刘佳</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e8%b0%88%e9%9d%99&scode=000045365583&acode=000045365583' target="knet">谈静</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%96%bd%e5%bb%ba%e6%96%b0&scode=000007170297&acode=000007170297' target="knet">施建新</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%ad%8f%e8%b7%83%e9%92%a2&scode=000025734084&acode=000025734084' target="knet">魏跃钢</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=ZYXN'>中医药信息</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:48
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTyYjeEdFRXVlQoJmc2o2a1JHTxtkS5UmM5NkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dZYXN20230306001%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="ZYXN20230306001"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=11 name=CookieName  value="CAPJLASTDAY!AHYY2023030600I!11!0"  onclick="$(this).filenameClick()"  >11</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=11&recid=&FileName=AHYY2023030600I&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1229.R.20230306.1246.034' target='_blank'>血流导向装置治疗未破裂中小型颈内动脉瘤对血流动力学的影响及短期疗效分析</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%8d%b7&scode=000033156795&acode=000033156795' target="knet">李捷</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%86%af%e5%ad%a6%e6%88%90&scode=000001812985&acode=000001812985' target="knet">冯学成</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%bb%84%e6%ad%a3%e5%a8%81&scode=000024544933&acode=000024544933' target="knet">黄正威</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%be%99%e9%9c%84%e7%bf%b1&scode=000036733739&acode=000036733739' target="knet">龙霄翱</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bb%96%e5%a3%ae%e6%a7%9f&scode=000019574891&acode=000019574891' target="knet">廖壮槟</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%bb%84%e6%b5%b7%e9%a3%9e&scode=000006033298&acode=000006033298' target="knet">黄海飞</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=AHYY'>安徽医药</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:45
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTld0T2hzaw8kV5NFa28kTMVmaL5mdvVDeaFnNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dAHYY2023030600I%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="AHYY2023030600I"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=12 name=CookieName  value="CAPJLASTDAY!AHYY2023030600X!12!0"  onclick="$(this).filenameClick()"  >12</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=12&recid=&FileName=AHYY2023030600X&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1229.R.20230306.1248.064' target='_blank'>粪便钙卫蛋白与溃疡性结肠炎活动相关性初步研究</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%aa%80%e9%a3%9e%e9%a3%9e&scode=000013383750&acode=000013383750' target="knet">檀飞飞</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%91%a8%e4%b8%ad%e9%93%b6&scode=000025596243&acode=000025596243' target="knet">周中银</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=AHYY'>安徽医药</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:45
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTBh0T2hzaw8kV5NFa28kTMVmaL5mdvVDeaFnNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dAHYY2023030600X%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="AHYY2023030600X"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=13 name=CookieName  value="CAPJLASTDAY!YIKE2023030700N!13!0"  onclick="$(this).filenameClick()"  >13</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=13&recid=&FileName=YIKE2023030700N&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1065.R.20230307.1349.023' target='_blank'>左室整体纵向应变在早期预测乳腺癌化疗患者心脏毒性中的应用</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%97%bb%e5%b0%8f%e6%9e%97&scode=000022224931&acode=000022224931' target="knet">闻小林</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e7%8e%b2&scode=000046367372&acode=000046367372' target="knet">王玲</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e5%89%91%e7%90%bc&scode=000020008353&acode=000020008353' target="knet">陈剑琼</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e8%b6%85%e5%ad%a6&scode=000019967036&acode=000019967036' target="knet">张超学</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=YIKE'>安徽医科大学学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:43
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTDd2QtdDRrUmaOdTeHhjNm9SRQF0KRhjbCNkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dYIKE2023030700N%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="YIKE2023030700N"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=14 name=CookieName  value="CAPJLASTDAY!YIKE2023030700R!14!0"  onclick="$(this).filenameClick()"  >14</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=14&recid=&FileName=YIKE2023030700R&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1065.R.20230307.1350.027' target='_blank'>基于MRI影像组学模型鉴别鼻腔鼻窦内翻乳头状瘤与息肉</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e6%a2%a6%e7%a7%8b&scode=000002968033&acode=000002968033' target="knet">刘梦秋</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9b%be%e9%a3%9e%e9%9b%81&scode=000024515917&acode=000024515917' target="knet">曾飞雁</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e4%b8%81%e8%99%8e&scode=000053412018&acode=000053412018' target="knet">丁虎</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e5%bd%b1&scode=000032778089&acode=000032778089' target="knet">刘影</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=YIKE'>安徽医科大学学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:42
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTPd2QtdDRrUmaOdTeHhjNm9SRQF0KRhjbCNkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dYIKE2023030700R%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="YIKE2023030700R"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=15 name=CookieName  value="CAPJLASTDAY!YIKE2023030700S!15!0"  onclick="$(this).filenameClick()"  >15</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=15&recid=&FileName=YIKE2023030700S&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1065.R.20230307.1350.028' target='_blank'>不同胃癌筛查方案在早期胃癌诊断中的应用价值</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e6%9c%8b%e6%82%a6&scode=000011242302&acode=000011242302' target="knet">张朋悦</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9c%b1%e6%8c%af&scode=000048766796&acode=000048766796' target="knet">朱振</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e8%ae%b8%e5%a9%b7%e5%a9%b7&scode=000053412020&acode=000053412020' target="knet">许婷婷</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%86%af%e6%85%a7&scode=000026382014&acode=000026382014' target="knet">冯慧</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%9d%a8&scode=000046428353&acode=000046428353' target="knet">李杨</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e8%94%a1%e8%bd%b6&scode=000004954752&acode=000004954752' target="knet">蔡轶</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e4%bd%95%e4%bd%b3%e6%85%a7&scode=000002013940&acode=000002013940' target="knet">何佳慧</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e4%ba%9a%e9%9b%b7&scode=000006937677&acode=000006937677' target="knet">王亚雷</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=YIKE'>安徽医科大学学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:42
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTKd2QtdDRrUmaOdTeHhjNm9SRQF0KRhjbCNkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dYIKE2023030700S%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="YIKE2023030700S"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=16 name=CookieName  value="CAPJLASTDAY!YIKE2023030700D!16!0"  onclick="$(this).filenameClick()"  >16</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=16&recid=&FileName=YIKE2023030700D&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1065.R.20230307.1348.013' target='_blank'>过表达ephrinB2调控犬牙周膜干细胞的成骨能力</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e9%9b%a8%e8%8b%97&scode=000053411961&acode=000053411961' target="knet">刘雨苗</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%a8%e9%87%91%e9%91%ab&scode=000050037210&acode=000050037210' target="knet">杨金鑫</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9c%b1%e7%bb%8d%e8%b7%83&scode=000021354177&acode=000021354177' target="knet">朱绍跃</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%a9%ac%e6%af%93%e4%b8%b4&scode=000053411962&acode=000053411962' target="knet">马毓临</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%a4%8f%e5%af%92%e8%90%8d&scode=000053411963&acode=000053411963' target="knet">夏寒萍</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%91%a8%e7%8c%9b&scode=000042520328&acode=000042520328' target="knet">周猛</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%a8%e5%a7%9d%e8%95%be&scode=000053411964&acode=000053411964' target="knet">杨姝蕾</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%bb%84%e6%b3%b0%e5%ae%81&scode=000053411960&acode=000053411960' target="knet">黄泰宁</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e4%b8%81%e7%8f%82%e6%ac%a3&scode=000050037208&acode=000050037208' target="knet">丁珂欣</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e5%ae%97%e5%93%8d&scode=000020419194&acode=000020419194' target="knet">刘宗响</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=YIKE'>安徽医科大学学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:42
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTOh2QtdDRrUmaOdTeHhjNm9SRQF0KRhjbCNkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dYIKE2023030700D%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="YIKE2023030700D"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=17 name=CookieName  value="CAPJLASTDAY!YIKE2023030700O!17!0"  onclick="$(this).filenameClick()"  >17</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=17&recid=&FileName=YIKE2023030700O&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1065.R.20230307.1350.024' target='_blank'>儿童川崎病冠状动脉损伤危险因素Logistic回归分析</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%92%b1%e7%bf%a0%e5%b9%b3&scode=000043767009&acode=000043767009' target="knet">钱翠平</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%bb%84%e6%99%93%e7%a2%a7&scode=000036535573&acode=000036535573' target="knet">黄晓碧</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e8%b5%b5%e8%83%9c&scode=000037474832&acode=000037474832' target="knet">赵胜</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%ab%a0%e5%8b%87&scode=000053413142&acode=000053413142' target="knet">章勇</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=YIKE'>安徽医科大学学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:41
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTOd2QtdDRrUmaOdTeHhjNm9SRQF0KRhjbCNkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dYIKE2023030700O%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="YIKE2023030700O"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=18 name=CookieName  value="CAPJLASTDAY!YIKE2023030700Q!18!0"  onclick="$(this).filenameClick()"  >18</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=18&recid=&FileName=YIKE2023030700Q&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=34.1065.R.20230307.1350.026' target='_blank'>利用MDCT上气道成像研究成人OSAHS疾病成因及应用价值</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%9c%e9%9b%85%e9%9d%92&scode=000020433816&acode=000020433816' target="knet">杜雅青</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%a9%ac%e4%ba%91%e9%9c%9e&scode=000041652845&acode=000041652845' target="knet">马云霞</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e4%be%a0&scode=000027208078&acode=000027208078' target="knet">王侠</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%ab%98%e7%85%a7&scode=000007498034&acode=000007498034' target="knet">高照</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%ae%8b%e5%bb%ba&scode=000042426731&acode=000042426731' target="knet">宋建</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e9%9d%99&scode=000035105202&acode=000035105202' target="knet">吴静</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e5%bc%80%e4%b9%90&scode=000025576055&acode=000025576055' target="knet">吴开乐</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e5%85%b4%e6%97%ba&scode=000000976884&acode=000000976884' target="knet">吴兴旺</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=YIKE'>安徽医科大学学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:41
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTQd2QtdDRrUmaOdTeHhjNm9SRQF0KRhjbCNkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCAPJLASTDAY%26filename%3dYIKE2023030700Q%26dbCode%3dCAPJ' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="YIKE2023030700Q"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=19 name=CookieName  value="CAPJLASTDAY!YAXU20230306001!19!0"  onclick="$(this).filenameClick()"  >19</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=19&recid=&FileName=YAXU20230306001&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=44.1650.R.20230307.1107.004' target='_blank'>加味逍遥散联合氟伏沙明对青少年抑郁症的疗效分析</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e4%b9%94&scode=000039748084&acode=000039748084' target="knet">吴乔</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%94%b3%e7%92%8e&scode=000019280882&acode=000019280882' target="knet">申璎</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e5%b0%8f%e5%86%9b&scode=000028893586&acode=000028893586' target="knet">刘小军</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%82%b1%e5%90%89%e6%98%8e&scode=000008263395&acode=000008263395' target="knet">邱吉明</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%9d%a8&scode=000036331619&acode=000036331619' target="knet">李杨</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9c%b1%e6%b5%b7%e8%8a%b3&scode=000005986167&acode=000005986167' target="knet">朱海芳</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=YAXU'>今日药学</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:22
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GToJka2U3LFN2TrVzVvUUZ5FXe0ETSW5kdCNkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCAPJ%26filename%3dYAXU20230306001' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="YAXU20230306001"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=20 name=CookieName  value="CAPJLASTDAY!ZFLZ20230305001!20!0"  onclick="$(this).filenameClick()"  >20</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=0&CurRec=20&recid=&FileName=ZFLZ20230305001&DbName=CAPJLASTDAY&DbCode=CAPJ&yx=Y&pr=&URLID=11.2761.R.20230306.1753.002' target='_blank'>93例非结核分枝杆菌肺病临床分析</a>
+         
+        
+          <B class="marktip">网络首发</B> 
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%9f%a9%e5%96%9c%e7%90%b4&scode=000036653309&acode=000036653309' target="knet">韩喜琴</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e6%95%ac&scode=000029375436&acode=000029375436' target="knet">王敬</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e8%b0%ad%e7%a7%8b%e6%b8%85&scode=000044000663&acode=000044000663' target="knet">谭秋清</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%99%93%e5%8d%8e&scode=000053410248&acode=000053410248' target="knet">李晓华</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e7%ab%8b%e7%be%a4&scode=000032569013&acode=000032569013' target="knet">张立群</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e9%82%b5%e7%8e%b2%e7%8e%b2&scode=000000202093&acode=000000202093' target="knet">邵玲玲</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CAPJ&sfield=%e4%bd%9c%e8%80%85&skey=%e6%ae%b5%e9%b8%bf%e9%a3%9e&scode=000004165329&acode=000004165329' target="knet">段鸿飞</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CAPJ&BaseID=ZFLZ'>中国防痨杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2023-03-07 14:20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=shERZx2Y05EZlZHd2ElNrYDZkhDdQdkNvFmeEVVRux2YOFDc0RXU4c0aIN3MEVnNOFUU2FnWsNHcN9GTOpFT1AzMv8GUrYFUOV0S2YXVVV0VsBDWxMkNyZUVrEWbG9yKpF3UJRWOulGZxUXNrkmTslEeUFDNvQVR&tablename=CAPJLASTDAY" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCAPJ%26filename%3dZFLZ20230305001' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CAPJ" data-filename="ZFLZ20230305001"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr></table></td></tr></table><div class='pages'><span class='cur'>1</span><a href="javascript:void(0);" data-curpage="2" title="键盘的“← →”可以实现快速翻页" id="page2">2</a><a href="javascript:void(0);" data-curpage="3" title="键盘的“← →”可以实现快速翻页" id="page3">3</a><a href="javascript:void(0);" data-curpage="4" title="键盘的“← →”可以实现快速翻页" id="page4">4</a><a href="javascript:void(0);" data-curpage="5" title="键盘的“← →”可以实现快速翻页" id="page5">5</a><a href="javascript:void(0);" data-curpage="6" title="键盘的“← →”可以实现快速翻页" id="page6">6</a><a href="javascript:void(0);" data-curpage="7" title="键盘的“← →”可以实现快速翻页" id="page7">7</a><a href="javascript:void(0);" data-curpage="8" title="键盘的“← →”可以实现快速翻页" id="page8">8</a><a href="javascript:void(0);" data-curpage="9" title="键盘的“← →”可以实现快速翻页" id="page9">9</a><a href="javascript:void(0);" data-curpage="2" title="键盘的“← →”可以实现快速翻页" id="PageNext">下一页</a></div></div><input type="hidden" id="docstateinfo" name=id="docstateinfo" value="JD00PYrfAvzGtFgNNTfafk4Fg7e9vv3GyTPzwvb1+7WeENmvmcXSz7Gl/eIBpp4LkLLv2bHYVUyOSFm0Ii+m+kdhCWMvrceRCZbvwX68Bi16E41NrVp+pvBMdS1YW3qbZRxBK/xitdS71Q5jPiI40stTtDRCapM3zSZE0Og5hl8yMUGW5Iz0BrUdHz4QRcxY6umqMt6+oP8o6GfJqLwU0O6TQ5nDP8v84pzmZdaNcd3F7MUUaUeGTPEETY8iArUCfyfT6iDWnjADaXfJjDeFnzoWCa4NJrgrcM1hU6s1QzuDutWlrqGoC01ZvQuYyq9vG5vhFgo+fQLN3ONkM2qvo0rxq/PuszspSqFNV2ZJiEeiIFbBO1K5fa7rlaEDG0DgWPrR4l+h/UQVZ/ZDTyvSqzgA4mNVZAZPyRJyVpnVvxR9qlixJ3gHkIzlhHAgqdt+Yyx2DthN/624GDmrFjbLbvj4lU9ft3OY9uZKhHbjcXXbb1ty9FV4J2aV+23d2BNCdGDti+N9PeSBO7ehfZZTscd6hjnfZTrJ8e7EGMUmbeoNaqjRVFry0i2iPivJr1/aFHwyHa1GnQZZQDJ1thsX43c97BlRGi9GnphIBG6SHxDwS7bpKtXlnq2R/qaqedYpANjzoEiuG3sftAVLfsAPdFIiqeUre9TIb6+ifrivxaT6qCpCqHitA8bbNy7SOF5hCSHjRAmwN0sOob9/rOP3WAClszmuQdyS2z/RXriQqDedjEDESb+qpNUxxGAbm6jFTWiEfQ7k7BKmb6XNKDMPITaZcchz35DCulaKWOrcF9X+FrTXIfxNjEFqK6bMpk+YubKk/qZ/9bTOKPhStGb4+Ld5fEizerZYlLqT0bKUuIoOl6QnSkahzFAYWkCFhHaDJSrEHm/rmtxFNsWq61T6ctsba1zpPYJCFU3HWoB92jSi/xTvN88KWIPYJOasMfF4DCCavbR6T7uHx0f3kuszvW02wD7PMSIDsunrRmfUgAY9zUbE/v0WLFe75nPwAs23VyfpFOBNOhrIURQbNQIZtnn5QU027Eh1GgkvIQoTkb/9X5DkR5yiB6BQn+yxfG4xPpw3K1XLCN+uW0yZcH3vb70tlts3l0H2I8b/GUNeW0nnkCIT1qmjkgpk8zUTAgesCJ0JNbyNLt7JseR4m0UIveWO0klGrX46oV6ponqYC1bNaHnHNj/7z4exh+tyPvTmcRm4HMMzL6Q/dyy+AlDtB/IZVnOTMu1XCJp34pIA1xVGSP9gLJvVZdEAZhpi0nooq0LAKCvsq4tKnbrORqRzYerv77PNG//cx3Me9X8HDpb6G3bL69+cG5ZfoeIh3TLet0gp4RjwZXzY0u3WxbltF0OswoYlhmeyAWy+RpQRtfXtuf0c90QFStONmFlPMQASuC1ZV85IEKRmfqCwZ0N/3svb5Xhe7xeaOJFSexkSDNU/aSTjw6hERVbUNREoerxy/oTOhhDceR5VwvJEuvxzIUNEJ8DM8UT1aCHrCi37OVsd3lksLnaeA8SCUNH5RbtvvaOYJeFv3KGebvqxizt+uNB/J/jK1SHJ28it5RFiXSPq0QlbL4sMejQhOjA0aaDb+bIsSJvQtysJv5PTMdYIflNm3dKBKopq9VvEUxDmEMu5++2Ecz52YaywcNn7MImTF/vZP+NeW8CINEPQCR3Y5tncsKHN9leIU3GJFqIcOc4mLi5EQU3fIsRqdrYPVOON7wO8gEoNtFgzjtXZcccvzZ/dOxrV+IeA5HUEe6H1LcycFweC5z3PCKyL8msHaTvQ47FeV5YyoKfuwqwNiDe1rgpsGiC7HIgVQZnlimp5aO6d2PMb8g7kNmF8edWBFCABhgmS3sym0WAkd0rd2bp72wOnpF8QwPr2vEvcaGVHnEixpYHWfpu/qYG1Vhn9YJITZvs7WYsTWP5ktXxeUoiwHvh7tq0gjr/mMYHIcE6GoW/axKd0p8LxBlR8ruEeE9AMIuynPHpdot6yUzyXwh1W3tJ+E9+BWBHuOvqueNfXGyzXrF0tuDlS7bVan+r0NbAGehONTa1afqbwTHUtWFt6m2UcQSv8YrXUu9UOYz4iONLZ/OASH6TFxE5nVxJVE1DIVzuCbdyEGO8Rtf8XaVIpCOrpqjLevqD/KOhnyai8FNDuk0OZwz/L/OKc5mXWjXHdxezFFGlHhkzxBE2PIgK1Akm/hDKsf1EZYy5KusjDDpAvn9pwI3uCHAD43sTZCTyXg7rVpa6hqAtNWb0LmMqvbxub4RYKPn0CzdzjZDNqr6NK8avz7rM7KUqhTVdmSYhHoiBWwTtSuX2u65WhAxtA4K279Xcl+xnl00L9hai06WFk1k/NcSe2VIUHRbL3zt0vfapYsSd4B5CM5YRwIKnbfmMsdg7YTf+tuBg5qxY2y274+JVPX7dzmPbmSoR243F1229bcvRVeCdmlftt3dgTQg7Xjg7EOYiXXt8grQywVzOr2+JOTOLQ0bDcEH3E5Qihan8K3z5i7V4rQNldXcIW4Up7ow+a9VEbU/BHhnBu1AI="/><input type="hidden" id="docprequery_server_url" name="docprequery_server_url" value="https://kns.cnki.net/docpre/api/inner/multi-statusex"/>
+    </div>
+    <input id="errorMsgHid" type="hidden" value="" />
+    <input id="HandlerIdHid" type="hidden" value="0" />
+    <input id="curPageHid" type="hidden" value="1" />
+    <input id="isSortHid" type="hidden" value="false" />
+    <input id="sqlVal" type="hidden" value="0645419CC2F0B23BC604FFC82ADF67C6E920108EDAD48468E8156BA693E89F481391D6F5096D7FFF3585B29E8209A884EFDF8EF1B43B4C7232E120D4832CCC8979F171B4C268EE675FFB969E7C6AF23B4B63CE6436EE93F3973DCB2E4950C92CBCE188BEB6A4E9E17C3978AE8787ED6BB56445D70910E6E32D9A03F3928F9AD8AADE2A90A8F00E2B29BD6E5A0BE025E88D8E778EC97D42EF1CF47C35B8A9D5473493D11B406E77A4FF28F5B34B8028FE85F57606D7A3FED75B27901EEF587583EBD4B63AC0E07735BE77F216B50090DEE5ABB766456B996D37EB8BDACA3A67E8126F111CF9D15B351A094210DB6B4638A21065F03B6F0B73BB4625BBECE66F8197909739D8FB4EB756DEF71864177DFA3CB468CFA6E8ABF7924234DED6B0DFD49D9269CBA4A2BF4075D517A61D094225D70C1B4C137DB9614758A5E097376F5F3E55A7063A4B7E437436D13FF3CC8FB435E131FFCD16FC30DD997098B4FC997D995E767E2712175BC05B960D3FEB5CAF12A13BD1CE3530AD72FC4DB93206996E216BC5DC294960A0CA05E986848E1E64FFC5A52BFCB41A97840A708E397F11EFF261E08F3A34094061AE8E8F819AF6A17A9E2176C3893C6DD3E3C06864C91989BDEF9790A38FAF2524B17743B30EBA4ADD550BF985F9C3097A608C697283CE37F8CB78BDC9EAA4874C3485E6F931B016EC41BFBC0EF91B2AD7E1B424E1DFB8FC8771DEA2458C5A7A4C9BF0192C101FD8EDDEE1BACB44C3E478361EF0D1B70FAD56BCF6870A6044D3A226611B9C1A43C6F9F7C021C98E0D5F778D72C87183F026071A730B8BB4FABF9F68FEC783AB1E6E79218B5D87FD1BB541817FB4F3C21DC849A803CB8A620A2EE00475BAF2CE6556638B7A949B446F39A1076DA15764A777BA6239447CB91F4CF513325366E167D268DDB75F288B5C13415CE62F5C431181C044A28CA502FF14439E5C6F63D419CB6DE1360DB01593FE765459299E442EE24917C199AB5178F38461F8C4EBBC95344C5F2AB60F379813A87E2E3AFE3021198B8222CEAB870D9A353786079961184D63977917C7DF8FE6AFBBC795A832BDD454D6E3CD22C3FF7A58808923DD6F464C12A9A88FBFD0C71458AB0E4C1D566315181A9578ECE93670E5CAF13CF2553F68E64726C131F4A48B42A9E7F09EFEBA51D1FDA6BA0ECA0B02B951ECC04548F1D4D08DB69D0EFDCE6793537BB8E59DC442631A9CDBA13878D7493AADA0CD868C1C1C3A6A6FA17C4109205A83F9C0C43E0D2551D0A8592EA99D20D4B78B4EEEE2D53A543701F620C7D6FF46E800B0CEF9B3D23ACD62C7CBEA25FC8BD74D5A0E5C86B9CF3FCACBDBE585AFF85F9689CBF5BCBD267C580361D5B93AA9BD5A1BB6122BB87C04AE227211FE675A4650814F2285261E5641683D65E0454E2597F6025BB4AA1A044D7B97F57394EA5EC878B80FC0A82F12E2D3D9E1BCB062A7ABB290F02116BDED95761A67CE2FDDE42BDDDF34F22E49A0406D724FEBC86B93F80BB52A8D34B8D2B24288ECBC3F90CCB1EF36085E77F1E2AE0AB411FE60A033E704A21469EA5CE4BB8AF6B1C1F1C5F1F084472D57F458CC39F0B2FE583D0795159E9E38BD1102F5D96DB0F828B66F41A702BB0AE59E40CF53BE7F6342EF208434CFFABF845AFD771B288D484BB79952159E6EA27658A6B6230557AF16E86C4AFDF973DBD5A3A2B979AD9037441409D22A954DC50CBCEA8EA5AC500C4BC8282DCE2626BD2B2CB4B1E33B2E1F92533F7F04C48D061907DBCE3E21FF0A77F09C1AE33E769962CD1EDE6B688590D569409EE9EEC4DF1074DCC97C43B0EDAF1C38B5B2784ABC803D9B3B4FC35F46CB1E275E7F83036FC6AFF2E624D4D2E6AE1C2D4CE3FF219FA90A935957E0DE1A386E4AAB5C9F9D1CECA909F5698BFA86C57B6A73D3C0F9FDB94128B7BB9FDD19D57E4C2C2F4127A1F127A96ABF248B26D8B6EF12A1EA97D064564D33D46E5CA71F53FA121A7E5C91ED2B08BE64A0E3D22BE26FC251C0BF4CF21674DE19AF410E3EDFBD9A4BBEA6C709A1E42B5C17E1EE7AA33EFB0F375BF0858D49210A71662313FA5B8E04E508A5E9425D49C3C5D12CB8DCADBF8A148BFA042BBB0218AAC403AAB9CECC45FD33CEC6797FC984BF91FF638AF6E1F09546F595CFC779D2D867282C63B78DC6A6ED3C1C3887462C84AC07C756C5A8D8A8B2EFD39C28A68D47091A3312461BC20085636F4B41F22D5B46861F3E557777CDCFDFE6CAB8ABECFECA3634D779C0F21185772CA46EA1C0B1E0191F02F11A2B10372550A8B839D8C819F77A67512CA57D16DBA687D1BB77271E375C6DD3432C804B0A707D0DF7D72108E3190885E95DE0F0F118A904C80D606BB82C582FF3E3D836AED573EA426D382FF3D0C83B51E0E63B863FC20F67D2C68C14558E2EEDED6B71B615A74152632E0E1A4BFC01F083BEEA6E702D1650038B1826D1970F88507FB5E5C07A18F3BD94177B73C5C9E960EE73ED66B353BB65245EABB7D552BA6F27425B703A081479862CF0C6A2102A796F0B93F072D362F8CE04AB334C4342186C69F946794EE812FFC903D270DF98BCEAF98F8C4D685BB25DD848FBDE28BE6A5DB4564BF4D9115620B5BA45E1A86A44A0F4A1D1839184E8E952AB38050D6C2A5378577AB09FA6A5167AA498C61F04853CCA741B2A360E4EA67F8F67E4739DFB9DF144C9D44CBAFEA30AD7B764F276F570674A2333F36EB6C9051026EA82DE60C00EFB5DF9661474D1A9DDD4137C8E7DC9E1B9C4D4E6D9091E5764AECB618E94F85A503FBACE93CAB29A0695D8827D7A8270E5454ADC51A64D437081B6DCEAC22C5CEFAC49A667F67E253E486F4AAC6CD8D4223FE1D9443E3CBBA90D8F890057F71EE0E5EAC2120CC83FD82330872F070B2537CE36AB62EB3EDA94B4B92C4D94255188F1B083BC82EE0E6AE7C48E05D1F0E68EF707E646BDB2187508AC0F8F5ACCC9D9F2EAF694BA976FDD36FD180B198ED3BF445664CF579835B0B53EBE6038F253EC6A51E18829F3462572A7D9D82B67FEBE7711BB69A072AC9096BCD8F7180AC2B5C0727CB92ACFBE003BF9E0FC64C3EBFDBBCEF1E69E259EB49BB65C9D79B63C7B1AD65F43CE0D3F9DCB848DB6F153890F6EFE3692B714C01B960B2A0167DE69B475AE0B991A2A9D2FA3" />
+    <input id="pathAnalysisHid" type="hidden" value="/KVisual/ArticleAnalysis/index?" />
+
+</form>
+
+<script type="text/javascript">
+    $(function () {
+        if ('True'=='False') {
+            $("#batchOpsBox .bulkdownload").css("display","none");
+        }
+    });
+   
+</script>

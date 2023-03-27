@@ -1,0 +1,7830 @@
+{
+	"2022": {
+		"临床医学": {
+			"field": "专题子栏目代码",
+			"value": "E060",
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"肿瘤学": {
+			"field": "专题子栏目代码",
+			"value": "E072",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"外科学": {
+			"field": "专题子栏目代码",
+			"value": "E066",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"中医学": {
+			"field": "专题子栏目代码",
+			"value": "E056",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"内分泌腺及全身性疾病": {
+			"field": "专题子栏目代码",
+			"value": "E065",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"妇产科学": {
+			"field": "专题子栏目代码",
+			"value": "E068",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"神经病学": {
+			"field": "专题子栏目代码",
+			"value": "E070",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"心血管系统疾病": {
+			"field": "专题子栏目代码",
+			"value": "E062",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"儿科学": {
+			"field": "专题子栏目代码",
+			"value": "E069",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"泌尿科学": {
+			"field": "专题子栏目代码",
+			"value": "E067",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"眼科与耳鼻咽喉科": {
+			"field": "专题子栏目代码",
+			"value": "E073",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"医药卫生方针政策与法律法规研究": {
+			"field": "专题子栏目代码",
+			"value": "E053",
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展": {
+					"value": "25",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"中药学": {
+			"field": "专题子栏目代码",
+			"value": "E057",
+			"study_level": {
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"消化系统疾病": {
+			"field": "专题子栏目代码",
+			"value": "E064",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"急救医学": {
+			"field": "专题子栏目代码",
+			"value": "E077",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"呼吸系统疾病": {
+			"field": "专题子栏目代码",
+			"value": "E063",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"医学教育与医学边缘学科": {
+			"field": "专题子栏目代码",
+			"value": "E054",
+			"study_level": {
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展": {
+					"value": "25",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"药学": {
+			"field": "专题子栏目代码",
+			"value": "E079",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"口腔科学": {
+			"field": "专题子栏目代码",
+			"value": "E074",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"特种医学": {
+			"field": "专题子栏目代码",
+			"value": "E076",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展": {
+					"value": "25",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				}
+			}
+		}
+	},
+	"2021": {
+		"临床医学": {
+			"field": "专题子栏目代码",
+			"value": "E060",
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"高级科普": {
+					"value": "19",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"肿瘤学": {
+			"field": "专题子栏目代码",
+			"value": "E072",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"外科学": {
+			"field": "专题子栏目代码",
+			"value": "E066",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"中医学": {
+			"field": "专题子栏目代码",
+			"value": "E056",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"高级科普": {
+					"value": "19",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"妇产科学": {
+			"field": "专题子栏目代码",
+			"value": "E068",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"心血管系统疾病": {
+			"field": "专题子栏目代码",
+			"value": "E062",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"内分泌腺及全身性疾病": {
+			"field": "专题子栏目代码",
+			"value": "E065",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"神经病学": {
+			"field": "专题子栏目代码",
+			"value": "E070",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"儿科学": {
+			"field": "专题子栏目代码",
+			"value": "E069",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"泌尿科学": {
+			"field": "专题子栏目代码",
+			"value": "E067",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"医药卫生方针政策与法律法规研究": {
+			"field": "专题子栏目代码",
+			"value": "E053",
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展": {
+					"value": "25",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"眼科与耳鼻咽喉科": {
+			"field": "专题子栏目代码",
+			"value": "E073",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"急救医学": {
+			"field": "专题子栏目代码",
+			"value": "E077",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "21",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"消化系统疾病": {
+			"field": "专题子栏目代码",
+			"value": "E064",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "21",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"呼吸系统疾病": {
+			"field": "专题子栏目代码",
+			"value": "E063",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"中药学": {
+			"field": "专题子栏目代码",
+			"value": "E057",
+			"study_level": {
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"医学教育与医学边缘学科": {
+			"field": "专题子栏目代码",
+			"value": "E054",
+			"study_level": {
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "21",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展": {
+					"value": "25",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"药学": {
+			"field": "专题子栏目代码",
+			"value": "E079",
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"口腔科学": {
+			"field": "专题子栏目代码",
+			"value": "E074",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"感染性疾病及传染病": {
+			"field": "专题子栏目代码",
+			"value": "E061",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			}
+		}
+	},
+	"2020": {
+		"临床医学": {
+			"field": "专题子栏目代码",
+			"value": "E060",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"肿瘤学": {
+			"field": "专题子栏目代码",
+			"value": "E072",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"外科学": {
+			"field": "专题子栏目代码",
+			"value": "E066",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"中医学": {
+			"field": "专题子栏目代码",
+			"value": "E056",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"妇产科学": {
+			"field": "专题子栏目代码",
+			"value": "E068",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"心血管系统疾病": {
+			"field": "专题子栏目代码",
+			"value": "E062",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"内分泌腺及全身性疾病": {
+			"field": "专题子栏目代码",
+			"value": "E065",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"神经病学": {
+			"field": "专题子栏目代码",
+			"value": "E070",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"儿科学": {
+			"field": "专题子栏目代码",
+			"value": "E069",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展": {
+					"value": "25",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"医药卫生方针政策与法律法规研究": {
+			"field": "专题子栏目代码",
+			"value": "E053",
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展": {
+					"value": "25",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"泌尿科学": {
+			"field": "专题子栏目代码",
+			"value": "E067",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"呼吸系统疾病": {
+			"field": "专题子栏目代码",
+			"value": "E063",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"自然科学理论与方法": {
+			"field": "专题子栏目代码",
+			"value": "A001",
+			"study_level": {
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"急救医学": {
+			"field": "专题子栏目代码",
+			"value": "E077",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"消化系统疾病": {
+			"field": "专题子栏目代码",
+			"value": "E064",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"眼科与耳鼻咽喉科": {
+			"field": "专题子栏目代码",
+			"value": "E073",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"医学教育与医学边缘学科": {
+			"field": "专题子栏目代码",
+			"value": "E054",
+			"study_level": {
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"中药学": {
+			"field": "专题子栏目代码",
+			"value": "E057",
+			"study_level": {
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"特种医学": {
+			"field": "专题子栏目代码",
+			"value": "E076",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-业务研究": {
+					"value": "234",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "21",
+					"study_level_field": "人工标识码"
+				}
+			}
+		},
+		"感染性疾病及传染病": {
+			"field": "专题子栏目代码",
+			"value": "E061",
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			}
+		}
+	},
+	"2019": {
+		"临床医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E060"
+		},
+		"肿瘤学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E072"
+		},
+		"外科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E066"
+		},
+		"中医学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E056"
+		},
+		"心血管系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E062"
+		},
+		"妇产科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E068"
+		},
+		"内分泌腺及全身性疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E065"
+		},
+		"神经病学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E070"
+		},
+		"儿科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E069"
+		},
+		"泌尿科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E067"
+		},
+		"急救医学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E077"
+		},
+		"消化系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E064"
+		},
+		"医药卫生方针政策与法律法规研究": {
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展": {
+					"value": "25",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E053"
+		},
+		"眼科与耳鼻咽喉科": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E073"
+		},
+		"呼吸系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E063"
+		},
+		"特种医学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-业务研究": {
+					"value": "234",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E076"
+		},
+		"自然科学理论与方法": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "A001"
+		},
+		"医学教育与医学边缘学科": {
+			"study_level": {
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-业务研究": {
+					"value": "234",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E054"
+		},
+		"中药学": {
+			"study_level": {
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E057"
+		}
+	},
+	"2018": {
+		"临床医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E060"
+		},
+		"肿瘤学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E072"
+		},
+		"外科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E066"
+		},
+		"中医学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E056"
+		},
+		"心血管系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E062"
+		},
+		"妇产科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E068"
+		},
+		"内分泌腺及全身性疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E065"
+		},
+		"神经病学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E070"
+		},
+		"儿科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E069"
+		},
+		"泌尿科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E067"
+		},
+		"急救医学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E077"
+		},
+		"消化系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E064"
+		},
+		"医药卫生方针政策与法律法规研究": {
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E053"
+		},
+		"眼科与耳鼻咽喉科": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E073"
+		},
+		"特种医学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-业务研究": {
+					"value": "234",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E076"
+		},
+		"呼吸系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E063"
+		},
+		"中药学": {
+			"study_level": {
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E057"
+		},
+		"医学教育与医学边缘学科": {
+			"study_level": {
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E054"
+		},
+		"感染性疾病及传染病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E061"
+		}
+	},
+	"2017": {
+		"临床医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E060"
+		},
+		"肿瘤学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E072"
+		},
+		"外科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E066"
+		},
+		"中医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E056"
+		},
+		"心血管系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E062"
+		},
+		"内分泌腺及全身性疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E065"
+		},
+		"妇产科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E068"
+		},
+		"神经病学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E070"
+		},
+		"儿科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E069"
+		},
+		"泌尿科学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E067"
+		},
+		"急救医学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E077"
+		},
+		"眼科与耳鼻咽喉科": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E073"
+		},
+		"消化系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E064"
+		},
+		"医药卫生方针政策与法律法规研究": {
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E053"
+		},
+		"特种医学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E076"
+		},
+		"呼吸系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E063"
+		},
+		"中药学": {
+			"study_level": {
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E057"
+		},
+		"医学教育与医学边缘学科": {
+			"study_level": {
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E054"
+		},
+		"感染性疾病及传染病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E061"
+		}
+	},
+	"2016": {
+		"临床医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E060"
+		},
+		"肿瘤学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E072"
+		},
+		"外科学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E066"
+		},
+		"中医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E056"
+		},
+		"心血管系统疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E062"
+		},
+		"内分泌腺及全身性疾病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E065"
+		},
+		"妇产科学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E068"
+		},
+		"儿科学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E069"
+		},
+		"神经病学": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E070"
+		},
+		"眼科与耳鼻咽喉科": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E073"
+		},
+		"泌尿科学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E067"
+		},
+		"消化系统疾病": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E064"
+		},
+		"急救医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E077"
+		},
+		"医药卫生方针政策与法律法规研究": {
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展-管理研究": {
+					"value": "253",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E053"
+		},
+		"呼吸系统疾病": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E063"
+		},
+		"特种医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-业务研究": {
+					"value": "234",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E076"
+		},
+		"感染性疾病及传染病": {
+			"study_level": {
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E061"
+		},
+		"中药学": {
+			"study_level": {
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E057"
+		},
+		"医学教育与医学边缘学科": {
+			"study_level": {
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E054"
+		},
+		"药学": {
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E079"
+		}
+	},
+	"2015": {
+		"临床医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E060"
+		},
+		"外科学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"行业技术发展与评论": {
+					"value": "18",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E066"
+		},
+		"肿瘤学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E072"
+		},
+		"中医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E056"
+		},
+		"心血管系统疾病": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "22",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E062"
+		},
+		"内分泌腺及全身性疾病": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E065"
+		},
+		"妇产科学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E068"
+		},
+		"儿科学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E069"
+		},
+		"神经病学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"基础研究": {
+					"value": "11",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E070"
+		},
+		"消化系统疾病": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E064"
+		},
+		"眼科与耳鼻咽喉科": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E073"
+		},
+		"泌尿科学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E067"
+		},
+		"医药卫生方针政策与法律法规研究": {
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "2R",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-管理研究": {
+					"value": "233",
+					"study_level_field": "人工标识码"
+				},
+				"实践发展": {
+					"value": "25",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E053"
+		},
+		"急救医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E077"
+		},
+		"呼吸系统疾病": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E063"
+		},
+		"中药学": {
+			"study_level": {
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-行业研究": {
+					"value": "242",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E057"
+		},
+		"特种医学": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-业务研究": {
+					"value": "244",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-政策研究": {
+					"value": "231",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E076"
+		},
+		"感染性疾病及传染病": {
+			"study_level": {
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-政策研究": {
+					"value": "241",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究": {
+					"value": "24",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				},
+				"学科教育教学": {
+					"value": "1R",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E061"
+		},
+		"药学": {
+			"study_level": {
+				"工程与项目管理": {
+					"value": "15",
+					"study_level_field": "人工标识码"
+				},
+				"应用基础研究": {
+					"value": "12",
+					"study_level_field": "人工标识码"
+				},
+				"技术开发": {
+					"value": "16",
+					"study_level_field": "人工标识码"
+				},
+				"工程研究": {
+					"value": "14",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床研究": {
+					"value": "132",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究-临床医学试验研究": {
+					"value": "131",
+					"study_level_field": "人工标识码"
+				},
+				"实用工程技术": {
+					"value": "17",
+					"study_level_field": "人工标识码"
+				},
+				"技术研究": {
+					"value": "13",
+					"study_level_field": "人工标识码"
+				},
+				"开发研究-管理研究": {
+					"value": "243",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究-行业研究": {
+					"value": "232",
+					"study_level_field": "人工标识码"
+				},
+				"应用研究": {
+					"value": "23",
+					"study_level_field": "人工标识码"
+				}
+			},
+			"field": "专题子栏目代码",
+			"value": "E079"
+		}
+	}
+}

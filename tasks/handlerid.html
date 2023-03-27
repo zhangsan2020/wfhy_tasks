@@ -1,0 +1,3072 @@
+<form method="post" name="gridTableForm">
+    <div id="gridTable" class="search-result">
+<div class='toolbar'><div id="countPageDiv" class="result-con-r"><span class='pagerTitleCell'>共找到<em>98</em>条结果</span><span class='countPageMark'>2/2</span><span class='topTurnSpan'><a id='Page_Prev_top' title='键盘的“← →”可以实现快速翻页' data-curPage='1'><<</a></span></div><div class='toolbar-col'>
+        <div class="checkcount">
+            <label class="checkAll"><input type="checkbox" name="selectCheckbox" id="selectCheckAll1" onclick="$(this).filenameClick()">全选</label>
+            <span>已选：</span>
+            <em title='点击查看所选文献' id='selectCount' name='selectCount' onclick='window.open(APPPATH + "/manage.html"+(GetQueryStringByName("subject")?"?subject="+GetQueryStringByName("subject"):""))'>0</em>
+            <a href="javascript:$.filenameClear();">清除</a>
+          </div>         
+          <ul class="dropdown-analysis-btns" id="batchOpsBox">
+			<li class="bulkdownload export"><a href="javascript:void(0)">批量下载</a></li>
+              <li>
+                <a href="javascript:void(0)">导出与分析</a><i class="icon-d"></i>
+                <ul>
+                  <li class="export">
+                    <a href="javascript:void(0)">导出文献</a>
+                    <i class="icon-r"></i>
+                    <ul class="secondUl">
+                      <li><a href="javascript:void(0)" exportType="GBTREFER">GB/T 7714-2015 格式引文</a></li>
+                      <li><a href="javascript:void(0)" exportType="elearning" >知网研学（原E-Study）</a></li>
+                      <li><a href="javascript:void(0)" exportType="REFER" >CAJ-CD 格式引文</a></li>
+                       <li><a href="javascript:void(0)" exportType="MLA" >MLA格式引文</a></li>
+                       <li><a href="javascript:void(0)" exportType="APA" >APA格式引文</a></li>
+                      <li><a href="javascript:void(0)" exportType="NEW" >查新（引文格式）</a></li>
+                      <li><a href="javascript:void(0)" exportType="newdefine" >查新（自定义引文格式）</a></li>
+                      <li><a href="javascript:void(0)" exportType="Refworks" >Refworks</a></li>
+                      <li><a href="javascript:void(0)" exportType="EndNote" >EndNote</a></li>
+                      <li><a href="javascript:void(0)" exportType="NoteExpress" >NoteExpress</a></li>
+                      <li><a href="javascript:void(0)" exportType="NodeFirst" >NoteFirst</a></li>
+                      <li><a href="javascript:void(0)" exportType="selfDefine">自定义</a></li>
+                    </ul>
+                  </li>
+                  <li id="analysisLi">
+                    <a href="javascript:void(0)">可视化分析</a><i class="icon-r"></i>
+                    <ul class="secondUl">
+                      <li id="anisys_select"><a href="javascript:void(0)">已选结果分析(<span>0</span>)</a></li>
+                      <li id="anisys_all"><a href="javascript:void(0)">全部检索结果分析</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+              </li>
+            </ul>
+          <ul class="change-list" id="DivDisplayMode"><li  title="详情" data-obj="result-piclist" data-mode="custommode"><i class="icon-detail"></i></li><li class="active" title="列表" data-obj="result-table-list" data-mode="listmode"><i class="icon-table"></i></li></ul><div class="statistic"><div id="id_grid_display_num"  class="page-show-count">显示<div class="sort" id="perPageDiv"><div class="sort-default"><span>50</span><i class="icon icon-sort"></i></div><ul class="sort-list"><li  data-val="10"><a href="javascript:void(0);">10</a></li><li data-val="20" ><a href="javascript:void(0);" >20</a></li> <li class="cur" data-val="50"><a href="javascript:void(0);" >50</a></li></ul></div></div></div><div class="order-group" id="sortList"><span> 排序：</span><ul class="order" id="orderList"><li data-sorttype="relevant%2c(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)"  data-k="RELEVANT"  data-sort="RELEVANT-%e7%9b%b8%e5%85%b3%e5%ba%a6%2frelevant%2c(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)" data-onlydesc="true">相关度</li><li class='descend cur' title='只在800万条记录以内有效' data-k="PT" data-sorttype="(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)" data-sort="PT-%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2f(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)" data-onlydesc="false">发表时间</li><li data-sorttype="(%e8%a2%ab%e5%bc%95%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)"  data-k="CITY"  data-sort="CITY-%e8%a2%ab%e5%bc%95%2f(%e8%a2%ab%e5%bc%95%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)" data-onlydesc="false">被引</li><li data-sorttype="(%e4%b8%8b%e8%bd%bd%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)"  data-k="DOWNLOAD"  data-sort="DOWNLOAD-%e4%b8%8b%e8%bd%bd%2f(%e4%b8%8b%e8%bd%bd%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)" data-onlydesc="false">下载</li><li data-sorttype="relevant%2c(ffd%2c%27NUM1000%27)"  data-k="ALL"  data-sort="ALL-%e7%bb%bc%e5%90%88%2frelevant%2c(ffd%2c%27NUM1000%27)" data-onlydesc="true">综合</li></ul></div></div></div><table class="result-table-list"> <thead><tr><th></th><th>题名</th><th>作者</th><th>来源</th><th>发表时间</th><th>数据库</th><th>被引</th><th>下载</th><th>操作</th></tr></thead><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=51 name=CookieName  value="CJFDLAST2015!LCWX201520032!51!1"  onclick="$(this).filenameClick()"  >51</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=51&recid=&FileName=LCWX201520032&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>研究<font class=Mark>乳腺癌</font>改良根治术应用抗生素与术后伤口感染的关系</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%be%90%e6%ad%a3%e8%89%af&scode=000006221718&acode=000006221718' target="knet">徐正良</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=LCWX'>临床医药文献电子杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-07-15
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>42</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURzokRPZnRSlnUHZjNql2TBp3UtNVUit2QrIDVWFFZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dLCWX201520032' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="LCWX201520032"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=52 name=CookieName  value="CJFDLAST2015!ZYYG201511027!52!1"  onclick="$(this).filenameClick()"  >52</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=52&recid=&FileName=ZYYG201511027&DbName=CJFDLAST2015&DbCode=CJFD&yx=Y&pr=&URLID=11.3070.r.20150618.1647.013' target='_blank'>Orem自理理论在<font class=Mark>乳腺癌</font>改良根治术后患者中的应用</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%ab%98%e4%b8%bd%e5%90%9b&scode=000042390843&acode=000042390843' target="knet">高丽君</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bd%ad%e6%a0%b9%e8%8b%b1&scode=000024915119&acode=000024915119' target="knet">彭根英</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e4%bd%95%e5%bb%ba%e7%be%a4&scode=000047831480&acode=000047831480' target="knet">何建群</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZYYG'>中医药管理杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-06-18 16:47
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=Orem%e8%87%aa%e7%90%86%e7%90%86%e8%ae%ba%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e6%82%a3%e8%80%85%e4%b8%ad%e7%9a%84%e5%ba%94%e7%94%a8&scode=ZYYG201511027' target="_blank">5</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>106</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVUR1cndR9EOE9iaz10VXRDbyQFbUBzUU1mVmxmbOhGZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZYYG201511027' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZYYG201511027"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=53 name=CookieName  value="CJFDLAST2015!NXYX201508011!53!1"  onclick="$(this).filenameClick()"  >53</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=53&recid=&FileName=NXYX201508011&DbName=CJFDLAST2015&DbCode=CJFD&yx=Y&pr=&URLID=64.1008.r.20150615.0848.004' target='_blank'>TIVA对新辅助化疗后行<font class=Mark>乳腺癌</font>改良根治术患者骨髓功能及肝肾功能的影响</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%a9%ac%e5%80%a9&scode=000025954738&acode=000025954738' target="knet">马倩</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%a9%ac%e5%af%8c%e5%bc%ba&scode=000039812570&acode=000039812570' target="knet">马富强</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e5%ad%a6%e6%96%b0&scode=000039310791&acode=000039310791' target="knet">陈学新</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e6%b5%b7%e6%b3%a2&scode=000046600271&acode=000046600271' target="knet">刘海波</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%91%86%e5%bf%97%e9%9c%9e&scode=000019351202&acode=000019351202' target="knet">摆志霞</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=NXYX'>宁夏医学杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-06-15 08:48
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=TIVA%e5%af%b9%e6%96%b0%e8%be%85%e5%8a%a9%e5%8c%96%e7%96%97%e5%90%8e%e8%a1%8c%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e6%82%a3%e8%80%85%e9%aa%a8%e9%ab%93%e5%8a%9f%e8%83%bd%e5%8f%8a%e8%82%9d%e8%82%be%e5%8a%9f%e8%83%bd%e7%9a%84%e5%bd%b1%e5%93%8d&scode=NXYX201508011' target="_blank">1</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>53</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURTpWVUhjSFBXSxpXbWZ1aKFUbaF3Tnt2QrIDVWFFZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dNXYX201508011' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="NXYX201508011"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=54 name=CookieName  value="CJFDLAST2015!ZSSA201516022!54!1"  onclick="$(this).filenameClick()"  >54</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=54&recid=&FileName=ZSSA201516022&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术引流管拔除后皮下积液的处理</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%bd%97%e5%9b%bd%e5%ba%86&scode=000040706853&acode=000040706853' target="knet">罗国庆</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZSSA'>中国实用医药</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-06-10
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%bc%95%e6%b5%81%e7%ae%a1%e6%8b%94%e9%99%a4%e5%90%8e%e7%9a%ae%e4%b8%8b%e7%a7%af%e6%b6%b2%e7%9a%84%e5%a4%84%e7%90%86&scode=ZSSA201516022' target="_blank">2</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>91</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURqdDW0ZEWtNlQ5ITR4FUQv4UYipkN11UbaF1Y1xGZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZSSA201516022' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZSSA201516022"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=55 name=CookieName  value="CJFDLAST2015!XCYY201511022!55!1"  onclick="$(this).filenameClick()"  >55</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=55&recid=&FileName=XCYY201511022&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术后胸壁放疗者放置皮肤填充物对疗效的影响</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e5%86%9b%e5%88%9a&scode=000004765390&acode=000004765390' target="knet">陈军刚</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e4%b8%ad%e6%a0%8b&scode=000024706872&acode=000024706872' target="knet">王中栋</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%86%af%e8%8b%97%e8%8a%b3&scode=000012665613&acode=000012665613' target="knet">冯苗芳</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%b0%a2%e7%82%9c%e4%b8%bd&scode=000018364810&acode=000018364810' target="knet">谢炜丽</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=XCYY'>中国乡村医药</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-06-01
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e8%83%b8%e5%a3%81%e6%94%be%e7%96%97%e8%80%85%e6%94%be%e7%bd%ae%e7%9a%ae%e8%82%a4%e5%a1%ab%e5%85%85%e7%89%a9%e5%af%b9%e7%96%97%e6%95%88%e7%9a%84%e5%bd%b1%e5%93%8d&scode=XCYY201511022' target="_blank">1</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>42</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURlJ1SRVmYaN2N14GcWJjVIVVSzwUT3h3Z110Y1xGZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dXCYY201511022' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="XCYY201511022"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=56 name=CookieName  value="CJFDLAST2015!ZXDY201514023!56!1"  onclick="$(this).filenameClick()"  >56</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=56&recid=&FileName=ZXDY201514023&DbName=CJFDLAST2015&DbCode=CJFD&yx=Y&pr=&URLID=43.1225.r.20150529.1659.026' target='_blank'>光子治疗仪在<font class=Mark>乳腺癌</font>改良根治术后并发皮下积液患者中的临床应用</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%83%a1%e8%93%89&scode=000033017557&acode=000033017557' target="knet">胡蓉</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%a7%9c%e8%90%8d%e5%b2%9a&scode=000019861488&acode=000019861488' target="knet">姜萍岚</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZXDY'>中国现代医学杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-05-29 16:59
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e5%85%89%e5%ad%90%e6%b2%bb%e7%96%97%e4%bb%aa%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e5%b9%b6%e5%8f%91%e7%9a%ae%e4%b8%8b%e7%a7%af%e6%b6%b2%e6%82%a3%e8%80%85%e4%b8%ad%e7%9a%84%e4%b8%b4%e5%ba%8a%e5%ba%94%e7%94%a8&scode=ZXDY201514023' target="_blank">3</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>120</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURlF1aR9yb0syZKJXW6ZkaSplWvJEN11UbaF1Y1xGZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZXDY201514023' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZXDY201514023"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=57 name=CookieName  value="CJFDLAST2015!ZYWA201505063!57!1"  onclick="$(this).filenameClick()"  >57</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=57&recid=&FileName=ZYWA201505063&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术治疗Ⅰ、Ⅱ期<font class=Mark>乳腺癌</font>的随机对照研究</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9e%97%e5%85%83%e6%b2%9b&scode=000019515072&acode=000019515072' target="knet">林元沛</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e8%89%b3&scode=000031111447&acode=000031111447' target="knet">李艳</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e6%a5%9a%e5%8d%8e&scode=000024471766&acode=000024471766' target="knet">王楚华</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%82%93%e6%b1%9f%e6%b3%a2&scode=000006288855&acode=000006288855' target="knet">邓江波</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZYWA'>中国药物经济学</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-05-25
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e6%b2%bb%e7%96%97%e2%85%a0%e3%80%81%e2%85%a1%e6%9c%9f%e4%b9%b3%e8%85%ba%e7%99%8c%e7%9a%84%e9%9a%8f%e6%9c%ba%e5%af%b9%e7%85%a7%e7%a0%94%e7%a9%b6&scode=ZYWA201505063' target="_blank">1</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>23</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURCd0dRtCZxo2VxhnaFlnUIV3cIZlblx2dzxUS6BTTidmZwFGTjJGOilHVZBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZYWA201505063' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZYWA201505063"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=58 name=CookieName  value="CJFDLAST2015!ZSSA201514019!58!1"  onclick="$(this).filenameClick()"  >58</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=58&recid=&FileName=ZSSA201514019&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术后出血原因分析</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%bd%97%e5%9b%bd%e5%ba%86&scode=000040706853&acode=000040706853' target="knet">罗国庆</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%83%a1%e5%ae%81%e4%b8%9c&scode=000025173386&acode=000025173386' target="knet">胡宁东</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%83%ad%e8%bf%9c%e5%b3%b0&scode=000023701036&acode=000023701036' target="knet">郭远峰</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%91%a8%e6%99%b6%e6%99%b6&scode=000025920034&acode=000025920034' target="knet">周晶晶</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZSSA'>中国实用医药</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-05-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>463</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURxVDSEJ1SShHUD5WVzY1S5lUeyY3bGdkaK9CT49GZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZSSA201514019' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZSSA201514019"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=59 name=CookieName  value="CJFDLAST2015!HLWK201503056!59!1"  onclick="$(this).filenameClick()"  >59</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=59&recid=&FileName=HLWK201503056&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>保留胸大小肌<font class=Mark>乳腺癌</font>改良根治术临床分析</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%97%ab%e5%bf%97%e6%96%87&scode=000003484207&acode=000003484207' target="knet">闫志文</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=HLWK'>河南外科学杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-05-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%bf%9d%e7%95%99%e8%83%b8%e5%a4%a7%e5%b0%8f%e8%82%8c%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%b4%e5%ba%8a%e5%88%86%e6%9e%90&scode=HLWK201503056' target="_blank">2</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>9</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURFF1KidDOSRmeUFWVSRmamFzL10GUZxkQ2UHe6F2YGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCJFDLAST2015%26filename%3dHLWK201503056%26dbCode%3dCJFD' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="HLWK201503056"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=60 name=CookieName  value="CJFDLAST2015!YLMR201502021!60!1"  onclick="$(this).filenameClick()"  >60</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=60&recid=&FileName=YLMR201502021&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=CJFU2015;&URLID=' target='_blank'>小切口皮内缝合<font class=Mark>乳腺癌</font>改良根治术的疗效分析</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%a7%9c%e5%90%89%e6%b4%b5&scode=000019419270&acode=000019419270' target="knet">姜吉洵</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e5%8d%9a&scode=000027832895&acode=000027832895' target="knet">李博</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%98%a5%e6%99%93&scode=000027780918&acode=000027780918' target="knet">李春晓</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=YLMR'>中国医疗美容</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-05-15
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e5%b0%8f%e5%88%87%e5%8f%a3%e7%9a%ae%e5%86%85%e7%bc%9d%e5%90%88%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e7%9a%84%e7%96%97%e6%95%88%e5%88%86%e6%9e%90&scode=YLMR201502021' target="_blank">2</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>32</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURykmW2A1UJFEW1Y0ctR1Y6RlMlpVbElDe310Y1xGZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dYLMR201502021' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="YLMR201502021"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=61 name=CookieName  value="CJFDLAST2015!ZMGY201505020!61!1"  onclick="$(this).filenameClick()"  >61</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=61&recid=&FileName=ZMGY201505020&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术中保留肋间臂神经的临床价值</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%83%91%e6%a1%93&scode=000002794632&acode=000002794632' target="knet">郑桓</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e4%b8%96%e6%95%8f&scode=000040673462&acode=000040673462' target="knet">张世敏</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e4%b8%96%e4%bc%9f&scode=000027113010&acode=000027113010' target="knet">张世伟</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%94%90%e7%85%a7%e9%b9%8f&scode=000022103607&acode=000022103607' target="knet">唐照鹏</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%9f%b3%e7%95%85&scode=000004096945&acode=000004096945' target="knet">石畅</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%96%b9%e5%9c%86&scode=000028670679&acode=000028670679' target="knet">方圆</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%ad%9f%e5%be%b7%e5%b3%b0&scode=000037914078&acode=000037914078' target="knet">孟德峰</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e6%99%8b%e5%86%80&scode=000036615112&acode=000036615112' target="knet">张晋冀</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9c%b1%e7%ba%a2%e6%88%90&scode=000036658529&acode=000036658529' target="knet">朱红成</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%be%90%e5%8d%ab%e5%9b%bd&scode=000037726728&acode=000037726728' target="knet">徐卫国</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZMGY'>中国煤炭工业医学杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-05-15
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e4%bf%9d%e7%95%99%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e7%9a%84%e4%b8%b4%e5%ba%8a%e4%bb%b7%e5%80%bc&scode=ZMGY201505020' target="_blank">12</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>51</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURDhUWOV2L6t0csVWQ5cTb5IWcyZzRrkzRt9mbOhGZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZMGY201505020' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZMGY201505020"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=62 name=CookieName  value="CJFDLAST2015!GYKS201503010!62!1"  onclick="$(this).filenameClick()"  >62</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=62&recid=&FileName=GYKS201503010&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>早期<font class=Mark>乳腺癌</font>行<font class=Mark>乳腺癌</font>改良根治术治疗疗效及安全性</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%ae%98%e4%b8%8a%e7%90%a6&scode=000008205873&acode=000008205873' target="knet">官上琦</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=GYKS'>国外医药(抗生素分册)</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-05-15
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e6%97%a9%e6%9c%9f%e4%b9%b3%e8%85%ba%e7%99%8c%e8%a1%8c%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e6%b2%bb%e7%96%97%e7%96%97%e6%95%88%e5%8f%8a%e5%ae%89%e5%85%a8%e6%80%a7&scode=GYKS201503010' target="_blank">8</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>13</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURzMnYEhmNoBlMWtkYJJXU0EHO6dlMGZnWrYDe6F2YGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dGYKS201503010' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="GYKS201503010"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=63 name=CookieName  value="CJFDLAST2015!JCYL201505009!63!1"  onclick="$(this).filenameClick()"  >63</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=63&recid=&FileName=JCYL201505009&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术后胸壁新发良性肿物的超声特征</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%a8%e5%80%a9&scode=000033683752&acode=000033683752' target="knet">杨倩</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9c%b1%e5%ba%86%e8%8e%89&scode=000025722102&acode=000025722102' target="knet">朱庆莉</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%a7%9c%e7%8e%89%e6%96%b0&scode=000039350540&acode=000039350540' target="knet">姜玉新</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e5%bb%ba%e5%88%9d&scode=000006907260&acode=000006907260' target="knet">李建初</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e7%92%9f&scode=000027695920&acode=000027695920' target="knet">张璟</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%8e%8b%e7%ba%a2%e7%87%95&scode=000026159088&acode=000026159088' target="knet">王红燕</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%b8%b8%e7%8f%8a%e7%8f%8a&scode=000002636929&acode=000002636929' target="knet">游珊珊</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=JCYL'>基础医学与临床</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-05-05
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e8%83%b8%e5%a3%81%e6%96%b0%e5%8f%91%e8%89%af%e6%80%a7%e8%82%bf%e7%89%a9%e7%9a%84%e8%b6%85%e5%a3%b0%e7%89%b9%e5%be%81&scode=JCYL201505009' target="_blank">3</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>79</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURVJDb3w2crV0dyZGM0MmSFFUQON0czkzdZ10Y1xGZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dJCYL201505009' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="JCYL201505009"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=64 name=CookieName  value="CJFDLAST2015!SXYZ201505054!64!1"  onclick="$(this).filenameClick()"  >64</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=64&recid=&FileName=SXYZ201505054&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>保留肋间臂神经在<font class=Mark>乳腺癌</font>改良根治术中的应用及临床分析</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%b5%b5%e6%b8%ad%e4%b8%9c&scode=000020107208&acode=000020107208' target="knet">赵渭东</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%99%93%e8%be%89&scode=000033410424&acode=000033410424' target="knet">李晓辉</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%8d%9c%e6%99%ba%e6%96%8c&scode=000025561149&acode=000025561149' target="knet">卜智斌</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=SXYZ'>陕西医学杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-05-05
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%bf%9d%e7%95%99%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e7%9a%84%e5%ba%94%e7%94%a8%e5%8f%8a%e4%b8%b4%e5%ba%8a%e5%88%86%e6%9e%90&scode=SXYZ201505054' target="_blank">9</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>20</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURIdFa1FHSSVEMohDbGhFarg1U45EW5k3Z110Y1xGZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dSXYZ201505054' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="SXYZ201505054"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=65 name=CookieName  value="CJFDLAST2015!ZFYB201512058!65!1"  onclick="$(this).filenameClick()"  >65</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=65&recid=&FileName=ZFYB201512058&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>保留乳头乳晕的<font class=Mark>乳腺癌</font>改良根治术与传统根治术对比</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%82%b5%e5%bf%97%e5%b9%b3&scode=000002514886&acode=000002514886' target="knet">邵志平</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%83%a1%e5%ad%9d%e6%b8%a0&scode=000036686652&acode=000036686652' target="knet">胡孝渠</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e7%bb%a7%e6%89%bf&scode=000042007275&acode=000042007275' target="knet">李继承</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%83%a1%e6%99%93%e4%b8%bd&scode=000026250091&acode=000026250091' target="knet">胡晓丽</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZFYB'>中国妇幼保健</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-04-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%bf%9d%e7%95%99%e4%b9%b3%e5%a4%b4%e4%b9%b3%e6%99%95%e7%9a%84%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%8e%e4%bc%a0%e7%bb%9f%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%af%b9%e6%af%94&scode=ZFYB201512058' target="_blank">20</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>161</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVUROh2YwcFcRZXONtUNWNTUSRGaWJXdadmUv9CT49GZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZFYB201512058' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZFYB201512058"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=66 name=CookieName  value="CJFDLAST2015!FSXS201504018!66!1"  onclick="$(this).filenameClick()"  >66</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=66&recid=&FileName=FSXS201504018&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术后自体背阔肌皮瓣乳房重建术后X线表现</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e5%87%a4%e6%a2%85&scode=000007733641&acode=000007733641' target="knet">刘凤梅</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%be%9a%e6%9f%b3%e7%87%95&scode=000036918855&acode=000036918855' target="knet">龚柳燕</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%94%90%e5%8b%87&scode=000034367131&acode=000034367131' target="knet">唐勇</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%a2%81%e4%ba%91&scode=000027274851&acode=000027274851' target="knet">梁云</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%b1%a4%e5%8f%91&scode=000018927713&acode=000018927713' target="knet">汤发</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=FSXS'>放射学实践</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-04-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e8%87%aa%e4%bd%93%e8%83%8c%e9%98%94%e8%82%8c%e7%9a%ae%e7%93%a3%e4%b9%b3%e6%88%bf%e9%87%8d%e5%bb%ba%e6%9c%af%e5%90%8eX%e7%ba%bf%e8%a1%a8%e7%8e%b0&scode=FSXS201504018' target="_blank">4</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>78</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVUR1QjMwcXTrtWbw00MDpUY15Wb5tkdidHUzFUO3IHZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dFSXS201504018' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="FSXS201504018"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=67 name=CookieName  value="CJFDLAST2015!BQEN201502033!67!1"  onclick="$(this).filenameClick()"  >67</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=67&recid=&FileName=BQEN201502033&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>抽脂对<font class=Mark>乳腺癌</font>改良根治术中淋巴结清扫数影响及肋间臂神经保护的研究</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%b0%a2%e6%9c%89%e5%bf%97&scode=000025175852&acode=000025175852' target="knet">谢有志</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9e%97%e5%ae%97%e4%bc%9f&scode=000038038024&acode=000038038024' target="knet">林宗伟</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%93%9d%e5%85%89%e4%bc%9a&scode=000036906476&acode=000036906476' target="knet">蓝光会</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=BQEN'>白求恩医学杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-04-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e6%8a%bd%e8%84%82%e5%af%b9%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e6%b7%8b%e5%b7%b4%e7%bb%93%e6%b8%85%e6%89%ab%e6%95%b0%e5%bd%b1%e5%93%8d%e5%8f%8a%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e4%bf%9d%e6%8a%a4%e7%9a%84%e7%a0%94%e7%a9%b6&scode=BQEN201502033' target="_blank">1</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>33</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURTBjYqBDMzc0L0dmdrtCTht0YGJETy0WSy9UO3IHZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dBQEN201502033' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="BQEN201502033"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=68 name=CookieName  value="CJFDLAST2015!BQEN201502018!68!1"  onclick="$(this).filenameClick()"  >68</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=68&recid=&FileName=BQEN201502018&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术与标准根治术的疗效分析</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bb%96%e7%ba%af%e6%a6%9c&scode=000020043919&acode=000020043919' target="knet">廖纯榜</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e5%8d%ab%e6%96%87&scode=000003804671&acode=000003804671' target="knet">吴卫文</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%9b%b7%e4%bc%9f%e5%a8%9c&scode=000019377943&acode=000019377943' target="knet">雷伟娜</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e4%bc%8d%e7%b4%a0%e5%ab%a6&scode=000017520036&acode=000017520036' target="knet">伍素嫦</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%94%84%e5%b8%a6%e5%a8%a3&scode=000017047940&acode=000017047940' target="knet">甄带娣</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%a2%81%e8%b6%85%e6%9d%b0&scode=000025498448&acode=000025498448' target="knet">袁超杰</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e4%bd%95%e4%bb%95%e9%9d%92&scode=000019936311&acode=000019936311' target="knet">何仕青</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=BQEN'>白求恩医学杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-04-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%8e%e6%a0%87%e5%87%86%e6%a0%b9%e6%b2%bb%e6%9c%af%e7%9a%84%e7%96%97%e6%95%88%e5%88%86%e6%9e%90&scode=BQEN201502018' target="_blank">2</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>31</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVURzQWWtVHUzc0L0dmdrtCTht0YGJETy0WSy9UO3IHZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dBQEN201502018' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="BQEN201502018"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=69 name=CookieName  value="CJFDLAST2015!LCSY201504018!69!1"  onclick="$(this).filenameClick()"  >69</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=69&recid=&FileName=LCSY201504018&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>保留肋间臂神经在<font class=Mark>乳腺癌</font>改良根治术中的临床意义</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%bd%98%e6%89%bf%e6%ac%a3&scode=000020035950&acode=000020035950' target="knet">潘承欣</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e7%bb%ae%e9%8b%86&scode=000008154427&acode=000008154427' target="knet">吴绮鋆</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%b4%94%e4%bb%81%e5%bf%a0&scode=000019730770&acode=000019730770' target="knet">崔仁忠</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e7%a7%80%e5%ae%b9&scode=000003654306&acode=000003654306' target="knet">张秀容</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%a8%e6%8e%a5%e8%be%89&scode=000020279651&acode=000020279651' target="knet">杨接辉</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=LCSY'>实用临床医学</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-04-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%bf%9d%e7%95%99%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e7%9a%84%e4%b8%b4%e5%ba%8a%e6%84%8f%e4%b9%89&scode=LCSY201504018' target="_blank">5</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>36</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=5QkbWtWYnBVRCRUcqRXalNUTkdTOz8GTytmUFpFeDNlNMBDTNdjV0ZVQydzVlZ1KsFESyEnSYZkQOVUR3FTUiR2M29SUZ9yUXBjZ3N1aWJTaRh0LP9mbOhGZGZHVLJVNzwkZIJ0baBFZJ9USFhHeCtEUvhjM1cVR&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dLCSY201504018' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="LCSY201504018"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=70 name=CookieName  value="CPFDLAST2015!GXYS201504001792!70!1"  onclick="$(this).filenameClick()"  >70</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=70&recid=&FileName=GXYS201504001792&DbName=CPFDLAST2015&DbCode=CPFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术中保留肋间臂神经的操作要点和临床意义</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CPFD&sfield=%e4%bd%9c%e8%80%85&skey=%e4%b8%81%e9%94%90&scode=000027485414&acode=000027485414' target="knet">丁锐</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CPFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%91%a8%e6%ad%a3%e6%ad%a6&scode=000003742672&acode=000003742672' target="knet">周正武</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CPFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%9f%a9%e5%9c%a3%e7%91%be&scode=000023065970&acode=000023065970' target="knet">韩圣瑾</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CPFD&BaseID=GXYS201504001'>中国转化医学和整合医学研讨会（广州站）论文综合刊</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-04-09
+      </td>        
+      <td class="data">
+	     中国会议 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>20</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=VeINHdvNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGS=0TP3pEejVjU5NXUUtiQndFM4MVMMVUVGdkcnVjb6xGdTVWMP5EcklHO3YjQxM1NxkWRop0V5Z1dLV1T1Ijald&tablename=CPFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCPFDLAST2015%26filename%3dGXYS201504001792%26dbCode%3dCPFD' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CPFD" data-filename="GXYS201504001792"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=71 name=CookieName  value="CJFDLAST2015!ZHRD201502003!71!1"  onclick="$(this).filenameClick()"  >71</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=71&recid=&FileName=ZHRD201502003&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术中保留肋间臂神经的可行性</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e4%b8%96%e4%bc%9f&scode=000027113010&acode=000027113010' target="knet">张世伟</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%be%90%e5%8d%ab%e5%9b%bd&scode=000037726728&acode=000037726728' target="knet">徐卫国</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%8f%b2%e7%b4%a0%e4%b8%bd&scode=000036714614&acode=000036714614' target="knet">史素丽</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%9f%b3%e7%95%85&scode=000004096945&acode=000004096945' target="knet">石畅</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%94%90%e7%85%a7%e9%b9%8f&scode=000022103607&acode=000022103607' target="knet">唐照鹏</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e4%b8%96%e6%95%8f&scode=000040673462&acode=000040673462' target="knet">张世敏</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%8f%b8%e7%91%9e%e8%8a%ac&scode=000021836411&acode=000021836411' target="knet">司瑞芬</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%be%90%e8%99%b9%e8%99%b9&scode=000017442155&acode=000017442155' target="knet">徐虹虹</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e5%8a%9b&scode=000034604299&acode=000034604299' target="knet">陈力</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e6%99%8b%e5%86%80&scode=000036615112&acode=000036615112' target="knet">张晋冀</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZHRD'>中华乳腺病杂志(电子版)</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-04-01
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e4%bf%9d%e7%95%99%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e7%9a%84%e5%8f%af%e8%a1%8c%e6%80%a7&scode=ZHRD201502003' target="_blank">5</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>63</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGS6BXc6xGU3hHantieppUewQ2NWZneKJkUDNjeYdFMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZHRD201502003' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZHRD201502003"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=72 name=CookieName  value="CJFDLAST2015!YJZY201509016!72!1"  onclick="$(this).filenameClick()"  >72</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=72&recid=&FileName=YJZY201509016&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术保留肋间臂神经临床应用</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%9b%b7%e6%9f%b1%e4%ba%91&scode=000018327285&acode=000018327285' target="knet">雷柱云</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%94%ba%e5%a8%9c&scode=000005474922&acode=000005474922' target="knet">蔺娜</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%9b%9b%e5%ae%b6%e5%ae%81&scode=000023448496&acode=000023448496' target="knet">盛家宁</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%a8%e4%b8%ad%e8%83%bd&scode=000021969614&acode=000021969614' target="knet">杨中能</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%b0%b9%e6%98%ad%e4%ba%94&scode=000018335003&acode=000018335003' target="knet">尹昭五</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%b2%b3%e5%8d%a0%e8%ae%b4&scode=000017973219&acode=000017973219' target="knet">岳占讴</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%a7%9a%e7%9b%9b%e5%b9%b3&scode=000014312728&acode=000014312728' target="knet">姚盛平</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=YJZY'>中外医学研究</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-03-25
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%bf%9d%e7%95%99%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e4%b8%b4%e5%ba%8a%e5%ba%94%e7%94%a8&scode=YJZY201509016' target="_blank">2</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>25</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSzNTUZp3bCVGcqJEajhjVhl3drFVd2dTQFdnVrUHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dYJZY201509016' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="YJZY201509016"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=73 name=CookieName  value="CJFDLAST2015!XJYI201503018!73!1"  onclick="$(this).filenameClick()"  >73</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=73&recid=&FileName=XJYI201503018&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>帕瑞昔布钠超前镇痛对<font class=Mark>乳腺癌</font>改良根治术患者术后急性及慢性疼痛的影响</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e4%be%af%e5%bd%a6%e6%b7%b1&scode=000019250059&acode=000019250059' target="knet">侯彦深</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e7%8e%89%e5%a9%b7&scode=000026839058&acode=000026839058' target="knet">刘玉婷</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%8a%aa%e5%b0%94%e6%b3%a2%e6%8b%89%e6%8f%90%c2%b7%e5%8a%a0%e5%88%97%e5%8a%9b%e6%b1%97&scode=000018677898&acode=000018677898' target="knet">努尔波拉提·加列力汗</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=XJYI'>新疆医学</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-03-25
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e5%b8%95%e7%91%9e%e6%98%94%e5%b8%83%e9%92%a0%e8%b6%85%e5%89%8d%e9%95%87%e7%97%9b%e5%af%b9%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e6%82%a3%e8%80%85%e6%9c%af%e5%90%8e%e6%80%a5%e6%80%a7%e5%8f%8a%e6%85%a2%e6%80%a7%e7%96%bc%e7%97%9b%e7%9a%84%e5%bd%b1%e5%93%8d&scode=XJYI201503018' target="_blank">1</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>61</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSRhEVJxmdGlGdJdUToBlbBRFbvBTQydTQFdnVrUHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dXJYI201503018' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="XJYI201503018"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=74 name=CookieName  value="CJFDLAST2015!ZHTY201503012!74!1"  onclick="$(this).filenameClick()"  >74</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=74&recid=&FileName=ZHTY201503012&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>单个前哨淋巴结阳性保腋窝在<font class=Mark>乳腺癌</font>改良根治术中应用的可行性研究</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%bd%97%e5%9b%bd%e5%ba%86&scode=000040706853&acode=000040706853' target="knet">罗国庆</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%83%a1%e5%ae%81%e4%b8%9c&scode=000025173386&acode=000025173386' target="knet">胡宁东</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e7%a7%8b%e5%8d%8e&scode=000042551145&acode=000042551145' target="knet">刘秋华</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e4%b8%81%e6%98%8e%e4%ba%91&scode=000024376874&acode=000024376874' target="knet">丁明云</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZHTY'>中国现代医药杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-03-25
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e5%8d%95%e4%b8%aa%e5%89%8d%e5%93%a8%e6%b7%8b%e5%b7%b4%e7%bb%93%e9%98%b3%e6%80%a7%e4%bf%9d%e8%85%8b%e7%aa%9d%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e5%ba%94%e7%94%a8%e7%9a%84%e5%8f%af%e8%a1%8c%e6%80%a7%e7%a0%94%e7%a9%b6&scode=ZHTY201503012' target="_blank">2</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>32</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSPJnU1pGbFJ3ZHNFd4dXc1JlVBRDWPFFRyAXe5EDMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCJFDLAST2015%26filename%3dZHTY201503012%26dbCode%3dCJFD' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZHTY201503012"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=75 name=CookieName  value="CJFDLAST2015!SLYY201503031!75!1"  onclick="$(this).filenameClick()"  >75</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=75&recid=&FileName=SLYY201503031&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>不同手术器械在<font class=Mark>乳腺癌</font>改良根治术中的应用效果研究</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e8%b4%b5%e6%89%8d&scode=000025024371&acode=000025024371' target="knet">吴贵才</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e4%bb%95%e5%8d%93&scode=000019812161&acode=000019812161' target="knet">李仕卓</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9b%be%e9%9d%92%e7%a3%8a&scode=000019920878&acode=000019920878' target="knet">曾青磊</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e7%a6%8f%e7%91%b6&scode=000017001482&acode=000017001482' target="knet">陈福瑶</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=SLYY'>数理医药学杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-03-15
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b8%8d%e5%90%8c%e6%89%8b%e6%9c%af%e5%99%a8%e6%a2%b0%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e7%9a%84%e5%ba%94%e7%94%a8%e6%95%88%e6%9e%9c%e7%a0%94%e7%a9%b6&scode=SLYY201503031' target="_blank">6</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>55</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSwcTVRBXVycWN5FDWiRXcjBHdB9SVtdmdx9UWvZHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dSLYY201503031' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="SLYY201503031"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=76 name=CookieName  value="CJFDLAST2015!XCYS201507049!76!1"  onclick="$(this).filenameClick()"  >76</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=76&recid=&FileName=XCYS201507049&DbName=CJFDLAST2015&DbCode=CJFD&yx=Y&pr=&URLID=11.5189.R.20150305.0855.041' target='_blank'>喉罩全麻在<font class=Mark>乳腺癌</font>改良根治术中的应用</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%ac%a7%e9%98%b3%e6%89%8d%e4%bb%bb&scode=000015627768&acode=000015627768' target="knet">欧阳才任</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%91%e6%99%93%e7%a2%a7&scode=000017545144&acode=000017545144' target="knet">向晓碧</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9e%97%e5%b8%86&scode=000042300133&acode=000042300133' target="knet">林帆</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=XCYS'>中国社区医师</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-03-05 08:55
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e5%96%89%e7%bd%a9%e5%85%a8%e9%ba%bb%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e7%9a%84%e5%ba%94%e7%94%a8&scode=XCYS201507049' target="_blank">3</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>26</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSPRjN0Z3SqNGWz12ZDRXeWtWQkJjWEJFcwAVWvZHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dXCYS201507049' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="XCYS201507049"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=77 name=CookieName  value="CJFDLAST2015!ZYCX201507021!77!1"  onclick="$(this).filenameClick()"  >77</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=77&recid=&FileName=ZYCX201507021&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术并发症的原因与预防措施的研讨</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%bb%84%e5%81%a5%e6%96%87&scode=000007002242&acode=000007002242' target="knet">黄健文</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZYCX'>中国医学创新</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-03-05
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%b9%b6%e5%8f%91%e7%97%87%e7%9a%84%e5%8e%9f%e5%9b%a0%e4%b8%8e%e9%a2%84%e9%98%b2%e6%8e%aa%e6%96%bd%e7%9a%84%e7%a0%94%e8%ae%a8&scode=ZYCX201507021' target="_blank">6</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>72</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSnd3K1o2U30kd2c1VXB3aC1GawcDWYBlbvEUWvZHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCJFDLAST2015%26filename%3dZYCX201507021%26dbCode%3dCJFD' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZYCX201507021"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=78 name=CookieName  value="CMFD201602!1015410397.nh!78!1"  onclick="$(this).filenameClick()"  >78</td>     
+      <td class="name" >
+        
+        <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=78&FileName=1015410397.nh&DbName=CMFD201602&DbCode=CMFD' target='_blank'><font class=Mark>乳腺癌</font>改良根治术后皮下积液及上肢水肿的研究探讨</a>
+          
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CMFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e7%a3%8a&scode=000029910922&acode=000029910922' target="knet">李磊</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CMFD&BaseID=GXYKU'>新疆医科大学</a>     
+     
+      
+      
+     </td>
+      <td class="date">
+        2015-03-01
+      </td>        
+      <td class="data">
+	     硕士 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CMFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e7%9a%ae%e4%b8%8b%e7%a7%af%e6%b6%b2%e5%8f%8a%e4%b8%8a%e8%82%a2%e6%b0%b4%e8%82%bf%e7%9a%84%e7%a0%94%e7%a9%b6%e6%8e%a2%e8%ae%a8&scode=1015410397.nh' target="_blank">2</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>129</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGS0YjYlRFcZV1YSBVRzkmbxknWhRlQSpUNroWNDhjRrdWMRl3TOZlM0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CMFD201602" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCMFD201602%26filename%3d1015410397.nh%26dbCode%3dCMFD' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1015410397.nh"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=79 name=CookieName  value="CMFD201601!1016013712.nh!79!1"  onclick="$(this).filenameClick()"  >79</td>     
+      <td class="name" >
+        
+        <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=79&FileName=1016013712.nh&DbName=CMFD201601&DbCode=CMFD' target='_blank'>超声引导椎旁阻滞联合TIVA在<font class=Mark>乳腺癌</font>改良根治术中的应用</a>
+          
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CMFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9c%b1%e6%99%a8&scode=000046114884&acode=000046114884' target="knet">朱晨</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CMFD&BaseID=GOJYU'>南方医科大学</a>     
+     
+      
+      
+     </td>
+      <td class="date">
+        2015-03-01
+      </td>        
+      <td class="data">
+	     硕士 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CMFD&sfield=cite&skey=%e8%b6%85%e5%a3%b0%e5%bc%95%e5%af%bc%e6%a4%8e%e6%97%81%e9%98%bb%e6%bb%9e%e8%81%94%e5%90%88TIVA%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e7%9a%84%e5%ba%94%e7%94%a8&scode=1016013712.nh' target="_blank">4</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>168</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGS0dXbOVEU2I0KWBzdphjMT1UcF9SaRRVYwklT4QmRrdWMRl3TOZlM0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CMFD201601" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCMFD201601%26filename%3d1016013712.nh%26dbCode%3dCMFD' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1016013712.nh"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=80 name=CookieName  value="CMFD201601!1015647665.nh!80!1"  onclick="$(this).filenameClick()"  >80</td>     
+      <td class="name" >
+        
+        <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=80&FileName=1015647665.nh&DbName=CMFD201601&DbCode=CMFD' target='_blank'><font class=Mark>乳腺癌</font>改良根治术后辅助性放疗的剂量学研究与骨转移的中西医治疗</a>
+          
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CMFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%ad%99%e9%a2%96&scode=000033979248&acode=000033979248' target="knet">孙颖</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CMFD&BaseID=GLNZC'>辽宁中医药大学</a>     
+     
+      
+      
+     </td>
+      <td class="date">
+        2015-03-01
+      </td>        
+      <td class="data">
+	     硕士 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CMFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e8%be%85%e5%8a%a9%e6%80%a7%e6%94%be%e7%96%97%e7%9a%84%e5%89%82%e9%87%8f%e5%ad%a6%e7%a0%94%e7%a9%b6%e4%b8%8e%e9%aa%a8%e8%bd%ac%e7%a7%bb%e7%9a%84%e4%b8%ad%e8%a5%bf%e5%8c%bb%e6%b2%bb%e7%96%97&scode=1015647665.nh' target="_blank">1</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>77</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSEZTO1B3VzNDZupWNuRUNT50bYBTdvMEezAjNFFkRrdWMRl3TOZlM0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CMFD201601" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+        
+         <a class="icon-read"  target="online_open" href='/kns8/Detail/Read?domain=tablename%3dCMFD201601%26filename%3d1015647665.nh%26dbCode%3dCMFD' title="在线阅读"><i></i></a>
+             
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CMFD" data-filename="1015647665.nh"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=81 name=CookieName  value="CJFDLAST2015!HNYY201508034!81!1"  onclick="$(this).filenameClick()"  >81</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=81&recid=&FileName=HNYY201508034&DbName=CJFDLAST2015&DbCode=CJFD&yx=Y&pr=&URLID=46.1049.r.20150226.1702.006' target='_blank'>新辅助化疗联合保留乳头乳晕<font class=Mark>乳腺癌</font>改良根治术对乳房重建美容效果及免疫功能的影响</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%82%96%e8%89%b3%e6%9e%97&scode=000004655000&acode=000004655000' target="knet">肖艳林</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e8%b4%a4%e6%96%8c&scode=000038467645&acode=000038467645' target="knet">李贤斌</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bd%ad%e7%99%bb%e8%8d%a3&scode=000018968648&acode=000018968648' target="knet">彭登荣</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%b4%e6%b5%b7%e4%b8%bd&scode=000000593730&acode=000000593730' target="knet">吴海丽</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e7%ba%a2%e6%a2%85&scode=000033792372&acode=000033792372' target="knet">刘红梅</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=HNYY'>海南医学院学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-26 17:02
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e6%96%b0%e8%be%85%e5%8a%a9%e5%8c%96%e7%96%97%e8%81%94%e5%90%88%e4%bf%9d%e7%95%99%e4%b9%b3%e5%a4%b4%e4%b9%b3%e6%99%95%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%af%b9%e4%b9%b3%e6%88%bf%e9%87%8d%e5%bb%ba%e7%be%8e%e5%ae%b9%e6%95%88%e6%9e%9c%e5%8f%8a%e5%85%8d%e7%96%ab%e5%8a%9f%e8%83%bd%e7%9a%84%e5%bd%b1%e5%93%8d&scode=HNYY201508034' target="_blank">11</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>87</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSTJlc2JzUJhmbtxUYBxGbyIFTHR0bVdmczQHa0EVevN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dHNYY201508034' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="HNYY201508034"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=82 name=CookieName  value="CJFDLAST2016!SANE201501051!82!1"  onclick="$(this).filenameClick()"  >82</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=82&recid=&FileName=SANE201501051&DbName=CJFDLAST2016&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术后高负压持续吸引对预后的影响</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%97%bb%e7%88%b1%e5%a8%9f&scode=000017553873&acode=000017553873' target="knet">闻爱娟</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e9%81%93%e5%ae%9d&scode=000025126748&acode=000025126748' target="knet">陈道宝</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=SANE'>中国妇幼健康研究</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-25
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e9%ab%98%e8%b4%9f%e5%8e%8b%e6%8c%81%e7%bb%ad%e5%90%b8%e5%bc%95%e5%af%b9%e9%a2%84%e5%90%8e%e7%9a%84%e5%bd%b1%e5%93%8d&scode=SANE201501051' target="_blank">8</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>8</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSHNkV4pmdnl1VjxEa1IUMqxmcjhWcysmU4FUaIZjetpGeFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2016" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dSANE201501051' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="SANE201501051"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=83 name=CookieName  value="CJFDLAST2015!ZPWL201502030!83!1"  onclick="$(this).filenameClick()"  >83</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=83&recid=&FileName=ZPWL201502030&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>超声刀在<font class=Mark>乳腺癌</font>改良根治术中保留胸肌神经及肋间臂神经的应用价值</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%9c%e6%9e%9c%e5%9f%8e&scode=000023908023&acode=000023908023' target="knet">杜果城</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e8%8c%82%e6%98%a5&scode=000038406727&acode=000038406727' target="knet">张茂春</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e8%87%bb%e8%87%bb&scode=000002753385&acode=000002753385' target="knet">刘臻臻</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9c%b1%e5%85%8b%e9%b9%8f&scode=000025391026&acode=000025391026' target="knet">朱克鹏</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%8b%e6%96%87&scode=000023759496&acode=000023759496' target="knet">弋文</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9c%b1%e5%86%ac%e6%a2%85&scode=000027084346&acode=000027084346' target="knet">朱冬梅</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZPWL'>中国普外基础与临床杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-25
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e8%b6%85%e5%a3%b0%e5%88%80%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e4%bf%9d%e7%95%99%e8%83%b8%e8%82%8c%e7%a5%9e%e7%bb%8f%e5%8f%8a%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e7%9a%84%e5%ba%94%e7%94%a8%e4%bb%b7%e5%80%bc&scode=ZPWL201502030' target="_blank">4</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>102</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSxV1cp92THNDUkt0SoV2bJVzZTVDWypFRsJUWvZHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZPWL201502030' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZPWL201502030"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=84 name=CookieName  value="CJFDTEMP!LCWK201502022!84!1"  onclick="$(this).filenameClick()"  >84</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=84&recid=&FileName=LCWK201502022&DbName=CJFDTEMP&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术联合化疗对患者并发症与生活质量的影响</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%b3%89%e6%ba%90&scode=000037866103&acode=000037866103' target="knet">李泉源</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e4%b8%a5%e7%a4%bc%e7%90%b4&scode=000020094472&acode=000020094472' target="knet">严礼琴</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%ad%8f%e6%b6%a7&scode=000024512983&acode=000024512983' target="knet">魏涧</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=LCWK'>临床外科杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e8%81%94%e5%90%88%e5%8c%96%e7%96%97%e5%af%b9%e6%82%a3%e8%80%85%e5%b9%b6%e5%8f%91%e7%97%87%e4%b8%8e%e7%94%9f%e6%b4%bb%e8%b4%a8%e9%87%8f%e7%9a%84%e5%bd%b1%e5%93%8d&scode=LCWK201502022' target="_blank">6</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>79</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=Gb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGS=0TTXV3YwJGOwRHVThTWMJDVR9kauNjSZxmZiFnYOZDeuNGZNJEZpp0V5Z1dLV1T1IjaldVeINHdvN&tablename=CJFDTEMP" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dLCWK201502022' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="LCWK201502022"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=85 name=CookieName  value="CJFDLAST2015!ZSSA201505109!85!1"  onclick="$(this).filenameClick()"  >85</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=85&recid=&FileName=ZSSA201505109&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>喉罩通气全凭吸入七氟醚麻醉在<font class=Mark>乳腺癌</font>改良根治术中应用的疗效分析</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%91%a8%e7%bb%93%e8%b4%a4&scode=000017746009&acode=000017746009' target="knet">周结贤</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9e%97%e8%90%8d&scode=000030395697&acode=000030395697' target="knet">林萍</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZSSA'>中国实用医药</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e5%96%89%e7%bd%a9%e9%80%9a%e6%b0%94%e5%85%a8%e5%87%ad%e5%90%b8%e5%85%a5%e4%b8%83%e6%b0%9f%e9%86%9a%e9%ba%bb%e9%86%89%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e5%ba%94%e7%94%a8%e7%9a%84%e7%96%97%e6%95%88%e5%88%86%e6%9e%90&scode=ZSSA201505109' target="_blank">8</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>32</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGS0wEToZXawJjQpdnQwF3VxYjQ6FXMHdFcwEFdnVXMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZSSA201505109' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZSSA201505109"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=86 name=CookieName  value="CJFDLAST2015!HLZL201501028!86!1"  onclick="$(this).filenameClick()"  >86</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=86&recid=&FileName=HLZL201501028&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>纳米碳示踪对<font class=Mark>乳腺癌</font>改良根治术后皮下积液皮瓣坏死的防治</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e4%b8%81%e7%ba%a2%e5%8d%8e&scode=000038060935&acode=000038060935' target="knet">丁红华</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=HLZL'>肿瘤基础与临床</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e7%ba%b3%e7%b1%b3%e7%a2%b3%e7%a4%ba%e8%b8%aa%e5%af%b9%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e7%9a%ae%e4%b8%8b%e7%a7%af%e6%b6%b2%e7%9a%ae%e7%93%a3%e5%9d%8f%e6%ad%bb%e7%9a%84%e9%98%b2%e6%b2%bb&scode=HLZL201501028' target="_blank">9</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>99</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSyhkRINHOBlVRqlUYPRFeq5mRVJ2Z4lUcr8UWvZHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dHLZL201501028' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="HLZL201501028"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=87 name=CookieName  value="CJFDLAST2015!ZGZL201503007!87!1"  onclick="$(this).filenameClick()"  >87</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=87&recid=&FileName=ZGZL201503007&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术后即刻背阔肌皮瓣乳房重建与传统改良根治术的疗效比较</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e6%95%8f%e6%95%8f&scode=000026735366&acode=000026735366' target="knet">张敏敏</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%8e%ab%e5%86%9b%e6%89%ac&scode=000025552916&acode=000025552916' target="knet">莫军扬</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%a6%83%e8%88%92%e5%a9%b7&scode=000024829053&acode=000024829053' target="knet">覃舒婷</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZGZL'>中国肿瘤临床</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-15
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e5%8d%b3%e5%88%bb%e8%83%8c%e9%98%94%e8%82%8c%e7%9a%ae%e7%93%a3%e4%b9%b3%e6%88%bf%e9%87%8d%e5%bb%ba%e4%b8%8e%e4%bc%a0%e7%bb%9f%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e7%9a%84%e7%96%97%e6%95%88%e6%af%94%e8%be%83&scode=ZGZL201503007' target="_blank">43</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>433</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSSBlTykmWHBlYItWbrYnU6lGVwBnZxpFRsJUWvZHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZGZL201503007' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZGZL201503007"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=88 name=CookieName  value="CJFDLAST2015!SZZX201503069!88!1"  onclick="$(this).filenameClick()"  >88</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=88&recid=&FileName=SZZX201503069&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>保留肋间臂神经的<font class=Mark>乳腺癌</font>改良根治术临床分析</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%ae%b7%e5%be%b7%e7%a6%8f&scode=000023674510&acode=000023674510' target="knet">殷德福</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=SZZX'>深圳中西医结合杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-15
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%bf%9d%e7%95%99%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e7%9a%84%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%b4%e5%ba%8a%e5%88%86%e6%9e%90&scode=SZZX201503069' target="_blank">2</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>12</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGS3dDZKFDO5ZzZolFe01WW6J1dElDVtdmdx9UWvZHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dSZZX201503069' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="SZZX201503069"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=89 name=CookieName  value="CJFDLAST2015!JLYX201504033!89!1"  onclick="$(this).filenameClick()"  >89</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=89&recid=&FileName=JLYX201504033&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>合并原发性高血压患者进行<font class=Mark>乳腺癌</font>改良根治术的麻醉方法分析</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%91%a3%e7%bb%b4%e7%8c%9b&scode=000018990331&acode=000018990331' target="knet">董维猛</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=JLYX'>吉林医学</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-05
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>17</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSwUVUpRUdrQ0amNzV5kDbwYjM240T39yZMpVMLFXMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dJLYX201504033' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="JLYX201504033"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=90 name=CookieName  value="CJFDLAST2016!ZHPD201501016!90!1"  onclick="$(this).filenameClick()"  >90</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=90&recid=&FileName=ZHPD201501016&DbName=CJFDLAST2016&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>保留乳头乳晕的<font class=Mark>乳腺癌</font>改良根治术并Ⅰ期假体重建</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%9b%b7%e5%b2%9a&scode=000004994632&acode=000004994632' target="knet">雷岚</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%bb%84%e6%b3%bd%e6%a5%a0&scode=000024821330&acode=000024821330' target="knet">黄泽楠</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%a7%9c%e5%8d%8e&scode=000033920090&acode=000033920090' target="knet">姜华</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%82%b1%e4%b8%87%e5%af%bf&scode=000019945831&acode=000019945831' target="knet">邱万寿</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%bb%84%e5%8b%87&scode=000036232465&acode=000036232465' target="knet">黄勇</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%88%98%e4%bb%81%e6%96%8c&scode=000005300764&acode=000005300764' target="knet">刘仁斌</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZHPD'>中华普通外科学文献(电子版)</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-01
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%bf%9d%e7%95%99%e4%b9%b3%e5%a4%b4%e4%b9%b3%e6%99%95%e7%9a%84%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%b9%b6%e2%85%a0%e6%9c%9f%e5%81%87%e4%bd%93%e9%87%8d%e5%bb%ba&scode=ZHPD201501016' target="_blank">8</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>160</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSNNEN6dnSwNXMKtkaRNmWTd0KlV0R3p1YPhUaJhmetpGeFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2016" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZHPD201501016' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZHPD201501016"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=91 name=CookieName  value="CJFDLAST2016!ZHPD201501011!91!1"  onclick="$(this).filenameClick()"  >91</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=91&recid=&FileName=ZHPD201501011&DbName=CJFDLAST2016&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术中保留肋间臂神经的临床意义</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%b6%9b&scode=000032053800&acode=000032053800' target="knet">李涛</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZHPD'>中华普通外科学文献(电子版)</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-01
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e4%bf%9d%e7%95%99%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e7%9a%84%e4%b8%b4%e5%ba%8a%e6%84%8f%e4%b9%89&scode=ZHPD201501011' target="_blank">5</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>54</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSO10VsNjSwNXMKtkaRNmWTd0KlV0R3p1YPhUaJhmetpGeFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2016" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZHPD201501011' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZHPD201501011"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=92 name=CookieName  value="CJFDLAST2016!ZHPD201501012!92!1"  onclick="$(this).filenameClick()"  >92</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=92&recid=&FileName=ZHPD201501012&DbName=CJFDLAST2016&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>保留肋间臂神经在<font class=Mark>乳腺癌</font>改良根治术中的应用</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%a2%9c%e6%99%93%e6%95%8f&scode=000002893319&acode=000002893319' target="knet">颜晓敏</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%83%a1%e8%b5%9f%e5%ae%8f&scode=000019535814&acode=000019535814' target="knet">胡赟宏</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%b4%94%e5%b5%98%e5%b5%98&scode=000019484702&acode=000019484702' target="knet">崔嵘嵘</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZHPD'>中华普通外科学文献(电子版)</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-01
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%bf%9d%e7%95%99%e8%82%8b%e9%97%b4%e8%87%82%e7%a5%9e%e7%bb%8f%e5%9c%a8%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%ad%e7%9a%84%e5%ba%94%e7%94%a8&scode=ZHPD201501012' target="_blank">6</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>39</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSINDNvNjSwNXMKtkaRNmWTd0KlV0R3p1YPhUaJhmetpGeFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2016" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZHPD201501012' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZHPD201501012"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=93 name=CookieName  value="CJFDLAST2015!ZHRD201501007!93!1"  onclick="$(this).filenameClick()"  >93</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=93&recid=&FileName=ZHRD201501007&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>新辅助化疗对腔镜<font class=Mark>乳腺癌</font>改良根治术后并发症及疗效的影响</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%a2%81%e5%85%a8%e7%90%a8&scode=000018100385&acode=000018100385' target="knet">梁全琨</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e6%b0%b8%e6%9d%be&scode=000005407870&acode=000005407870' target="knet">张永松</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%92%9f%e7%8e%b2&scode=000027344542&acode=000027344542' target="knet">钟玲</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e8%8c%83%e6%9e%97%e5%86%9b&scode=000039038494&acode=000039038494' target="knet">范林军</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZHRD'>中华乳腺病杂志(电子版)</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-02-01
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e6%96%b0%e8%be%85%e5%8a%a9%e5%8c%96%e7%96%97%e5%af%b9%e8%85%94%e9%95%9c%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e5%b9%b6%e5%8f%91%e7%97%87%e5%8f%8a%e7%96%97%e6%95%88%e7%9a%84%e5%bd%b1%e5%93%8d&scode=ZHRD201501007' target="_blank">11</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>129</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGS5RjSLFFc1olMOplemdlbhZFSGRDWPFFRyAXe5EDMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZHRD201501007' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZHRD201501007"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=94 name=CookieName  value="SNAD!SNAD000001641564!94!1"  onclick="$(this).filenameClick()"  >94</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=94&recid=&FileName=SNAD000001641564&DbName=SNAD&DbCode=SNAD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术中保留肋间臂神经的临床研究</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      霍永平;阎丽婷;张海峰;朱庆芬;谭雪敏;栗飞   
+      </td>
+      <td class="source">     
+    
+      邯郸市中心医院
+       
+      
+      
+     </td>
+      <td class="date">
+        2015-02-01
+      </td>        
+      <td class="data">
+	     科技成果 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+       
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=VeINHdvNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGS=0TPnh0ZTNldpJEWrdFOzRWNrZWSilUb1QXWUJnUJlVdqxEbEFTSLRzTqpHdVhlRQ1mVop0V5Z1dLV1T1Ijald&tablename=SNAD" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+         
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="SNAD" data-filename="SNAD000001641564"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=95 name=CookieName  value="CJFDLAST2015!YJZY201503072!95!1"  onclick="$(this).filenameClick()"  >95</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=95&recid=&FileName=YJZY201503072&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>早期<font class=Mark>乳腺癌</font>保留乳头乳晕复合体的皮下<font class=Mark>乳腺癌</font>改良根治术效果及并发症防治</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%88%e5%b2%9a&scode=000030017620&acode=000030017620' target="knet">陈岚</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%bd%97%e6%a1%83&scode=000002755710&acode=000002755710' target="knet">罗桃</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=YJZY'>中外医学研究</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-01-25
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e6%97%a9%e6%9c%9f%e4%b9%b3%e8%85%ba%e7%99%8c%e4%bf%9d%e7%95%99%e4%b9%b3%e5%a4%b4%e4%b9%b3%e6%99%95%e5%a4%8d%e5%90%88%e4%bd%93%e7%9a%84%e7%9a%ae%e4%b8%8b%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e6%95%88%e6%9e%9c%e5%8f%8a%e5%b9%b6%e5%8f%91%e7%97%87%e9%98%b2%e6%b2%bb&scode=YJZY201503072' target="_blank">11</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>71</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSuZkUwQUUwJmMyw2LMFmY5EmerITeXB1cyUGdnVXMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dYJZY201503072' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="YJZY201503072"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=96 name=CookieName  value="CJFDLAST2015!HLWK201501057!96!1"  onclick="$(this).filenameClick()"  >96</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=96&recid=&FileName=HLWK201501057&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术疗效观察</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%b4%94%e5%bf%b5%e7%a3%8a&scode=000008103607&acode=000008103607' target="knet">崔念磊</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=HLWK'>河南外科学杂志</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-01-20
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e7%96%97%e6%95%88%e8%a7%82%e5%af%9f&scode=HLWK201501057' target="_blank">3</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>26</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSYN2T3klYrY2STFnY11kYIBFOYJ2Z4lUcr8UWvZHMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dHLWK201501057' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="HLWK201501057"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=97 name=CookieName  value="CJFDLAST2015!QQHB201501025!97!1"  onclick="$(this).filenameClick()"  >97</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=97&recid=&FileName=QQHB201501025&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'><font class=Mark>乳腺癌</font>改良根治术与传统根治术的临床比较</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e9%99%86%e5%86%9b&scode=000033844532&acode=000033844532' target="knet">陆军</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e7%ab%a5%e5%ae%97%e5%9f%b9&scode=000020332966&acode=000020332966' target="knet">童宗培</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%bd%98%e9%be%99&scode=000008086467&acode=000008086467' target="knet">潘龙</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=QQHB'>齐齐哈尔医学院学报</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-01-07
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e4%b8%8e%e4%bc%a0%e7%bb%9f%e6%a0%b9%e6%b2%bb%e6%9c%af%e7%9a%84%e4%b8%b4%e5%ba%8a%e6%af%94%e8%be%83&scode=QQHB201501025' target="_blank">11</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>71</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSCJTQud1TTZXTuVEbYlFM3sSd2IHd5V1KUVGdnVXMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dQQHB201501025' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="QQHB201501025"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr><tr >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=98 name=CookieName  value="CJFDLAST2015!ZYSG201501034!98!1"  onclick="$(this).filenameClick()"  >98</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=1&CurRec=98&recid=&FileName=ZYSG201501034&DbName=CJFDLAST2015&DbCode=CJFD&yx=&pr=&URLID=' target='_blank'>右美托咪定联合利多卡因用于<font class=Mark>乳腺癌</font>改良根治术后镇静镇痛</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e6%9d%8e%e6%98%8a%e6%80%a1&scode=000021904811&acode=000021904811' target="knet">李昊怡</a>; <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%90%95%e9%bb%84%e4%bc%9f&scode=000025538779&acode=000025538779' target="knet">吕黄伟</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=ZYSG'>中国药师</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2015-01-05
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+         
+         <span><a class="KnowledgeNetLink" href='/kns8/Detail?sdb=CJFD&sfield=cite&skey=%e5%8f%b3%e7%be%8e%e6%89%98%e5%92%aa%e5%ae%9a%e8%81%94%e5%90%88%e5%88%a9%e5%a4%9a%e5%8d%a1%e5%9b%a0%e7%94%a8%e4%ba%8e%e4%b9%b3%e8%85%ba%e7%99%8c%e6%94%b9%e8%89%af%e6%a0%b9%e6%b2%bb%e6%9c%af%e5%90%8e%e9%95%87%e9%9d%99%e9%95%87%e7%97%9b&scode=ZYSG201501034' target="_blank">2</a></span>
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>94</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=vNGb6tEaGNFd350Ml1mUPRjUlhlNWplYnVnTrhjUnZXcQx0ZQhjN49SYjhEbMVXY1tWdjJ2Q5l1ZwdGSLtyKMplckhVY1Z3R0VDROFVTydzVx90MvJFdnVXMzN1dFR0dIhnQ0ZUcpp0V5Z1dLV1T1IjaldVeINHd&tablename=CJFDLAST2015" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dZYSG201501034' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="ZYSG201501034"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr></table></td></tr></table><div class='pages'><a href="javascript:void(0);" data-curpage="1" title="键盘的“← →”可以实现快速翻页" id="total">首页</a><a href="javascript:void(0);" data-curpage="1" title="键盘的“← →”可以实现快速翻页" id="PagePrev">上一页</a><a href="javascript:void(0);" data-curpage="1" title="键盘的“← →”可以实现快速翻页" id="page1">1</a><span class='cur'>2</span></div></div><input type="hidden" id="docstateinfo" name=id="docstateinfo" value="JD00PYrfAvzGtFgNNTfafk4Fg7e9vv3GyTPzwvb1+7WeENmvmcXSz7Gl/eIBpp4LkLLv2bHYVUyOSFm0Ii+m+kdhCWMvrceRCZbvwX68Bi0TbfHQrX5xKUq8ekGx2jWQZRxBK/xitdS71Q5jPiI40mZwC4VjNxrOTJyKuF110kGZnT2CvsO/+jyG8Dj7N0nz5nOcQ7WEACjgtPbYCwf5nHvCJJKFUi2KkdKo7HrYywoKbBoguxyIFUGZ5YpqeWjuP4NorlXI90SW5O+T6Y00FS84TyhEvCcnSIxsz15xTKJHrchc9Qtx1tSqtuqIyKlAY0pNxUG6tICICdjndbyuhTVYmdKSJC5rqV3mNEJldWPq0QlbL4sMejQhOjA0aaDba81wA1UcEFgUB8iZ/txDjFNOKt3pqR7gNRRU5yk59qVmHuHdHcrqv272tfKrJffhJG7m3YmdOQyFFFGH8+PhNYCepAgePMSsSZLAxM1OHVi3SCnhGPBlfNjS7dbFuW0X4I/mTIlG+6JAm3bgQ5FPbwKAEPTEdcquh/azzzEeeO74hphSJ50kIA1ebO7X7UU5baBrbrZZ/KEOEQ20XDpFfj6cNytVywjfrltMmXB972/DR/ebnRY8+w+FYFGuZusq42NX0QsVhf+oMdvQ9XYRP+q0JK3pb8fqbrE7Ug5j/0M1f/DeJeS0DoEoQ2lesuib4B59zVVs6hYntyVxdkQN6bd5fEizerZYlLqT0bKUuIovoyEexQlDJeN1mzdfwhVHMjFBluSM9Aa1HR8+EEXMWPs9+LwymrS64DFJaRpdC2SDpX9HqDENEYZEsI+KBmGkdz3sGVEaL0aemEgEbpIfEJJ/I8g7dN6S1WtRlBfzauekTxp5Hp4Zoljz7Xuvnk7JSVXbdT1/pMJAoPaMAJeMJ1Av4mcn896QMvE8qBBeEGSEt2K4RHw9NueHIGnvOlKKoiBWwTtSuX2u65WhAxtA4Gp4C9iUzVwXTCkneuopEQdqGBKeJmnditb3NaATtwyg1b9mh2HJB0uZeqJrn+G0mdesXS24OVLttVqf6vQ1sAYTbfHQrX5xKUq8ekGx2jWQZRxBK/xitdS71Q5jPiI40rI1NruYtDEEXM+YBKyFfCmZnT2CvsO/+jyG8Dj7N0nz5nOcQ7WEACjgtPbYCwf5nHvCJJKFUi2KkdKo7HrYywoKbBoguxyIFUGZ5YpqeWju9e9/xmzCMEPGd4nuZ55wq9wtcKR/dccc9zKiKOS1cTZHrchc9Qtx1tSqtuqIyKlAY0pNxUG6tICICdjndbyuhTVYmdKSJC5rqV3mNEJldWPq0QlbL4sMejQhOjA0aaDb8s2xJfu+SNmnjKt3L80s5pULNp4gsDlNrZHZxH+036xmHuHdHcrqv272tfKrJffhJG7m3YmdOQyFFFGH8+PhNYCepAgePMSsSZLAxM1OHVi3SCnhGPBlfNjS7dbFuW0Xch2uPmljaingpx+oztUjggKAEPTEdcquh/azzzEeeO74hphSJ50kIA1ebO7X7UU5baBrbrZZ/KEOEQ20XDpFfj6cNytVywjfrltMmXB9728HKyM/6deqO9oJnxSTnX3WCovWA9j2aLlMvsJr5xUcQuq0JK3pb8fqbrE7Ug5j/0M1f/DeJeS0DoEoQ2lesuib4B59zVVs6hYntyVxdkQN6bd5fEizerZYlLqT0bKUuIrnH6pKl/txQtx4lntcSQzZPHVaT2Q3rlkcLPN6L5tF9fs9+LwymrS64DFJaRpdC2SDpX9HqDENEYZEsI+KBmGkdz3sGVEaL0aemEgEbpIfECFMt14tjcq2v/jo8TvwETVVxU3xDCJF0EUXV6JJAeH2SVXbdT1/pMJAoPaMAJeMJ1Av4mcn896QMvE8qBBeEGSEt2K4RHw9NueHIGnvOlKKoiBWwTtSuX2u65WhAxtA4L3dT1mCEC/cj70bziMzYY+RddEYf1xbu07MvMx7SDY91b9mh2HJB0uZeqJrn+G0mdesXS24OVLttVqf6vQ1sAYTbfHQrX5xKUq8ekGx2jWQZRxBK/xitdS71Q5jPiI40n+1WFoUJY2CTs6F4FslGEeZnT2CvsO/+jyG8Dj7N0nz5nOcQ7WEACjgtPbYCwf5nHvCJJKFUi2KkdKo7HrYywoKbBoguxyIFUGZ5YpqeWjuSgJQ/Ct1O8KYcdi7Wkvx/Y6nIGUyX2NFoYG9qZ9FPhZHrchc9Qtx1tSqtuqIyKlAY0pNxUG6tICICdjndbyuhTVYmdKSJC5rqV3mNEJldWPq0QlbL4sMejQhOjA0aaDb2Kh4RvxG2cfvV8HDrZR2HjbCEBT+49TtPNEOpEZNPmJmHuHdHcrqv272tfKrJffhBS8LvrMqpP3eEZA3Ti6JmTB32JQgN4fd7DFrtOFm4Jsu/zGqavCAwimFaCJAKfXKTNEJCpDPA4NLuOGsHiuTuYvwyiI5s78CL49rFY/IIRAOzN0PKXSH/OxM37GD/pCqJG7m3YmdOQyFFFGH8+PhNYCepAgePMSsSZLAxM1OHVi3SCnhGPBlfNjS7dbFuW0XpWO4FIXqEqEeI9CCcKYhLgKAEPTEdcquh/azzzEeeO74hphSJ50kIA1ebO7X7UU5baBrbrZZ/KEOEQ20XDpFfj6cNytVywjfrltMmXB9729A7TH6BhSgVFjAuatYow5a5Bk6SIyTK8KJsRewPq3/ceq0JK3pb8fqbrE7Ug5j/0M1f/DeJeS0DoEoQ2lesuib4B59zVVs6hYntyVxdkQN6bd5fEizerZYlLqT0bKUuIoFuwm/Nbc/ooyGFbANI+wCvVRwXnWDVre4v4uX7Z+7uPs9+LwymrS64DFJaRpdC2SDpX9HqDENEYZEsI+KBmGkdz3sGVEaL0aemEgEbpIfEFxlloGahwnuJ8S3RONfH2kouQ1p70UmNIeob6h6ZeEqSVXbdT1/pMJAoPaMAJeMJ1Av4mcn896QMvE8qBBeEGSEt2K4RHw9NueHIGnvOlKKoiBWwTtSuX2u65WhAxtA4GNbyg49g6k0VXoMosFKst6KeBSAmrq+KDSv/6XnWe5T1b9mh2HJB0uZeqJrn+G0mdesXS24OVLttVqf6vQ1sAYTbfHQrX5xKUq8ekGx2jWQZRxBK/xitdS71Q5jPiI40n4LdYOmB537pyqz9u7q+fKZnT2CvsO/+jyG8Dj7N0nz5nOcQ7WEACjgtPbYCwf5nHvCJJKFUi2KkdKo7HrYywoKbBoguxyIFUGZ5YpqeWjue0GzbSjvm0CwLd3ihEok6BXUVdjUM99G3MkcTh1IChBHrchc9Qtx1tSqtuqIyKlAY0pNxUG6tICICdjndbyuhddYwi/5hpEFzEJ/AYmyzrLM630IytQbm7BI95pVflCBkbQ3/uPrZqfOOTFqApt3WQDi3k4m+ctujou1bCkKw8n4gpKgYM/RmgvYcURtGYRcGWxslObXmwLe3dSA1EfggG54vVFu4OM0grgzOVaZkarDMnDXic62xVrYWNE78evgiIfok0ThSypL8al6JH7kZMBYIvTmJiJUVuXV2CH5pX2ek6kIiaBGCV65MGsFFQ17VKHafXdhT+WqsrsmmRoa2ZVbvfMxsEuEyaLt003qcp/xYHGmB5XxxQXXo/pw9FKqtx9Q9xQ1qEfp04IETL8AguEi1qqwMSxB9fRAg+td2iMCA4aN6GgMi8K/2KzGQvE85TUhjEpelhPy8A6IkUm/h8XsxRRpR4ZM8QRNjyICtQJDJ4H6b37R9JT/vgQe1nzs6ZaSJw0ayaoK5d43VlON3qaxY/xjxKD5YbCOWTgBZ/JvdW+mSIP0pqQNoILbY1/aRdUx6GbLk3f40Zh8KI75Tvh7tq0gjr/mMYHIcE6GoW/szh0VqPByesE1zrGUlnW3X4frEV9N9AAI1YL4zQZHcgbLOKbqg/VAbvlRtAF8Vf/E9LiYC3XTo23kL8/BARcePmchlO3oFjqmgfDDvaSMgyYuLkRBTd8ixGp2tg9U441KONPQ9SWioD5mLZY1TdiHkYQ+0D7NBPGplGX3g+NB9rtHZ/9gjot6cXUxuunHWxp426vHLgCfRIN53J3PzAGBP2kk48OoREVW1DURKHq8cq5NJ+9v0rzt3xDjdCZNoZW6RM5js4nNzRpryDvWHfOATWNzoxJi/S/BnduicpD1Q8T0uJgLddOjbeQvz8EBFx4+ZyGU7egWOqaB8MO9pIyDJi4uREFN3yLEana2D1TjjTk6WuLQzPwVr2LIyM/OMKWRhD7QPs0E8amUZfeD40H2u0dn/2COi3pxdTG66cdbGj3rStbTTW/yjbNFdOmZHRE/aSTjw6hERVbUNREoerxySJ4saIcVKudYLucbscZeNkQgYDbIc/3X1xZ3iwvbHQW6KhHFmGk25eHWnUWWaNz0BNW4R4K+BOpyhEfSwMNQ8n4O6pkuKqw+JWhYvgv+XldxGbgcwzMvpD93LL4CUO0HUi20ns1zSsaQEqpZGw/HFSDku5SYBI4oedJOebmlOC0V+aBNlFnI5GssK99BF/AtOHs5idHiVhZCNPeNTeeXbAwgmr20ek+7h8dH95LrM718rMOM1vUSLhUx68TqZsV+4JhRL/rRHhY1T3s25kl9kgGO0PPYHeSk1Wl+/6SldyzeJ4iL+gK87GKrqki91mZSGXf1dsrK5xz77DMP7tdCJQClszmuQdyS2z/RXriQqDepo9IMG/CN00tjGGyghZVYYgs3kG6YzcDmzqJaeUKntnbTgYZDJL6ipeYXyk1U0U4TjijI+jOXe6767qmz7BtYcEHPtoaNIKweHju+DgpCYdtvW3L0VXgnZpX7bd3YE0KSUyVioNPtqYdWMXz3q8Edn907GtX4h4DkdQR7ofUtzK8T/FQ18lu7VSYANGzKoN3lNSGMSl6WE/LwDoiRSb+HxezFFGlHhkzxBE2PIgK1AhcRjERJfKYsS6Qi5EOO3Y+TDCt8GxKoKqZL3Zz1kwk9prFj/GPEoPlhsI5ZOAFn8kvz8nH3GJbzflliZ2lpzLhF1THoZsuTd/jRmHwojvlO+Hu2rSCOv+YxgchwToahb/tisbs3XFTlqptWaNSaVuS7nf25CG0Q1h8CDN3UFduTBss4puqD9UBu+VG0AXxV/8T0uJgLddOjbeQvz8EBFx4+ZyGU7egWOqaB8MO9pIyDJi4uREFN3yLEana2D1TjjZyzigZZ9eyCeTGIFF+dLNWRhD7QPs0E8amUZfeD40H2u0dn/2COi3pxdTG66cdbGvKaSEcG3szhhTMxw+Q/QobOv0NncHbDkBY1BgBRJjBD2Yd/WWYWmLHYg0znEOwBlb3DwnDzgXUxb8WVx0QpZ0Ob35ql0KHOHCHEM2eU0x2s1G5PgsQ1ZmK5xWw2J1kynn4O6pkuKqw+JWhYvgv+XldxGbgcwzMvpD93LL4CUO0HfWvvao26r60eX5XoPlOCGTLC20rTHN2uSjp1GZ9YshsV+aBNlFnI5GssK99BF/AtOHs5idHiVhZCNPeNTeeXbAwgmr20ek+7h8dH95LrM72PGpimmnyqDkMM87QSf0k0vaKllvLAIfqNa4HJfCSJBQGO0PPYHeSk1Wl+/6SldyzeJ4iL+gK87GKrqki91mZSGXf1dsrK5xz77DMP7tdCJQClszmuQdyS2z/RXriQqDcWB1Vg9Js6MnhgXQr7YUdsP6X/Snb7HIJR1o7Q4GL+q3bTgYZDJL6ipeYXyk1U0U4TjijI+jOXe6767qmz7BtYcEHPtoaNIKweHju+DgpCYdtvW3L0VXgnZpX7bd3YE0JK+cXSqmZ5Mv0bVziGvYpmn907GtX4h4DkdQR7ofUtzLF+hEZ7VK/P1htJQgbYzLo="/><input type="hidden" id="docprequery_server_url" name="docprequery_server_url" value="https://kns.cnki.net/docpre/api/inner/multi-statusex"/>
+    </div>
+    <input id="errorMsgHid" type="hidden" value="" />
+    <input id="HandlerIdHid" type="hidden" value="1" />
+    <input id="curPageHid" type="hidden" value="2" />
+    <input id="isSortHid" type="hidden" value="false" />
+    <input id="sqlVal" type="hidden" value="0645419CC2F0B23BC604FFC82ADF67C6E920108EDAD48468E8156BA693E89F481391D6F5096D7FFF3585B29E8209A884EFDF8EF1B43B4C7232E120D4832CCC8979F171B4C268EE675FFB969E7C6AF23B4B63CE6436EE93F3973DCB2E4950C92CBCE188BEB6A4E9E17C3978AE8787ED6BB56445D70910E6E32D9A03F3928F9AD8AADE2A90A8F00E2B29BD6E5A0BE025E88D8E778EC97D42EF1CF47C35B8A9D5473493D11B406E77A4FF28F5B34B8028FE85F57606D7A3FED75B27901EEF587583EBD4B63AC0E07735BE77F216B50090DEE5ABB766456B996D37EB8BDACA3A67E8126F111CF9D15B351A094210DB6B4638A21065F03B6F0B73BB4625BBECE66F8197909739D8FB4EB756DEF71864177DFA3CB468CFA6E8ABF7924234DED6B0DFD49D9269CBA4A2BF4075D517A61D094225D70C1B4C137DB9614758A5E097376F5F3E55A7063A4B7E437436D13FF3CC8FB435E131FFCD16FC30DD997098B4FC997D995E767E2712175BC05B960D3FEB5CAF12A13BD1CE3530AD72FC4DB93206996E216BC5DC294960A0CA05E986848E1E64FFC5A52BFCB41A97840A708E397F11EFF261E08F3A34094061AE8E8F819AF6A17A9E2176C3893C6DD3E3C06864C91989BDEF9790A38FAF2524B17743B30EBA4ADD550BF985F9C3097A608C697283CE37F8CB78BDC9EAA4874C3485E6F931B016EC41BFBC0EF91B2AD7E1B424E1DFB8FC8771DEA2458C5A7A4C9BF0192C101FD8EDDEE1BACB44C3E478361EF0D1B70FAD56BCF6870A6044D3A226611B9C1A43C6F9F7C021C98E0D5F778D72C87183F026071A730B8BB4FABF9F68FEC783AB1E6E79218B5D87FD1BB541817FB4F3C21DC849A803CB8A620A2EE00475BAF2CE6556638B7A949B446F39A1076DA15764A777BA6239447CB91F4CF513325366E167D268DDB75F288B5C13415CE62F5C431181C044A28CA502FF14439E5C6F63D419CB6DE1360DB01593FE765459299E442EE24917C199AB5178F38461F8C4EBBC95344C5F2AB60F379813A87E2E3AFE3021198B8222CEAB870D9A353786079961184D63977917C7DF8FE6AFBBC795A832BDD454D6E3CD22C3FF7A58808923DD6F464C12A9A88FBFD0C71458AB0E4C1D566315181A9578ECE93670E5CAF13CF2553F68E64726C131F4A48B42A9E7F09EFEBA51D1FDA6BA0ECA0B02B951ECC04548F1D4D08DB69D0EFDCE6793537BB8E59DC442631A9CDBA13878D7493AADA0CD868C1C1C3A6A6FA17C4109205A83F9C0C43E0D2551D0A8592EA99D20D4B78B4EEEE2D53A543701F620C7D6FF46E800B0CEF9B3D23ACD62C7CBEA25FC8BD74D5A0E5C86B9CF3FCACBDBE585AFF85F9689CBF5BCBD267C580361D5B93AA9BD5A1BB6122BB87C04AE227211FE675A4650814F2285261E5641683D65E0454E2597F6025BB4AA1A044D7B97F57394EA5EC878B80FC0A82F12E2D3D9E1BCB062A7ABB290F02116BDED95761A67CE2FDDE42BDDDF34F22E49A0406D724FEBC86B93F80BB52A8D34B8D2B24288ECBC3F90CCB1EF36085E77F1E2AE0AB411FE60A033E704A21469EA5CE4BB8AF6B1C1F1C5F1F084472D57F458CC39F0B2FE583D0795159E9E38BD1102F5D96DB0F828B66F41A702BB0AE59E40CF53BE7F6342EF208434CFFABF845AFD771B288D484BB79952159E6EA27658A6B6230557AF16E86C4AFDF973DBD5A3A2B979AD9037441409D22A954DC50CBCEA8EA5AC500C4BC8282DCE2626BD2B2CB4B1E33B2E1F92533F7F04C48D061907DBCE3E21FF0A77F09C1AE33E769962CD1EDE6B688590D569409EE9EEC4DF1074DCC97C43B0EDAF1C38B5B2784ABC803D9B3B4FC35F46CB1E275E7F83036FC6AFF2E624D4D2E6AE1C2D4CE3FF219FA90A935957E0DE1A386E4AAB5C9F9D1CECA909F5698BFA86C57B6A73D3C0F9FDB94128B7BB9FDD19D57E4C2C2F4127A1F127A96ABF248B26D8B6EF12A1EA97D064564D33D46E5CA71F53FA121A7E5C91ED2B08BE64A0E3D22BE26FC251C0BF4CF21674DE19AF410E3EDFBD9A4BBEA6C709A1E42B5C17E1EE7AA33EFB0F375BF0858D49210A71662313FA5B8E04E508A5E9425D49C3C5D12CB8DCADBF8A148BFA042BBB0218AAC403AAB9CECC45FD33CEC6797FC984BF91FF638AF6E1F09546F595CFC779D2D867282C63B78DC6A6ED3C1C3887462C84AC07C756C5A8D8A8B2EFD39C28A68D47091A3312461BC20085636F4B41F22D5B46861F3E557777CDCFDFE6CAB8ABECFECA3634D779C0F21185772CA46EA1C0B1E0191F02F11A2B10372550A8B839D8C819F77A67512CA57D16DBA687D1BB77271E375C6DD3432C804B0A707D0DF7D72108E3190885E95DE0F0F118A904C80D606BB82C582FF3E3D836AED573EA426D382FF3D0C83B51E0E63B863FC20F67D2C68C14558E2EEDED6B71B615A74152632E0E1A4BFC01F083BEEA6E702D1650038B1826D1970F88507FB5E5C07A18F3BD94177B73C5C9E960EE73ED66B353BB65245EABB7D552BA6F27425B703A081479862CF0C6A2102A796F0B93F072D362F8CE04AB334C4342186C69F946794EE812FFC903D270DF98BCEAF98F8C4D685BB25DD848FBDE28BE6A5DB4564BF4D9115620B5BA45E1A86A44A0F4A1D1839184E8E952AB38050D6C2A5378577AB09FA6A5167AA498C61F04853CCA741B2A360E4EA67F8F67E4739DFB9DF144C9D44CBAFEA30AD7B764F276F570674A2333F36EB6C9051026EA82DE60C00EFB5DF9661474D1A9DDD4137C8E7DC9E1B9C4D4E6D9091E5764AECB618E94F85A503FBACE93CAB29A0695D8827D7A8270E5454ADC51A64D437081B6DCEAC22C5CEFAC49A667F67E253E486F4AAC6CD8D4223FE1D9443E3CBBA90DEA4280E02E05DB7B484E0EB85BF852FBE1C65E853C7E089083D9DD41E3C3C4BDDCA2FBEE967CBC8DA6CDB6C9F4A4D686B98EE3B536E4F06A9D335A8D23550087629F5DADEAF780FC4C8A818E381B1EDD250B39A858F0EED5B9116FE659797A9B757DC1E4387DDFCF" />
+    <input id="pathAnalysisHid" type="hidden" value="/KVisual/ArticleAnalysis/index?" />
+
+</form>
+
+<script type="text/javascript">
+    $(function () {
+        if ('True'=='False') {
+            $("#batchOpsBox .bulkdownload").css("display","none");
+        }
+    });
+   
+</script>

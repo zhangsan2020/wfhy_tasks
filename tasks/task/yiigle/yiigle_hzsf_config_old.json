@@ -1,0 +1,22 @@
+[
+  {
+    "web": "中华医学会",
+    "platform": "全库",
+    "keywords": ["预后","伤","心力衰竭"],
+    "keywords_end": ["伤","手术"],
+    "module_dir": "全库_年",
+    "max_year": 2023,
+    "min_year": 2014,
+    "page_size": 50,
+    "have_start": 1,
+    "have_end": 0,
+    "max_page": 15,
+    "is_running": 0,
+    "level": 3,
+    "cur_year": "2022",
+    "spider_at": "win",
+    "have_locked": "no",
+    "module_ok": "yes",
+    "owning_account": "6849_杭州师范大学"
+  }
+]

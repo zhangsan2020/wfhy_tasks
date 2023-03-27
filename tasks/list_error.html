@@ -1,0 +1,148 @@
+<!-- 包括翻页条的结果页 -->
+
+
+
+
+
+
+
+<!-- 3.è®¿é®å­¦ä½è®ºæç½ç« -->
+
+ <div style="display:none" class="page-down">
+	<div  class="pageleft">
+		<input id="selectAll" name="selectAll" type="checkbox" class="cursor_pointer"  value="" onclick="selectAllItemsOnThisPage()"/>
+		<label for="selectAll" class="cursor_pointer">当前页</label> -->
+		选择记录
+		<input name="" type="text" class="inputdiv01" />
+		&nbsp;到
+		<input name="" type="text" class="inputdiv01" />
+		 
+ 		 
+		
+		<span id="selectCountSpan2" class="jl" style="display: none">共选择<font
+			class="red"><span id="selectCount2"></span> </font>条记录&nbsp;&nbsp; 
+			<input type="image" onclick="javascript:changeDisplayAjax('1','false','','true');" src="/images/xsbj.jpg" style="vertical-align:middle"/>
+			</span>
+		
+	</div> 
+ 	<div class="pageright">
+		<a   
+			href="javascript:changeDisplayAjax('1','false','')" >首页&nbsp;&nbsp;</a>|&nbsp;&nbsp;
+		<a  
+			href="javascript:changeDisplayAjax('1','false','')" >上一页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a  >下一页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a  >尾页</a>&nbsp;&nbsp;
+		
+		共&nbsp;0&nbsp;篇&nbsp;&nbsp;
+		<input id="pn" name="pn" class="inputdiv01" value="0"
+			onkeydown="if(event.keyCode==13){changeDisplayAjax('','true','');return false;}"
+			type="text" class="lankuang1" size="6" />
+		<b>/</b>&nbsp;<span id="totalPages">0</span>&nbsp;&nbsp;
+		<a href="javascript:changeDisplayAjax('','true','')"><img
+				src="/images/page.jpg" align="top" style="padding-top: 5px;*padding-top:0px;*padding-bottom:10px;"/> </a>
+	</div>
+</div>
+<div class="page" style="border-top: 1px dashed #ccc;margin: 24px auto 10px; padding-top: 20px;width:105.6%;">
+            <a  href="javascript:changeDisplayAjax('1','false','')">首页</a>
+    		
+            
+            <a href="javascript:changeDisplayAjax('1','false','')">上一页</a>
+            
+             			<!-- <span class="hover">1</span> -->
+             					
+                                
+                                
+            					<span class="page1 hover">下一页</span>
+           						
+           						<a  href="javascript:changeDisplayAjax('0','false','')">尾页</a>
+				                                共0页&nbsp;
+				                                到第 <input id="pn2" name="pn" value="2"
+								onkeydown="if(event.keyCode==13){zyClk();return false;}" /> 页
+                                <button style="background: #216371; color: white;" onclick="zyClk();">确定</button>
+                            </div>
+<div class="recoreddiv">
+	<!-- 加载结果页面 -->
+	<input type="hidden" name="sql" id="sql" value="AD_ALL/1=&#039;手术&#039; AND DP_YEAR/1=&#039;2023&#039;" />
+	<!-- 保存统计检索语句 -->
+	
+	<input name="ordersend" id="ordersend" type="hidden" value="LIFO"/>
+	
+		<br />
+		
+
+
+
+
+
+
+<!-- 3.è®¿é®å­¦ä½è®ºæç½ç« -->
+
+
+<div class="huise">
+		您好！找不到和您的查询相符的资源。
+		<br />
+		<b>建议</b>：
+		<br />
+		<div style="padding-left:30px;">
+				请检查输入字词有无错误。
+				<br />
+				请换用另外的查询字词。
+				<br />
+				请改用较常见的字词。
+				<br />
+				请换用其它检索入口。
+				<br />
+				请重新选择数据库检索。
+         </div>
+</div>
+		<br />
+	
+	
+</div>
+<div class="page">
+	<span id="trackSelectCount2" style="display: none;"></span>
+	 <div class="page" style="margin-top: -10px;">
+	 <a  href="javascript:changeDisplayAjax('1','false','')">首页</a>
+    		
+            
+            <a href="javascript:changeDisplayAjax('1','false','')">上一页</a>
+            
+             			<!-- <span class="hover">1</span> -->
+             					
+                                
+                                
+            					<span class="page1 hover">下一页</span>
+           						
+           					<a  href="javascript:changeDisplayAjax('0','false','')">尾页</a>	
+				                                共0页&nbsp;
+				                                到第<input id="pn3" name="pn" value="2"
+								onkeydown="if(event.keyCode==13){zyClk_end();return false;}" /> 页
+                                <button style="background: #216371; color: white;" onclick="zyClk_end();">确定</button>
+                            </div>
+	<script src=/sf-webproxy/api/vpn-config></script><script src=/sf-webproxy/resource/web_proxy.js?v=1.4.7></script><script src=/sf-webproxy/resource/postMessage.js></script><script type="text/javascript">
+	function zyClk(){
+	var pn2=jQuery("#pn2").val();
+	pn2=parseInt(pn2);
+	if(pn2>'0'){
+	alert('输入不能超过最大页！');return;
+	}else{
+	changeDisplayAjax(pn2+'','false','');
+	}
+};
+	function zyClk_end(){
+	var pn2=jQuery("#pn3").val();
+	pn2=parseInt(pn2);
+	if(pn2>'0'){
+	alert('输入不能超过最大页！');return;
+	}else{
+	changeDisplayAjax(pn2+'','false','');
+	}
+};
+	</script>
+</div>
+<script>
+//默认右侧展开一个统计
+		    jQuery().ready(function() {
+		        resultBindAction();
+		    });
+</script>

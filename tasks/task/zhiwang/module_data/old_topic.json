@@ -1,0 +1,433 @@
+{
+  "model": "主题",
+  "keywords": {
+    "病": [
+      {
+        "name": "病理学",
+        "search_origin": "病",
+        "have_spider_2018": "202211171823",
+        "have_spider_2017": "202211181727"
+      },
+      {
+        "name": "病死率",
+        "search_origin": "病",
+        "have_spider_2018": "202211171844",
+        "have_spider_2017": "202211181728"
+      },
+      {
+        "name": "病虫害",
+        "search_origin": "病",
+        "have_spider_2017": "202211181729"
+      },
+      {
+        "name": "病原菌",
+        "search_origin": "病",
+        "have_spider_2017": "202211181730"
+      },
+      {
+        "name": "病毒感染",
+        "search_origin": "病",
+        "have_spider_2017": "202211181731"
+      },
+      {
+        "name": "病例报告",
+        "search_origin": "病",
+        "have_spider_2017": "202211181732"
+      },
+      {
+        "name": "病理检查",
+        "search_origin": "病",
+        "have_spider_2017": "202211181733"
+      },
+      {
+        "name": "病虫害防治",
+        "search_origin": "病",
+        "have_spider_2017": "202211181734"
+      },
+      {
+        "name": "病理诊断",
+        "search_origin": "病",
+        "have_spider_2017": "202211181754"
+      },
+      {
+        "name": "病理变化",
+        "search_origin": "病",
+        "have_spider_2017": "202211181836"
+      },
+      {
+        "name": "脑血管病",
+        "search_origin": "病",
+        "have_spider_2017": "202211211221"
+      },
+      {
+        "name": "心肌病",
+        "search_origin": "病",
+        "have_spider_2017": "202211211247"
+      },
+      {
+        "name": "心血管病",
+        "search_origin": "病",
+        "have_spider_2017": "202211220952"
+      },
+      {
+        "name": "银屑病",
+        "search_origin": "病",
+        "have_spider_2017": "202211220959"
+      },
+      {
+        "name": "帕金森病",
+        "search_origin": "病",
+        "have_spider_2017": "202211221012"
+      },
+      {
+        "name": "病毒病",
+        "search_origin": "病",
+        "have_spider_2017": "202211221227"
+      },
+      {
+        "name": "阿尔茨海默病",
+        "search_origin": "病"
+      },
+      {
+        "name": "枯萎病",
+        "search_origin": "病"
+      },
+      {
+        "name": "缺血性脑血管病",
+        "search_origin": "病"
+      },
+      {
+        "name": "扩张型心肌病",
+        "search_origin": "病"
+      }
+    ],
+    "病例": [
+      {
+        "name": "病例报告",
+        "search_origin": "病例"
+      },
+      {
+        "name": "病例资料",
+        "search_origin": "病例"
+      },
+      {
+        "name": "病例分析",
+        "search_origin": "病例"
+      },
+      {
+        "name": "病例对照",
+        "search_origin": "病例"
+      },
+      {
+        "name": "病例对照研究",
+        "search_origin": "病例"
+      },
+      {
+        "name": "病例介绍",
+        "search_origin": "病例"
+      },
+      {
+        "name": "病例报道",
+        "search_origin": "病例"
+      },
+      {
+        "name": "病例讨论",
+        "search_origin": "病例"
+      },
+      {
+        "name": "病例-对照",
+        "search_origin": "病例"
+      },
+      {
+        "name": "病例对照研究方法",
+        "search_origin": "病例"
+      },
+      {
+        "name": "死亡病例",
+        "search_origin": "病例"
+      },
+      {
+        "name": "临床病例",
+        "search_origin": "病例"
+      },
+      {
+        "name": "典型病例",
+        "search_origin": "病例"
+      },
+      {
+        "name": "住院病例",
+        "search_origin": "病例"
+      },
+      {
+        "name": "确诊病例",
+        "search_origin": "病例"
+      },
+      {
+        "name": "报告病例",
+        "search_origin": "病例"
+      },
+      {
+        "name": "门诊病例",
+        "search_origin": "病例"
+      },
+      {
+        "name": "新发病例",
+        "search_origin": "病例"
+      },
+      {
+        "name": "肺结核病例",
+        "search_origin": "病例"
+      },
+      {
+        "name": "诊断病例",
+        "search_origin": "病例"
+      }
+    ],
+    "医药": [
+      {
+        "name": "医药卫生",
+        "search_origin": "医药"
+      },
+      {
+        "name": "医药学",
+        "search_origin": "医药"
+      },
+      {
+        "name": "医药卫生体制改革",
+        "search_origin": "医药"
+      },
+      {
+        "name": "医药行业",
+        "search_origin": "医药"
+      },
+      {
+        "name": "医药工业",
+        "search_origin": "医药"
+      },
+      {
+        "name": "医药企业",
+        "search_origin": "医药"
+      },
+      {
+        "name": "医药产业",
+        "search_origin": "医药"
+      },
+      {
+        "name": "医药院校",
+        "search_origin": "医药"
+      },
+      {
+        "name": "医药卫生类",
+        "search_origin": "医药"
+      },
+      {
+        "name": "医药市场",
+        "search_origin": "医药"
+      },
+      {
+        "name": "生物医药",
+        "search_origin": "医药"
+      },
+      {
+        "name": "民族医药",
+        "search_origin": "医药"
+      },
+      {
+        "name": "传统医药",
+        "search_origin": "医药"
+      },
+      {
+        "name": "综合性医药卫生",
+        "search_origin": "医药"
+      },
+      {
+        "name": "生物医药产业",
+        "search_origin": "医药"
+      },
+      {
+        "name": "当代医药",
+        "search_origin": "医药"
+      },
+      {
+        "name": "中国当代医药",
+        "search_origin": "医药"
+      },
+      {
+        "name": "《中国当代医药》",
+        "search_origin": "医药"
+      },
+      {
+        "name": "壮医药",
+        "search_origin": "医药"
+      },
+      {
+        "name": "中国医药工业",
+        "search_origin": "医药"
+      }
+    ],
+    "医学": [
+      {
+        "name": "医学院",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医疗卫生",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医疗机构",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医务人员",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医护人员",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医科大学",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医院感染",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医疗服务",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医学教育",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医院管理",
+        "search_origin": "医学"
+      },
+      {
+        "name": "重症医学科",
+        "search_origin": "医学"
+      },
+      {
+        "name": "和谐医患",
+        "search_origin": "医学"
+      },
+      {
+        "name": "和谐医患关系",
+        "search_origin": "医学"
+      },
+      {
+        "name": "改善医患关系",
+        "search_origin": "医学"
+      },
+      {
+        "name": "和谐的医患关系",
+        "search_origin": "医学"
+      },
+      {
+        "name": "遵医行为的影响",
+        "search_origin": "医学"
+      },
+      {
+        "name": "北京大学医学部",
+        "search_origin": "医学"
+      },
+      {
+        "name": "医院重症医学科",
+        "search_origin": "医学"
+      },
+      {
+        "name": "减少医患纠纷",
+        "search_origin": "医学"
+      },
+      {
+        "name": "加强医患沟通",
+        "search_origin": "医学"
+      }
+    ],
+    "肿瘤": [
+      {
+        "name": "肿瘤坏死因子",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "肿瘤细胞",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "肿瘤患者",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "肿瘤坏死因子-α",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "肿瘤坏死因子-",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "肿瘤组织",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "肿瘤大小",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "肿瘤坏死因子α",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "肿瘤标志物",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "肿瘤医院",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "皮下气肿",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "诱导肿瘤细胞凋亡",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "血浆肿瘤坏死因子",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "抗肿瘤血管",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "人肿瘤坏死因子",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "抑制肿瘤血管生成",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "抗肿瘤血管生成",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "可溶性肿瘤坏死因子",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "葡萄肿",
+        "search_origin": "肿瘤"
+      },
+      {
+        "name": "抗肿瘤坏死因子",
+        "search_origin": "肿瘤"
+      }
+    ]
+  }
+}

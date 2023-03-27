@@ -1,0 +1,14 @@
+[
+  {
+    "web": "中华医学会",
+    "mode": "作者单位_关键字_年",
+    "platform": "作者单位",
+    "keywords_all": ["医院","病","伤","细胞"],
+    "keywords_over": ["病","伤"],
+    "max_year": 2023,
+    "min_year": 2014,
+    "page_size": 50,
+    "have_start": 1,
+    "have_end": 1
+  }
+]

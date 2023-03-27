@@ -1,0 +1,617 @@
+2022-12-27 11:09:10 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18952578715 文件路径为: F:/weipu_pdfs/日间手术全周期闭环智慧系统管理实践与成效.pdf
+2022-12-27 11:13:19 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18952578715 文件路径为: F:/weipu_pdfs/日间手术全周期闭环智慧系统管理实践与成效.pdf
+2022-12-27 11:54:23 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18952578715 文件路径为: F:/weipu_pdfs/日间手术全周期闭环智慧系统管理实践与成效.pdf
+2022-12-27 11:55:02 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13600538496 文件路径为: F:/weipu_pdfs/腹腔镜胰腺手术护理团队的组建及培训.pdf
+2022-12-27 14:02:00 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18952578715 文件路径为: F:/weipu_pdfs/日间手术全周期闭环智慧系统管理实践与成效.pdf
+2022-12-27 16:39:49 Tue cur_identify.py 55 WARNING 识别文件时出错... 路径为: None, 错误信息为: ValueError('bad start page number')
+2022-12-28 08:31:16 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18952578715 文件路径为: F:/weipu_pdfs/日间手术全周期闭环智慧系统管理实践与成效2022.pdf
+2022-12-28 08:34:14 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=10)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107303885
+2022-12-28 08:47:23 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13600538496 文件路径为: F:/weipu_pdfs/腹腔镜胰腺手术护理团队的组建及培训2022.pdf
+2022-12-28 08:52:23 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15531007748 文件路径为: F:/weipu_pdfs/机器人系统与腹腔镜手术在结直肠癌经自然腔道取标本手术中的效果比较2022.pdf
+2022-12-28 09:10:52 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/全闭环转运信息系统在手术患者流转安全的应用2022.pdf
+2022-12-28 09:24:54 Wed cur_identify.py 55 WARNING 识别文件时出错... 路径为: None, 错误信息为: ValueError('bad start page number')
+2022-12-28 11:05:07 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/免气腹腹腔镜胃癌根治术的手术操作规范2021版2022.pdf
+2022-12-28 11:05:14 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/某医院开颅清洁术后手术部位感染的危险因素分析2022.pdf
+2022-12-28 11:17:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17211428375 文件路径为: F:/weipu_pdfs/基于YY0174标准安全霎卸封储手术刀片防范锐器伤的探讨2021.pdf
+2022-12-28 11:17:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19204013831 文件路径为: F:/weipu_pdfs/基于YY0174标准安全霎卸封储手术刀片防范锐器伤的探讨2021.pdf
+2022-12-28 11:17:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19102392749 文件路径为: F:/weipu_pdfs/基于YY0174标准安全霎卸封储手术刀片防范锐器伤的探讨2021.pdf
+2022-12-28 11:19:23 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18751317511 文件路径为: F:/weipu_pdfs/危险预知训练在手术室新护士培训中的应用2021.pdf
+2022-12-28 11:20:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15224065775 文件路径为: F:/weipu_pdfs/脊柱结核手术时机选择的初步研究2021.pdf
+2022-12-28 11:20:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15224065775 文件路径为: F:/weipu_pdfs/脊柱结核手术时机选择的初步研究2021.pdf
+2022-12-28 11:20:52 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15804300486 文件路径为: F:/weipu_pdfs/手术室医护人员对手术安全核查制度的认知和态度分析2021.pdf
+2022-12-28 11:24:04 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13872039271 文件路径为: F:/weipu_pdfs/窦镰旁脑膜瘤的显微外科手术治疗效果及预后影响因素分析2021.pdf
+2022-12-28 11:29:50 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17211428375 文件路径为: F:/weipu_pdfs/基于YY0175-2005标准模块化稳拾舒持通配掣卸型手术刀柄的研究2021.pdf
+2022-12-28 11:29:50 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19204013831 文件路径为: F:/weipu_pdfs/基于YY0175-2005标准模块化稳拾舒持通配掣卸型手术刀柄的研究2021.pdf
+2022-12-28 11:29:50 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19102392749 文件路径为: F:/weipu_pdfs/基于YY0175-2005标准模块化稳拾舒持通配掣卸型手术刀柄的研究2021.pdf
+2022-12-28 11:30:12 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15607791212 文件路径为: F:/weipu_pdfs/白内障伴浅前房患者行超声乳化术的手术技巧及安全性探讨2021.pdf
+2022-12-28 11:31:57 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7103796459
+2022-12-28 12:05:44 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13891480472 文件路径为: F:/weipu_pdfs/改良Bilhaut-Cloquet术在拇指多指畸形患儿中的应用效果2022.pdf
+2022-12-28 12:07:54 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/进展期胃癌患者腹腔镜根治术最佳淋巴结送检数目的影响因素分析2022.pdf
+2022-12-28 12:08:50 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/针灸治疗肿瘤的CiteSpace知识图谱可视化分析2022.pdf
+2022-12-28 12:18:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/公立医院巩固健康扶贫成果的思考与实践2022.pdf
+2022-12-28 12:26:56 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7106447484
+2022-12-28 12:50:38 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=HS723742022006116
+2022-12-28 12:50:58 Wed connectionpool.py 812 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=HS723742022006116
+2022-12-28 12:51:18 Wed connectionpool.py 812 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=HS723742022006116
+2022-12-28 12:57:51 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/胸腔镜在肺癌治疗中的应用进展2022.pdf
+2022-12-28 12:58:44 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13601252798 文件路径为: F:/weipu_pdfs/麻子仁丸治疗术后肠梗阻的网络药理研究2022.pdf
+2022-12-28 12:59:21 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15891897902 文件路径为: F:/weipu_pdfs/针刺联合中药热奄包预防混合痔术后尿潴留的临床观察2022.pdf
+2022-12-28 13:08:36 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7106679157
+2022-12-28 13:10:22 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13605487932 文件路径为: F:/weipu_pdfs/基于虚拟技术的脑部神经手术模拟2022.pdf
+2022-12-28 13:12:04 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/颅颌面整形手术机器人在颏部水平截骨手术中的精确性分析2022.pdf
+2022-12-28 13:12:50 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18799138271 文件路径为: F:/weipu_pdfs/家畜外科及手术学课程实习教学改革探索2022.pdf
+2022-12-28 13:15:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19761024112 文件路径为: F:/weipu_pdfs/氯胺酮与七氟醚诱导老龄小鼠POCD的病理机制比较2022.pdf
+2022-12-28 13:15:49 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13519612003 文件路径为: F:/weipu_pdfs/高度近视SMILE术后眼压变化与手术参数的相关性2022.pdf
+2022-12-28 13:15:49 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13519612003 文件路径为: F:/weipu_pdfs/高度近视SMILE术后眼压变化与手术参数的相关性2022.pdf
+2022-12-28 13:17:51 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15615515577 文件路径为: F:/weipu_pdfs/腹腔镜腹膜后肾脏肿瘤切除术中患者30°折腰水平侧卧体位摆放的应用效果2022.pdf
+2022-12-28 13:19:44 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18760178695 文件路径为: F:/weipu_pdfs/人性化护理在腹腔镜手术患者护理中的应用效果2022.pdf
+2022-12-28 13:19:49 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/肿瘤患者输液港相关性血流感染危险因素的研究进展2022.pdf
+2022-12-28 13:24:21 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/慢性阻塞性肺病患者择期开颅手术后肺炎的发生率和影响因素及用E值法探讨效应值的稳健性2022.pdf
+2022-12-28 13:24:49 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15615315879 文件路径为: F:/weipu_pdfs/活血止痛汤在闭合复位交锁髓内钉内固定术治疗股骨干骨折中的应用2022.pdf
+2022-12-28 13:32:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/儿童室间隔缺损不同治疗方式的研究进展2022.pdf
+2022-12-28 13:42:43 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/StanfordA型主动脉夹层的治疗进展2022.pdf
+2022-12-28 13:42:43 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/StanfordA型主动脉夹层的治疗进展2022.pdf
+2022-12-28 13:42:43 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/StanfordA型主动脉夹层的治疗进展2022.pdf
+2022-12-28 13:53:26 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7108008393
+2022-12-28 13:55:04 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/肾鹿角形结石截石斜仰卧位及俯卧位下经皮肾镜碎石取石术的研究2022.pdf
+2022-12-28 13:56:08 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15502780648 文件路径为: F:/weipu_pdfs/离断空肠的胆肠改良袢式吻合在胆道疾病中的应用2022.pdf
+2022-12-28 13:59:50 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13770911702 文件路径为: F:/weipu_pdfs/急诊可切除破裂出血肝癌患者治疗策略的选择及预后因素分析2022.pdf
+2022-12-28 13:59:50 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13770911702 文件路径为: F:/weipu_pdfs/急诊可切除破裂出血肝癌患者治疗策略的选择及预后因素分析2022.pdf
+2022-12-28 14:02:21 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15962957800 文件路径为: F:/weipu_pdfs/改良肩外侧入路结合锁定接骨板治疗肱骨近端骨折的效果观察2022.pdf
+2022-12-28 14:02:21 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13057081297 文件路径为: F:/weipu_pdfs/改良肩外侧入路结合锁定接骨板治疗肱骨近端骨折的效果观察2022.pdf
+2022-12-28 14:04:45 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15688896971 文件路径为: F:/weipu_pdfs/人工耳蜗植入系统的环境适应性检测方法研究2022.pdf
+2022-12-28 14:04:45 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/人工耳蜗植入系统的环境适应性检测方法研究2022.pdf
+2022-12-28 14:05:42 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/改良心脏康复评估量表在心脏瓣膜术后Ⅰ期心脏康复中的效果2022.pdf
+2022-12-28 14:22:21 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/围手术期静脉血栓栓塞症早期诊断新型血栓分子标志物研究进展2022.pdf
+2022-12-28 14:34:22 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/电凝锐性解剖技术在甲状腺外科手术中的应用2022.pdf
+2022-12-28 14:37:21 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/未手术肝癌患者放化疗的选择策略2022.pdf
+2022-12-28 14:39:21 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13482198904 文件路径为: F:/weipu_pdfs/肛瘘保留括约肌手术治疗进展2022.pdf
+2022-12-28 14:47:22 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/早期应用谷氨酰胺治疗对老年结直肠癌病人术后胰岛素抵抗和炎性因子的影响2022.pdf
+2022-12-28 14:58:14 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/皮肤牵张闭合器联合封闭负压引流技术在难愈性创面修复中的应用2022.pdf
+2022-12-28 14:59:29 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13656330626 文件路径为: F:/weipu_pdfs/保乳术联合前哨淋巴结活检治疗早期三阴性乳腺癌的临床研究2022.pdf
+2022-12-28 15:00:49 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/经环甲间隙裸化甲状腺上极血管入路甲状腺腺叶切除术2022.pdf
+2022-12-28 15:02:22 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/建立儿童终末期肝病全周期规范化救治服务体系的实践与思考2022.pdf
+2022-12-28 15:02:24 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/自发性脑脊液鼻漏定位诊断的影像学征象分析2022.pdf
+2022-12-28 15:10:12 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/视觉动态评估联合系统化心理干预对瘢痕疙瘩患者临床疗效及焦虑的影响2022.pdf
+2022-12-28 15:10:12 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18937349221 文件路径为: F:/weipu_pdfs/视觉动态评估联合系统化心理干预对瘢痕疙瘩患者临床疗效及焦虑的影响2022.pdf
+2022-12-28 15:11:43 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/互联网护理干预在肱骨髁上骨折患儿中的应用效果2022.pdf
+2022-12-28 15:11:59 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/青年群体容貌焦虑的媒介感知调查及其现实影响力研究——基于个人信息处理基模的分析2022.pdf
+2022-12-28 15:18:14 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18602898065 文件路径为: F:/weipu_pdfs/开窍汤联合糠酸莫米松鼻喷剂对慢性鼻-鼻窦炎患者的临床疗效2022.pdf
+2022-12-28 15:18:14 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18193575166 文件路径为: F:/weipu_pdfs/开窍汤联合糠酸莫米松鼻喷剂对慢性鼻-鼻窦炎患者的临床疗效2022.pdf
+2022-12-28 15:18:38 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13855200468 文件路径为: F:/weipu_pdfs/喉返神经入喉处的临床意义及相关研究进展2022.pdf
+2022-12-28 15:22:04 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于结构方程模型的烧伤患儿亲社会行为现状及影响因素分析2022.pdf
+2022-12-28 15:23:00 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/针对性护理在腹股沟斜疝无张力修补术患者术后护理中的应用效果2022.pdf
+2022-12-28 15:25:06 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/改良式回肠造口术在腹腔镜低位直肠癌根治术中的应用效果及安全性2022.pdf
+2022-12-28 15:26:01 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于互联网新媒体的乳腺癌全程专业化管理模式的临床实践及效果2022.pdf
+2022-12-28 15:26:15 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18824291970 文件路径为: F:/weipu_pdfs/内镜下逆行阑尾炎治疗术治疗急性阑尾炎疗效的Meta分析2022.pdf
+2022-12-28 15:29:31 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13787125038 文件路径为: F:/weipu_pdfs/采用超声探测颈侧前部的临床意义2022.pdf
+2022-12-28 15:31:12 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15088913538 文件路径为: F:/weipu_pdfs/梗阻性黄疸的治疗进展2022.pdf
+2022-12-28 15:31:34 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15833866686 文件路径为: F:/weipu_pdfs/个性化护理干预对腹部带蒂皮瓣修复手外伤后并发肩关节功能障碍的作用2022.pdf
+2022-12-28 15:33:20 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19480713156 文件路径为: F:/weipu_pdfs/战后日本的优生政策及其影响基于优生保护法的考察2022.pdf
+2022-12-28 15:35:13 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18913827581 文件路径为: F:/weipu_pdfs/ERAS全程胃肠道管理在机器人辅助腹腔镜前列腺癌根治术中的应用2022.pdf
+2022-12-28 15:35:31 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/快速康复外科护理对肝癌患者疲乏程度和生存质量的影响2022.pdf
+2022-12-28 15:38:37 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13641066540 文件路径为: F:/weipu_pdfs/医疗失效模式与效应分析在口服拆零药品中的应用2022.pdf
+2022-12-28 15:39:40 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15522320960 文件路径为: F:/weipu_pdfs/旋覆代赭汤对食管癌细胞干性的影响2022.pdf
+2022-12-28 15:40:31 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13665721966 文件路径为: F:/weipu_pdfs/下肢持续被动活动联合足底静脉泵锻炼对下肢深静脉血栓的预防效果2022.pdf
+2022-12-28 15:40:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13928303323 文件路径为: F:/weipu_pdfs/标准大骨瓣减压术与常规骨瓣开颅术治疗重型脑外伤的应用研究2022.pdf
+2022-12-28 15:42:34 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13663819365 文件路径为: F:/weipu_pdfs/2008—2021年医院CSSD外来医疗器械及植入物管理现状Meta分析2022.pdf
+2022-12-28 15:47:23 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/我国护理领域纵向质性研究文献分析2022.pdf
+2022-12-28 15:51:34 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/角膜地形图引导的FS-LASIK与TICL植入术矫正近视合并中高度散光的疗效2022.pdf
+2022-12-28 15:51:34 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/角膜地形图引导的FS-LASIK与TICL植入术矫正近视合并中高度散光的疗效2022.pdf
+2022-12-28 16:05:22 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/3D打印微创导向模板插植放射治疗联合深部热疗治疗局部晚期宫颈癌的疗效分析2022.pdf
+2022-12-28 16:05:22 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/3D打印微创导向模板插植放射治疗联合深部热疗治疗局部晚期宫颈癌的疗效分析2022.pdf
+2022-12-28 16:07:36 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/多学科团队协作模式在促进前列腺癌术后患者快速康复中的应用探讨2022.pdf
+2022-12-28 16:13:15 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13661027611 文件路径为: F:/weipu_pdfs/吻合器痔上黏膜环切术与外剥内扎术联合消痔灵注射治疗混合痔的远期疗效比较2022.pdf
+2022-12-28 16:13:49 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13776653295 文件路径为: F:/weipu_pdfs/我院288例5-HT2022.pdf
+2022-12-28 16:17:31 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13167019556 文件路径为: F:/weipu_pdfs/低频电疗法的临床应用2022.pdf
+2022-12-28 16:18:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13817714064 文件路径为: F:/weipu_pdfs/宣通玄府方防治白内障术后干眼症状的临床观察2022.pdf
+2022-12-28 16:18:43 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/宣通玄府方防治白内障术后干眼症状的临床观察2022.pdf
+2022-12-28 16:18:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13031002134 文件路径为: F:/weipu_pdfs/宣通玄府方防治白内障术后干眼症状的临床观察2022.pdf
+2022-12-28 16:25:29 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13876421006 文件路径为: F:/weipu_pdfs/蒿芩清胆汤联合克林霉素磷酸酯治疗盆腔炎性疾病后遗症患者的临床效果2022.pdf
+2022-12-28 16:27:53 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18234142858 文件路径为: F:/weipu_pdfs/肛周脓肿中医药外治法的进展2022.pdf
+2022-12-28 16:27:53 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13999191216 文件路径为: F:/weipu_pdfs/肛周脓肿中医药外治法的进展2022.pdf
+2022-12-28 16:27:53 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18690161208 文件路径为: F:/weipu_pdfs/肛周脓肿中医药外治法的进展2022.pdf
+2022-12-28 16:27:53 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13899884466 文件路径为: F:/weipu_pdfs/肛周脓肿中医药外治法的进展2022.pdf
+2022-12-28 16:29:39 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13614204679 文件路径为: F:/weipu_pdfs/人工髋关节置换术后假体松动的研究进展2022.pdf
+2022-12-28 16:29:58 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13818319830 文件路径为: F:/weipu_pdfs/袋形缝合术联合中药外用治疗低位肛瘘疗效观察2022.pdf
+2022-12-28 16:30:16 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15735646755 文件路径为: F:/weipu_pdfs/自体股骨头移植重建髋臼治疗髋关节发育不良的中期疗效2022.pdf
+2022-12-28 16:31:27 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15633035975 文件路径为: F:/weipu_pdfs/一期病灶清除关节置换治疗活动性髋关节结核的临床研究2022.pdf
+2022-12-28 16:31:27 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15633035975 文件路径为: F:/weipu_pdfs/一期病灶清除关节置换治疗活动性髋关节结核的临床研究2022.pdf
+2022-12-28 16:31:29 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/超微肿痛贴对兔膝骨关节炎模型的软骨中JNKp38MAPK信号通路的影响2022.pdf
+2022-12-28 16:32:21 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17778880106 文件路径为: F:/weipu_pdfs/情绪释放疗法联合耳穴贴压对混合痔术后疼痛及焦虑状态的疗效观察2022.pdf
+2022-12-28 16:32:49 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17401971600 文件路径为: F:/weipu_pdfs/抗风湿药联合超声引导关节介入治疗类风湿关节炎的价值研究2022.pdf
+2022-12-28 16:33:16 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15896302882 文件路径为: F:/weipu_pdfs/3D腹腔镜在输卵管妊娠切开取胚术中的应用研究2022.pdf
+2022-12-28 16:34:39 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15902969531 文件路径为: F:/weipu_pdfs/宫腹腔镜检查在不孕女性疑似生殖器结核的应用价值2022.pdf
+2022-12-28 16:34:39 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15902969531 文件路径为: F:/weipu_pdfs/宫腹腔镜检查在不孕女性疑似生殖器结核的应用价值2022.pdf
+2022-12-28 16:35:29 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15611161637 文件路径为: F:/weipu_pdfs/飞行员卵圆孔未闭合并脑卒中封堵术后飞行合格的护理2022.pdf
+2022-12-28 16:36:19 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/关节松动术联合PNF训练对膝关节骨性关节炎临床疗效分析2022.pdf
+2022-12-28 16:36:19 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15517691084 文件路径为: F:/weipu_pdfs/关节松动术联合PNF训练对膝关节骨性关节炎临床疗效分析2022.pdf
+2022-12-28 16:38:49 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18147936144 文件路径为: F:/weipu_pdfs/采用超声检查评估膝关节骨性关节炎患者临床治疗效果2022.pdf
+2022-12-28 16:39:26 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13119891113 文件路径为: F:/weipu_pdfs/瘢痕核心切除术联合放疗治疗胸壁瘢痕疙瘩的疗效观察2022.pdf
+2022-12-28 16:39:38 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13868883221 文件路径为: F:/weipu_pdfs/消毒供应中心与临床科室建立有效沟通的实践与探讨2022.pdf
+2022-12-28 16:39:50 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18704026329 文件路径为: F:/weipu_pdfs/退行性下颈椎不稳症治疗方法的研究进展2022.pdf
+2022-12-28 16:42:45 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/超声引导下针刀联合富血小板血浆注射技术治疗膝关节骨性关节炎的临床疗效观察2022.pdf
+2022-12-28 16:42:47 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13889656668 文件路径为: F:/weipu_pdfs/活血通络方熏蒸配合主动运动对膝关节骨性关节炎患者功能活动及X射线下生物力学指标的影响2022.pdf
+2022-12-28 16:44:56 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/术前经导管动脉栓塞对颈静脉球瘤切除术的影响2022.pdf
+2022-12-28 16:45:55 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/桥接外固定系统治疗胫骨慢性骨髓炎疗效分析2022.pdf
+2022-12-28 16:46:28 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18238713347 文件路径为: F:/weipu_pdfs/基于数据挖掘针灸对胃癌术后胃肠功能恢复的取穴规律研究2022.pdf
+2022-12-28 16:50:04 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13683575057 文件路径为: F:/weipu_pdfs/新型纯热解碳人工机械心脏瓣膜体外耐久性能试验2022.pdf
+2022-12-28 16:50:29 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13750267337 文件路径为: F:/weipu_pdfs/两种负压引流方式对初次人工全髋关节置换术后患者炎症因子水平及失血状况的影响2022.pdf
+2022-12-28 16:51:14 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/对丧偶单身女性继续使用辅助生殖技术的探讨2022.pdf
+2022-12-28 16:51:44 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13811696601 文件路径为: F:/weipu_pdfs/开胸术后切口感染伴骨髓炎的治疗体会2022.pdf
+2022-12-28 16:52:10 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/Klotho白细胞介素-8在老年慢性鼻窦炎病人鼻窦黏膜中的表达及与鼻息肉的关系2022.pdf
+2022-12-28 16:52:15 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/疫情防控常态化下内镜中心规划设计及设施的改变2022.pdf
+2022-12-28 16:52:15 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/疫情防控常态化下内镜中心规划设计及设施的改变2022.pdf
+2022-12-28 16:53:36 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13588746139 文件路径为: F:/weipu_pdfs/浙江省某三甲医院暖通空调系统设计2022.pdf
+2022-12-28 16:53:52 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18226196831 文件路径为: F:/weipu_pdfs/不同方法治疗颞下颌关节滑膜炎临床疗效的观察2022.pdf
+2022-12-28 16:53:52 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13866314769 文件路径为: F:/weipu_pdfs/不同方法治疗颞下颌关节滑膜炎临床疗效的观察2022.pdf
+2022-12-28 16:53:52 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13866395338 文件路径为: F:/weipu_pdfs/不同方法治疗颞下颌关节滑膜炎临床疗效的观察2022.pdf
+2022-12-28 16:53:59 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15816992982 文件路径为: F:/weipu_pdfs/镭射消融术治疗犬输尿管异位2022.pdf
+2022-12-28 16:54:45 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/活血软膏对膝骨关节炎兔血清中氧自由基的影响2022.pdf
+2022-12-28 16:57:01 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17441901200 文件路径为: F:/weipu_pdfs/基于折纸机构的上肢外骨骼2022.pdf
+2022-12-28 16:58:38 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18669836628 文件路径为: F:/weipu_pdfs/Furlow腭成形术对腭裂患者术后腭咽闭合功能及语音效果的影响2022.pdf
+2022-12-28 17:01:54 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17699029193 文件路径为: F:/weipu_pdfs/拆除不良修复体后根管再治疗疗效及影响因素分析2022.pdf
+2022-12-28 17:04:35 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13818824983 文件路径为: F:/weipu_pdfs/毫针刺法结合其他外治法治疗原发性冻结肩的研究现状2022.pdf
+2022-12-28 17:05:23 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13466834628 文件路径为: F:/weipu_pdfs/陈旧性胸腰椎骨折后凸畸形术后近端交界性后凸发生的危险因素及生活质量研究2022.pdf
+2022-12-28 17:07:03 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13517718321 文件路径为: F:/weipu_pdfs/基于网络药理学分析角药葛根-鹿衔草-羌活治疗颈椎病的作用机制2022.pdf
+2022-12-28 17:07:38 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18000003253 文件路径为: F:/weipu_pdfs/雾化吸入在支气管镜检查中的应用云南专家共识第1版2022.pdf
+2022-12-28 17:07:42 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/骨科关节术后医院感染的相关危险因素分析2022.pdf
+2022-12-28 17:09:14 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15996774519 文件路径为: F:/weipu_pdfs/脱敏剂联合氟保护漆改善牙周刮治术后根面敏感的疗效研究2022.pdf
+2022-12-28 17:09:37 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/小肠淋巴管扩张症的诊治进展2022.pdf
+2022-12-28 17:09:49 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/机器人辅助空心钉内固定技术治疗股骨颈骨折的临床观察2022.pdf
+2022-12-28 17:10:48 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/高精尖设备促进精准医疗科技创新助力健康中国建设2022.pdf
+2022-12-28 17:12:09 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13253498956 文件路径为: F:/weipu_pdfs/浅析针刺物理信号在穴区的启动和转导2022.pdf
+2022-12-28 17:13:39 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17874303054 文件路径为: F:/weipu_pdfs/上海妇女的抗美援朝运动2022.pdf
+2022-12-28 17:14:40 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/视错觉在口腔医学美学中的应用2022.pdf
+2022-12-28 17:14:40 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/视错觉在口腔医学美学中的应用2022.pdf
+2022-12-28 17:14:40 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/视错觉在口腔医学美学中的应用2022.pdf
+2022-12-28 17:14:40 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/视错觉在口腔医学美学中的应用2022.pdf
+2022-12-28 17:14:40 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/视错觉在口腔医学美学中的应用2022.pdf
+2022-12-28 17:14:40 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/视错觉在口腔医学美学中的应用2022.pdf
+2022-12-28 17:14:48 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/腹腔镜下初始肿瘤细胞减灭术与中间型肿瘤细胞减灭术对晚期卵巢肿瘤的疗效比较2022.pdf
+2022-12-28 17:15:23 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18859110022 文件路径为: F:/weipu_pdfs/腹部听诊肠鸣音的临床分析研究进展及展望2022.pdf
+2022-12-28 17:15:49 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/独身女性的生育权祛魅证立与实现2022.pdf
+2022-12-28 17:15:49 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/独身女性的生育权祛魅证立与实现2022.pdf
+2022-12-28 17:15:49 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/独身女性的生育权祛魅证立与实现2022.pdf
+2022-12-28 17:16:32 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17853680081 文件路径为: F:/weipu_pdfs/病毒性出血热动物模型研究进展2022.pdf
+2022-12-28 17:16:32 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13571892829 文件路径为: F:/weipu_pdfs/病毒性出血热动物模型研究进展2022.pdf
+2022-12-28 17:16:54 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/StanfordB型主动脉夹层诊断和治疗中国专家共识2022版2022.pdf
+2022-12-28 17:16:54 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/StanfordB型主动脉夹层诊断和治疗中国专家共识2022版2022.pdf
+2022-12-28 17:17:01 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/民法典可撤销婚姻制度的完善——以民法典第1053条为中心2022.pdf
+2022-12-28 17:17:01 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/民法典可撤销婚姻制度的完善——以民法典第1053条为中心2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:17:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中国与苏丹卫生合作的发展历程及主要成就2022.pdf
+2022-12-28 17:19:01 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/加强脑静脉研究提升神经系统疾病诊疗水平——脑静脉系统解剖生理和临床概述2022.pdf
+2022-12-28 17:19:01 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/加强脑静脉研究提升神经系统疾病诊疗水平——脑静脉系统解剖生理和临床概述2022.pdf
+2022-12-28 17:19:52 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19202057136 文件路径为: F:/weipu_pdfs/胃黏膜下肿瘤超声诊断的研究进展2022.pdf
+2022-12-28 17:20:56 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15808036398 文件路径为: F:/weipu_pdfs/基于目标导向的糖尿病教育在门诊糖尿病眼病患者中的应用2022.pdf
+2022-12-28 17:21:20 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15802370086 文件路径为: F:/weipu_pdfs/肝硬化门静脉高压症门奇断流术前内镜下曲张静脉套扎对预防再出血的临床疗效2022.pdf
+2022-12-28 17:21:50 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/一次性使用中性电极灼伤原因分析及建议2022.pdf
+2022-12-28 17:24:41 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/杂交手术与孙氏手术治疗A型夹层临床疗效的Meta分析2021.pdf
+2022-12-28 17:24:57 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13847113630 文件路径为: F:/weipu_pdfs/顽固难治性癫痫手术的临床观察及护理策略2021.pdf
+2022-12-28 17:27:35 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/不同原发病导致玻璃体积血患者行玻璃体切割手术的眼压变化分析2021.pdf
+2022-12-28 17:36:47 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15930193025 文件路径为: F:/weipu_pdfs/基于移动互联网的虚拟无痛病房对开颅手术后患者疼痛管理的效果2021.pdf
+2022-12-28 17:36:47 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15930193025 文件路径为: F:/weipu_pdfs/基于移动互联网的虚拟无痛病房对开颅手术后患者疼痛管理的效果2021.pdf
+2022-12-28 17:37:01 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/环乳晕切口联合乳腔镜腋窝淋巴结清扫在早期乳腺癌保乳手术中的应用2021.pdf
+2022-12-28 17:37:01 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/环乳晕切口联合乳腔镜腋窝淋巴结清扫在早期乳腺癌保乳手术中的应用2021.pdf
+2022-12-28 17:37:23 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13967302990 文件路径为: F:/weipu_pdfs/手术室护理管理在骨科手术患者中的应用2021.pdf
+2022-12-28 17:41:15 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18956280598 文件路径为: F:/weipu_pdfs/角膜地形图引导下不同手术切口对超声乳化术后角膜表面形态和泪膜的影响2021.pdf
+2022-12-28 17:41:15 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18956280598 文件路径为: F:/weipu_pdfs/角膜地形图引导下不同手术切口对超声乳化术后角膜表面形态和泪膜的影响2021.pdf
+2022-12-28 17:48:00 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13871467175 文件路径为: F:/weipu_pdfs/手术体位对病人下肢静脉血流的影响2021.pdf
+2022-12-28 17:50:17 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/择期全身麻醉手术禁食2型糖尿病患者围术期血糖管理分析与评价2021.pdf
+2022-12-28 17:51:04 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 16621264170 文件路径为: F:/weipu_pdfs/髋部骨折围手术期麻醉的研究进展2021.pdf
+2022-12-28 17:58:17 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/循证护理对人工髋关节置换术患者髋关节功能及生活质量的影响观察2022.pdf
+2022-12-28 17:58:27 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/伤科黄水对全膝关节置换术后炎症反应及膝关节功能的影响2022.pdf
+2022-12-28 17:59:32 Wed cur_identify.py 55 WARNING 识别文件时出错... 路径为: None, 错误信息为: ValueError('bad start page number')
+2022-12-28 17:59:33 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13695671718 文件路径为: F:/weipu_pdfs/综合护理干预在青光眼合并白内障患者围手术期的应用效果2021.pdf
+2022-12-28 18:01:13 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年人智能技术提升的现实困境与突破路径2022.pdf
+2022-12-28 18:04:10 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/针刺麻醉联合局部麻醉在肛肠病手术中的临床疗效观察2021.pdf
+2022-12-28 18:05:45 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13602899028 文件路径为: F:/weipu_pdfs/MOOC与CBL联合教学模式在骨伤科手术学教学中的实践探讨2021.pdf
+2022-12-28 18:05:45 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13602899028 文件路径为: F:/weipu_pdfs/MOOC与CBL联合教学模式在骨伤科手术学教学中的实践探讨2021.pdf
+2022-12-28 18:21:34 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年人信息素养的实证分析——基于上海市2399个样本的调查2022.pdf
+2022-12-28 18:22:02 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/智能时代老年人准备好了吗——基于2004名老年学员的调查分析2022.pdf
+2022-12-28 18:23:14 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15263188319 文件路径为: F:/weipu_pdfs/浅谈数字化复合手术室的规划与建设经验2021.pdf
+2022-12-28 18:23:14 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18834173112 文件路径为: F:/weipu_pdfs/浅谈数字化复合手术室的规划与建设经验2021.pdf
+2022-12-28 18:33:00 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/美国CDC社区老年人跌倒风险自评表与跌倒功效量表在社区老年人跌倒风险评估中的比较研究2022.pdf
+2022-12-28 18:36:23 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13040301039 文件路径为: F:/weipu_pdfs/家庭跟进照料模式对老年卧床患者家庭康复效果的评价2015.pdf
+2022-12-28 18:40:17 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7106392496
+2022-12-28 18:44:22 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/后疫情时期老年数字鸿沟的现状与对策研究——基于珠海市老年人智能手机的使用调查2022.pdf
+2022-12-28 18:44:22 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/后疫情时期老年数字鸿沟的现状与对策研究——基于珠海市老年人智能手机的使用调查2022.pdf
+2022-12-28 18:47:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/数字包容视域下的老年人数字鸿沟协同治理智慧实践与实践智慧2022.pdf
+2022-12-28 18:47:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/数字包容视域下的老年人数字鸿沟协同治理智慧实践与实践智慧2022.pdf
+2022-12-28 18:47:44 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/数字包容视域下的老年人数字鸿沟协同治理智慧实践与实践智慧2022.pdf
+2022-12-28 18:48:36 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15115010201 文件路径为: F:/weipu_pdfs/老年群体劳动参与及影响因素分析——基于湖北省的抽样调查数据2015.pdf
+2022-12-28 18:51:37 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年教育情寄何方--依循生命与生活逻辑的思考2022.pdf
+2022-12-28 18:57:23 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13710900601 文件路径为: F:/weipu_pdfs/老年人口腔急症治疗的风险评估及预防措施2015.pdf
+2022-12-28 18:57:23 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13570709983 文件路径为: F:/weipu_pdfs/老年人口腔急症治疗的风险评估及预防措施2015.pdf
+2022-12-28 19:04:37 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13006001456 文件路径为: F:/weipu_pdfs/头皮恶性肿瘤术后大面积头皮缺损修复手术护理配合的探讨2021.pdf
+2022-12-28 19:07:36 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13490503800 文件路径为: F:/weipu_pdfs/上海市老年人休闲体育参与的现状调查与研究2015.pdf
+2022-12-28 19:10:36 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13581709195 文件路径为: F:/weipu_pdfs/巴曲酶治疗老年突聋患者的安全性评估2015.pdf
+2022-12-28 19:11:36 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/人口老龄化老年贫困风险和老年社会救助2022.pdf
+2022-12-28 19:11:36 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/人口老龄化老年贫困风险和老年社会救助2022.pdf
+2022-12-28 19:11:36 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/人口老龄化老年贫困风险和老年社会救助2022.pdf
+2022-12-28 19:11:36 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/人口老龄化老年贫困风险和老年社会救助2022.pdf
+2022-12-28 19:11:36 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/人口老龄化老年贫困风险和老年社会救助2022.pdf
+2022-12-28 19:11:36 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/人口老龄化老年贫困风险和老年社会救助2022.pdf
+2022-12-28 19:11:49 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/公共图书馆老年人健康信息服务策略研究2022.pdf
+2022-12-28 19:11:49 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/公共图书馆老年人健康信息服务策略研究2022.pdf
+2022-12-28 19:11:49 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/公共图书馆老年人健康信息服务策略研究2022.pdf
+2022-12-28 19:12:48 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15044218515 文件路径为: F:/weipu_pdfs/老年人护理沟通服务评价量表的开发及信效度检验2022.pdf
+2022-12-28 19:14:17 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年照护体系的整体效应2022.pdf
+2022-12-28 19:15:07 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/微创技术在胸外科食管癌手术中的应用效果2021.pdf
+2022-12-28 19:15:07 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/互联网使用对中国老年人健康状况的影响机理及异质性分析2022.pdf
+2022-12-28 19:17:36 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13386259636 文件路径为: F:/weipu_pdfs/唑吡坦治疗原发性失眠老年住院患者60例2015.pdf
+2022-12-28 19:17:43 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15051887938 文件路径为: F:/weipu_pdfs/基于人口学因素的老年人体育活动行为特征2015.pdf
+2022-12-28 19:17:52 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/小儿腹腔镜保脾胰腺体尾部切除手术七例2021.pdf
+2022-12-28 19:17:55 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/田园民居式老年康养社区一个适地安老新方案2022.pdf
+2022-12-28 19:18:20 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/我国老年大学空间分布的省际差异与相关性分析2022.pdf
+2022-12-28 19:23:14 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13609295016 文件路径为: F:/weipu_pdfs/老年综合评估在方舱医院老年新型冠状病毒肺炎患者管理中的应用2022.pdf
+2022-12-28 19:23:14 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18192028999 文件路径为: F:/weipu_pdfs/老年综合评估在方舱医院老年新型冠状病毒肺炎患者管理中的应用2022.pdf
+2022-12-28 19:23:50 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18980602051 文件路径为: F:/weipu_pdfs/老年精神分裂症与阿尔茨海默病患者认知功能比较2015.pdf
+2022-12-28 19:27:10 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107961412
+2022-12-28 19:29:14 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/论我国老年人长期照护模式转型中的政府责任2022.pdf
+2022-12-28 19:29:17 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/体养融合视角下社区老年体育组织功能和发展途径2022.pdf
+2022-12-28 19:33:35 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于网络药理学分子对接和细胞实验探讨枸杞子防治老年性痴呆的作用机制2022.pdf
+2022-12-28 19:33:50 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/济南城市安全韧性评价基于城市体检中老年人满意度调查的分析2022.pdf
+2022-12-28 19:34:04 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年智能教育线上线下混合式教学模式探索2022.pdf
+2022-12-28 19:34:10 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/数字时代老年数字鸿沟何以跨越2022.pdf
+2022-12-28 19:34:10 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/数字时代老年数字鸿沟何以跨越2022.pdf
+2022-12-28 19:34:52 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13573143915 文件路径为: F:/weipu_pdfs/补肾方药对老年高血压病肾气亏虚证患者性激素相关调控因子的干预作用2015.pdf
+2022-12-28 19:39:18 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13387856685 文件路径为: F:/weipu_pdfs/呼吸科老年患者抗菌药物用药分析2015.pdf
+2022-12-28 19:40:24 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/医养结合机构失能老年人服务供需匹配现状研究2022.pdf
+2022-12-28 19:41:15 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年人长期照护保障机制研究——以喘息服务为视角2022.pdf
+2022-12-28 19:41:15 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年人长期照护保障机制研究——以喘息服务为视角2022.pdf
+2022-12-28 19:42:51 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13651291599 文件路径为: F:/weipu_pdfs/历代医家对中医老年饮食养生的理论认知探析2022.pdf
+2022-12-28 19:42:56 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13706222002 文件路径为: F:/weipu_pdfs/老年创伤患者临床特征和死亡危险因素分析2015.pdf
+2022-12-28 19:45:04 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18980880152 文件路径为: F:/weipu_pdfs/中国老年人血脂异常患病率的Meta分析2022.pdf
+2022-12-28 19:45:04 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18980880152 文件路径为: F:/weipu_pdfs/中国老年人血脂异常患病率的Meta分析2022.pdf
+2022-12-28 19:47:50 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/术前鼻腔局部留置激素-明胶海绵对鼻内镜手术患者出血量的影响2021.pdf
+2022-12-28 19:51:45 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13866716646 文件路径为: F:/weipu_pdfs/肺移植手术患者的麻醉管理2021.pdf
+2022-12-28 19:51:45 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13866716646 文件路径为: F:/weipu_pdfs/肺移植手术患者的麻醉管理2021.pdf
+2022-12-28 19:52:07 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/认知功能障碍老年人纯音听阈及言语识别能力测试2022.pdf
+2022-12-28 19:52:50 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/知沟视域下我国老年群体数字生存困境与应对2022.pdf
+2022-12-28 19:52:50 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/知沟视域下我国老年群体数字生存困境与应对2022.pdf
+2022-12-28 19:53:25 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于脑电双频指数的不同麻醉深度对老年腹腔镜手术患者术后认知功能障碍的影响2021.pdf
+2022-12-28 19:55:39 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18712918020 文件路径为: F:/weipu_pdfs/HPLC-MSMS法测定老年糖尿病患者血浆中苯甲酸阿格列汀浓度2022.pdf
+2022-12-28 19:56:10 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/手术服的研究进展2021.pdf
+2022-12-28 20:00:05 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13799321745 文件路径为: F:/weipu_pdfs/神经内镜辅助经幕下小脑上入路在脑深部病变手术中的初步应用2021.pdf
+2022-12-28 20:02:02 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13933193006 文件路径为: F:/weipu_pdfs/APACHEⅡAPACHEⅢ评分及PSI评分评估老年重症肺炎预后的对比研究2015.pdf
+2022-12-28 20:02:02 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18032111991 文件路径为: F:/weipu_pdfs/APACHEⅡAPACHEⅢ评分及PSI评分评估老年重症肺炎预后的对比研究2015.pdf
+2022-12-28 20:03:05 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/1990-2020年我国国家与专业之间关系的演变以老年人照顾社会工作为例2022.pdf
+2022-12-28 20:03:26 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/我国社会力量参与老年人体育服务供给行动逻辑现实境遇与突破路径2022.pdf
+2022-12-28 20:04:08 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19126502903 文件路径为: F:/weipu_pdfs/衡阳市城区老年人能力受损状况及影响因素分析2022.pdf
+2022-12-28 20:04:16 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于数字化医疗的老年慢性病病人自我管理现状及对策2022.pdf
+2022-12-28 20:05:35 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于老年人特征的居住空间设计研究2022.pdf
+2022-12-28 20:07:36 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18104576587 文件路径为: F:/weipu_pdfs/前列腺增生合并膀胱结石患者采取经尿道手术治疗的临床效果2021.pdf
+2022-12-28 20:09:14 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/卵巢型子宫内膜异位症患者保守性手术治疗效果2021.pdf
+2022-12-28 20:09:36 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/广州市某社区老年人可逆性认知衰弱现状及影响因素2022.pdf
+2022-12-28 20:10:34 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/养老保障对低龄老年人再就业的影响研究——基于CLHLS2018年数据2022.pdf
+2022-12-28 20:11:46 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/家庭功能在新疆少数民族地区居家失能老年人失能程度与家庭抗逆力间的中介作用研究2022.pdf
+2022-12-28 20:12:51 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年人权益法治保障的创新与实践——以应对诈骗伤害为中心2022.pdf
+2022-12-28 20:12:51 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年人权益法治保障的创新与实践——以应对诈骗伤害为中心2022.pdf
+2022-12-28 20:16:15 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/代际支持视角下技术反哺与老年群体信息化适应研究2022.pdf
+2022-12-28 20:16:15 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/代际支持视角下技术反哺与老年群体信息化适应研究2022.pdf
+2022-12-28 20:20:03 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13971124658 文件路径为: F:/weipu_pdfs/老年痴呆历代治法演变考2022.pdf
+2022-12-28 20:22:13 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/下颌优先于双颌正颌手术中运用的研究进展2021.pdf
+2022-12-28 20:25:04 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15021508327 文件路径为: F:/weipu_pdfs/互联网医疗背景下助老就医服务实践与探讨2022.pdf
+2022-12-28 20:32:05 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/瑞典乌普萨拉第三年龄大学的发展特色与启示2022.pdf
+2022-12-28 20:33:09 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107258971
+2022-12-28 20:33:10 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104846521
+2022-12-28 20:33:29 Wed connectionpool.py 812 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107258971
+2022-12-28 20:33:30 Wed connectionpool.py 812 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104846521
+2022-12-28 20:33:49 Wed connectionpool.py 812 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107258971
+2022-12-28 20:33:50 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104846521
+2022-12-28 20:34:10 Wed connectionpool.py 812 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104846521
+2022-12-28 20:34:29 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107258971
+2022-12-28 20:34:30 Wed connectionpool.py 812 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104846521
+2022-12-28 20:34:49 Wed connectionpool.py 812 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107258971
+2022-12-28 20:35:09 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107258971
+2022-12-28 20:35:10 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104846521
+2022-12-28 20:35:29 Wed connectionpool.py 812 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107258971
+2022-12-28 20:35:30 Wed connectionpool.py 812 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104846521
+2022-12-28 20:35:49 Wed connectionpool.py 812 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107258971
+2022-12-28 20:35:50 Wed connectionpool.py 812 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104846521
+2022-12-28 20:36:33 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/新时代背景下我国老年人体育发展的现状挑战及对策探析2022.pdf
+2022-12-28 20:38:14 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/智慧社会背景下公共图书馆老年人服务探析2022.pdf
+2022-12-28 20:38:14 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/智慧社会背景下公共图书馆老年人服务探析2022.pdf
+2022-12-28 20:38:25 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/积极应对人口老龄化战略的法治保障2022.pdf
+2022-12-28 20:57:19 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/社区老年人日间照料中心建设与发展对策研究2022.pdf
+2022-12-28 20:57:34 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13759968645 文件路径为: F:/weipu_pdfs/基于中医传承辅助平台分析韩祖成教授治疗眩晕的用药规律2022.pdf
+2022-12-29 00:14:21 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7106932021
+2022-12-29 08:52:59 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107856763
+2022-12-29 09:05:22 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13854833237 文件路径为: F:/weipu_pdfs/独活寄生汤联合PRP治疗肝肾亏虚型膝骨性关节炎临床观察2022.pdf
+2022-12-29 09:09:22 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /downloadpaper/api/v1/pdf/stream/2022/7106501514?infos=RkVFQUVHRlBFRkFFRkhGQkFQQUZBSUZFRkdCTkZGQUZBUEFJQk5BQ0FHQUZBQkJJQVBBREZDQU9CSUFFRkVBR0FEQUVGQkFCQU1GREZFRkRGR0JPQUNBR0FIQUNCT0FDQUdBQkFHQURBRkFCQUVBRUFEQk9BQkFEQU5BRkFIQUJBREFFQlBBQUJLQUFCT0JLQUZBQkFDQUVCSUFCQURCSUFGQUlCQUFHQU1BS0FCQU1BTkFEQUNCSkZCRkRGQ0ZCQUNBSkFIQU9BTkZFQUdGREFHRkNBSkFFRkhBQkFGQU1GREZDRkJBRUZHRkRGREFHQUhBSkFEQU9CS0FBQk9BRg&clientID=cqvip4fd848bc-d089-4350-82b8-4e345a79cefa&fileName=%E6%97%A9%E6%9C%9F%E5%BA%B7%E5%A4%8D%E6%8A%A4%E7%90%86%E5%B9%B2%E9%A2%84%E5%AF%B9%E8%83%AB%E9%AA%A8%E5%B9%B3%E5%8F%B0%E9%AA%A8%E6%8A%98%E6%82%A3%E8%80%85%E6%9C%AF%E5%90%8E%E6%95%88%E6%9E%9C%E5%8F%8A%E8%86%9D%E5%85%B3%E8%8A%82%E5%8A%9F%E8%83%BD%E7%9A%84%E5%BD%B1%E5%93%8D.pdf&algorithm=0
+2022-12-29 09:17:23 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18104515084 文件路径为: F:/weipu_pdfs/自重悬吊牵引下定位旋推法治疗腰椎小关节紊乱症的临床观察2022.pdf
+2022-12-29 09:48:22 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13901183833 文件路径为: F:/weipu_pdfs/加速康复外科理念在手法治疗腰椎小关节紊乱护理中的应用2022.pdf
+2022-12-29 09:48:22 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13901183833 文件路径为: F:/weipu_pdfs/加速康复外科理念在手法治疗腰椎小关节紊乱护理中的应用2022.pdf
+2022-12-29 09:58:57 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=664166674
+2022-12-29 10:01:39 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7108233853
+2022-12-29 10:08:12 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13718822649 文件路径为: F:/weipu_pdfs/膝骨关节炎的中西医研究进展2022.pdf
+2022-12-29 10:08:52 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107292711
+2022-12-29 10:12:19 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107804925
+2022-12-29 10:13:13 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13481095899 文件路径为: F:/weipu_pdfs/三黄散外敷治疗合并上消化道出血的急性痛风性关节炎28例临床观察2022.pdf
+2022-12-29 10:14:39 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13997152716 文件路径为: F:/weipu_pdfs/类风湿关节炎辨证分型及客观化研究进展2022.pdf
+2022-12-29 10:27:02 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/针刀神经触激术联合神经松动术治疗神经根型颈椎病的效果2022.pdf
+2022-12-29 10:30:31 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107973945
+2022-12-29 10:58:50 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13964799458 文件路径为: F:/weipu_pdfs/头孢呋辛钠联合清开灵注射液治疗肺气肿合并感染患者的疗效观察2015.pdf
+2022-12-29 10:59:49 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/孝道入法的价值探寻及路径选择2022.pdf
+2022-12-29 11:00:29 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13656818178 文件路径为: F:/weipu_pdfs/铁皮石斛联合锡类散治疗老年口腔溃疡疗效观察2015.pdf
+2022-12-29 11:23:00 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/我国贫困地区老年教育供给不足问题探讨——基于公共经济学视角2022.pdf
+2022-12-29 11:33:54 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=67677466504849534948485151
+2022-12-29 11:34:11 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/对接受膝关节置换术后的患者进行超声引导下髂筋膜间隙神经阻滞的效果探讨2022.pdf
+2022-12-29 11:39:10 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18394023505 文件路径为: F:/weipu_pdfs/中医治疗痛风性关节炎的研究进展2022.pdf
+2022-12-29 11:39:10 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13579429967 文件路径为: F:/weipu_pdfs/中医治疗痛风性关节炎的研究进展2022.pdf
+2022-12-29 11:39:10 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13253692591 文件路径为: F:/weipu_pdfs/中医治疗痛风性关节炎的研究进展2022.pdf
+2022-12-29 11:39:10 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13899808507 文件路径为: F:/weipu_pdfs/中医治疗痛风性关节炎的研究进展2022.pdf
+2022-12-29 11:41:19 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/山东省临沂市城区农村医养结合机构老年人养老就医现状对比分析2022.pdf
+2022-12-29 11:41:19 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/山东省临沂市城区农村医养结合机构老年人养老就医现状对比分析2022.pdf
+2022-12-29 12:12:49 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15199053046 文件路径为: F:/weipu_pdfs/铍针经筋割治法对退行性膝关节炎疼痛评分的疗效影响2022.pdf
+2022-12-29 12:12:49 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13565908032 文件路径为: F:/weipu_pdfs/铍针经筋割治法对退行性膝关节炎疼痛评分的疗效影响2022.pdf
+2022-12-29 12:19:25 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/超声半定量在评估膝骨性关节炎中的价值2022.pdf
+2022-12-29 12:20:50 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/日本老年人力资源开发的经验及启示2022.pdf
+2022-12-29 12:29:50 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于中医传承辅助平台的中药熏洗治疗膝关节骨性关节炎的用药规律2022.pdf
+2022-12-29 12:37:20 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107522026
+2022-12-29 12:46:39 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/内热针治疗肘关节僵硬的临床观察2022.pdf
+2022-12-29 12:57:16 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7106647567
+2022-12-29 13:05:49 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15837406222 文件路径为: F:/weipu_pdfs/体外冲击波对退行性膝关节炎关节功能炎症指标和微循环血流灌注量的影响2022.pdf
+2022-12-29 13:05:50 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=664169285
+2022-12-29 14:09:47 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18611675548 文件路径为: F:/weipu_pdfs/血清阴性类风湿关节炎3例并文献复习2022.pdf
+2022-12-29 14:11:48 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /downloadpaper/api/v1/pdf/stream/2022/7107042277?infos=RkVFQUVHRk9FQUFBRkVGR0FQQUZBSUZGRkRCSkZHQUNBUEFJQk5BREFEQUJBQ0JQQVBBREZDQVBCTkFBRkhBQkFEQUVGQkFBQUpGSEZIRkVGR0JPQUNBSEFDQUdCTkFGQUdBQkFIQUhBRUFHQUFBRkFBQk9BQkFDQUlBQkFFQUdBREFFQlBBQkJQQUVCTkJOQUZBQkFDQUZCTkFGQUFCUEFGQUlCQUFHQUVBT0FEQURBTkFGQUpCSUZFRkhGQkZHQUNBSkFIQVBBSUZBQUZGRUFHRkNBSkFGRkNBRkFHQUxGREZDRkJBRkZERkhGQUFCQUhBSkFEQVBCUEFFQk5BQw&clientID=cqvip4fd848bc-d089-4350-82b8-4e345a79cefa&fileName=%E9%87%8D%E7%97%87%E5%BF%83%E5%8A%9B%E8%A1%B0%E7%AB%AD%E6%80%A5%E8%AF%8A%E5%86%85%E7%A7%91%E6%B2%BB%E7%96%97%E5%8F%8A%E9%A2%84%E5%90%8E%E5%88%86%E6%9E%90.pdf&algorithm=0
+2022-12-29 14:15:53 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18362898809 文件路径为: F:/weipu_pdfs/加速康复护理在髋部骨折患者中的应用效果2022.pdf
+2022-12-29 14:17:58 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13144305430 文件路径为: F:/weipu_pdfs/整合医学教学模式下老年医学课程体系的构建与思考2022.pdf
+2022-12-29 14:21:25 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/微视频与微信健康教育在股骨头坏死手术患者中的应用效果对比2022.pdf
+2022-12-29 14:24:31 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13036085929 文件路径为: F:/weipu_pdfs/电针联合综合康复治疗膝骨性关节炎对患者疼痛关节功能及关节液中TGF-β1水平的影响2022.pdf
+2022-12-29 14:30:28 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18123460557 文件路径为: F:/weipu_pdfs/新风胶囊对佐剂关节炎大鼠外周血巨噬细胞CD86CD206表达影响2022.pdf
+2022-12-29 14:30:28 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13956051722 文件路径为: F:/weipu_pdfs/新风胶囊对佐剂关节炎大鼠外周血巨噬细胞CD86CD206表达影响2022.pdf
+2022-12-29 14:43:58 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7106335108
+2022-12-29 14:45:10 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/体质量指数与保守治疗腰椎骨关节炎临床疗效的相关性研究2022.pdf
+2022-12-29 14:47:04 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=666316859
+2022-12-29 14:47:13 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17030801009 文件路径为: F:/weipu_pdfs/刘健治疗反应性关节炎用药规律的数据挖掘研究2022.pdf
+2022-12-29 14:47:13 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18356051572 文件路径为: F:/weipu_pdfs/刘健治疗反应性关节炎用药规律的数据挖掘研究2022.pdf
+2022-12-29 14:54:31 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107265673
+2022-12-29 15:10:32 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13983905720 文件路径为: F:/weipu_pdfs/筋骨平衡理论在常见筋伤疾病中的应用探析2022.pdf
+2022-12-29 15:16:05 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13937187784 文件路径为: F:/weipu_pdfs/庞玉琴主任医师治疗老年性尿道炎经验2021.pdf
+2022-12-29 15:21:45 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/数字社会老年人权益保障路径研究2021.pdf
+2022-12-29 15:38:26 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13551039390 文件路径为: F:/weipu_pdfs/艾灸对类风湿关节炎动物模型促炎性细胞因子影响的文献分析2022.pdf
+2022-12-29 15:40:49 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13997235178 文件路径为: F:/weipu_pdfs/浅析刺络放血疗法治疗痛风性关节炎的临床研究进展2022.pdf
+2022-12-29 15:40:49 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15005609828 文件路径为: F:/weipu_pdfs/浅析刺络放血疗法治疗痛风性关节炎的临床研究进展2022.pdf
+2022-12-29 15:41:23 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15651075186 文件路径为: F:/weipu_pdfs/基于Abaqus的航天服波纹式肘关节有限元仿真平台开发2022.pdf
+2022-12-29 15:46:46 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18810502529 文件路径为: F:/weipu_pdfs/针灸治疗肝郁气滞抑郁症选穴规律研究2021.pdf
+2022-12-29 15:48:22 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15250358258 文件路径为: F:/weipu_pdfs/慢性阻塞性肺病患者肺功能检查的依从性调查与护理体会2015.pdf
+2022-12-29 15:50:31 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13934647932 文件路径为: F:/weipu_pdfs/颞下颌关节可复性盘移位的咬合治疗进展2022.pdf
+2022-12-29 15:56:05 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/疗愈式司法在老年人领域的应用研究2021.pdf
+2022-12-29 15:58:02 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19214549512 文件路径为: F:/weipu_pdfs/延续护理对慢性支气管炎患者生活质量影响的Meta分析2021.pdf
+2022-12-29 15:58:02 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13729063939 文件路径为: F:/weipu_pdfs/延续护理对慢性支气管炎患者生活质量影响的Meta分析2021.pdf
+2022-12-29 15:58:11 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15651075186 文件路径为: F:/weipu_pdfs/航天服软关节小样本阻力矩预测方法研究2022.pdf
+2022-12-29 16:02:30 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13883971930 文件路径为: F:/weipu_pdfs/家庭护理干预对骨质疏松症患者的影响2015.pdf
+2022-12-29 16:08:01 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13803881963 文件路径为: F:/weipu_pdfs/关节置换法和内固定法治疗老年人骨质疏松并股骨粗隆间骨折的效果比较2021.pdf
+2022-12-29 16:16:45 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13604323922 文件路径为: F:/weipu_pdfs/桃红四物汤配合小针刀松解术治疗膝骨性关节炎2022.pdf
+2022-12-29 16:17:06 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/新时代背景下新老年康养探讨2021.pdf
+2022-12-29 16:21:36 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15162240142 文件路径为: F:/weipu_pdfs/六味地黄丸在类风湿关节炎中的应用2022.pdf
+2022-12-29 16:24:22 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/关于老年服装市场的开拓和策略研究2021.pdf
+2022-12-29 16:24:22 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13956066506 文件路径为: F:/weipu_pdfs/老年肾病综合征临床分析2015.pdf
+2022-12-29 16:24:22 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13956066506 文件路径为: F:/weipu_pdfs/老年肾病综合征临床分析2015.pdf
+2022-12-29 16:28:47 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/植骨融合内固定术联合前后不同入路病灶清除术治疗胸腰椎结核患者的临床价值对比分析2022.pdf
+2022-12-29 16:37:12 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13854958618 文件路径为: F:/weipu_pdfs/不同剂量辛伐他汀治疗高血压合并高脂血症患者效果及安全性的meta分析2021.pdf
+2022-12-29 16:37:12 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13854958618 文件路径为: F:/weipu_pdfs/不同剂量辛伐他汀治疗高血压合并高脂血症患者效果及安全性的meta分析2021.pdf
+2022-12-29 16:37:22 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13982407299 文件路径为: F:/weipu_pdfs/基于干燥标本距下关节面的解剖学测量及临床意义2022.pdf
+2022-12-29 16:38:07 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13579216438 文件路径为: F:/weipu_pdfs/棍针治疗梨状肌综合征的临床疗效观察2022.pdf
+2022-12-29 16:38:07 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13669997901 文件路径为: F:/weipu_pdfs/棍针治疗梨状肌综合征的临床疗效观察2022.pdf
+2022-12-29 16:40:47 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13201649877 文件路径为: F:/weipu_pdfs/静态进展牵伸技术联合综合康复治疗对膝关节术后活动受限患者功能康复的影响2022.pdf
+2022-12-29 16:55:25 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13899887292 文件路径为: F:/weipu_pdfs/四妙汤调节JNK信号通路对压力性损伤大鼠的保护作用研究2022.pdf
+2022-12-29 17:04:33 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/膝关节前交叉韧带断裂中内侧半月板撕裂的MRI漏诊分析2022.pdf
+2022-12-29 17:04:33 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/膝关节前交叉韧带断裂中内侧半月板撕裂的MRI漏诊分析2022.pdf
+2022-12-29 17:08:22 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13466850587 文件路径为: F:/weipu_pdfs/沙利度胺治疗强直性脊柱炎的临床疗效评价2022.pdf
+2022-12-29 17:12:48 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15930950859 文件路径为: F:/weipu_pdfs/腰痛宁胶囊联合沙利度胺片对寒湿痹阻型强直性脊柱炎患者的临床疗效2022.pdf
+2022-12-29 17:12:48 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15930950859 文件路径为: F:/weipu_pdfs/腰痛宁胶囊联合沙利度胺片对寒湿痹阻型强直性脊柱炎患者的临床疗效2022.pdf
+2022-12-29 17:12:48 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15383055698 文件路径为: F:/weipu_pdfs/腰痛宁胶囊联合沙利度胺片对寒湿痹阻型强直性脊柱炎患者的临床疗效2022.pdf
+2022-12-29 17:12:48 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17621970275 文件路径为: F:/weipu_pdfs/腰痛宁胶囊联合沙利度胺片对寒湿痹阻型强直性脊柱炎患者的临床疗效2022.pdf
+2022-12-29 17:12:48 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15000297742 文件路径为: F:/weipu_pdfs/腰痛宁胶囊联合沙利度胺片对寒湿痹阻型强直性脊柱炎患者的临床疗效2022.pdf
+2022-12-29 17:14:41 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于Citespace对老年人主观幸福感的可视化分析2021.pdf
+2022-12-29 17:20:48 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/苗药验方治疗类风湿性关节炎的临床疗效2022.pdf
+2022-12-29 17:22:11 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/骨伤科名家刘寿山辨治腕三角纤维软骨复合体创伤性损伤经验与验案举隅2022.pdf
+2022-12-29 17:31:36 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13605601079 文件路径为: F:/weipu_pdfs/基于数据挖掘技术探讨针灸治疗肩周炎的选穴规律2022.pdf
+2022-12-29 17:33:06 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=663384845
+2022-12-29 17:33:13 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107717285
+2022-12-29 17:33:15 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7105967653
+2022-12-29 17:36:12 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15735161451 文件路径为: F:/weipu_pdfs/足底筋膜炎的诊断及生物力学治疗进展2022.pdf
+2022-12-29 17:36:12 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18999858658 文件路径为: F:/weipu_pdfs/足底筋膜炎的诊断及生物力学治疗进展2022.pdf
+2022-12-29 17:36:20 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17401971600 文件路径为: F:/weipu_pdfs/桂枝汤类方联合甲氨蝶呤治疗早期类风湿关节炎疗效观察2022.pdf
+2022-12-29 17:36:29 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/论坛式网络信息服务适老化困境与应对——以银龄网关停为例2021.pdf
+2022-12-29 17:36:29 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/论坛式网络信息服务适老化困境与应对——以银龄网关停为例2021.pdf
+2022-12-29 17:42:24 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18004018111 文件路径为: F:/weipu_pdfs/基于脾肾阳虚探讨膝骨性关节炎的发病机制及治疗思路研究2022.pdf
+2022-12-29 17:49:28 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/普惠老年教育面向教育现代化2035发展的核心路径2021.pdf
+2022-12-29 17:49:36 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15694548231 文件路径为: F:/weipu_pdfs/老年高血压社区中医护理干预效果的研究2015.pdf
+2022-12-29 17:49:39 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13860909910 文件路径为: F:/weipu_pdfs/老年髋部骨折合并糖尿病的护理干预研究2021.pdf
+2022-12-29 17:52:04 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/探讨老年股骨颈骨折并存糖尿病患者围术期治疗的方法2021.pdf
+2022-12-29 17:53:06 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 16220570055 文件路径为: F:/weipu_pdfs/基于混合建模技术的男体立裁人台手臂的研制2022.pdf
+2022-12-29 17:53:06 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 16220570055 文件路径为: F:/weipu_pdfs/基于混合建模技术的男体立裁人台手臂的研制2022.pdf
+2022-12-29 17:53:24 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/加味豨桐汤配方颗粒治疗膝骨关节炎性滑膜炎湿热阻络证的临床观察2022.pdf
+2022-12-29 17:55:07 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17320883307 文件路径为: F:/weipu_pdfs/二龙戏珠针法联合活血通络中药熏蒸对脑卒中后肩手综合征患者的临床疗效2022.pdf
+2022-12-29 17:55:07 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13630896729 文件路径为: F:/weipu_pdfs/二龙戏珠针法联合活血通络中药熏蒸对脑卒中后肩手综合征患者的临床疗效2022.pdf
+2022-12-29 17:55:07 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18118288716 文件路径为: F:/weipu_pdfs/二龙戏珠针法联合活血通络中药熏蒸对脑卒中后肩手综合征患者的临床疗效2022.pdf
+2022-12-29 17:55:37 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13927249986 文件路径为: F:/weipu_pdfs/关节镜全内缝合法治疗外侧半月板腘肌腱裂孔处撕裂的临床疗效分析2022.pdf
+2022-12-29 17:55:49 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/信息时代老年群体数字鸿沟的弥合机制研究2021.pdf
+2022-12-29 18:01:02 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17708130193 文件路径为: F:/weipu_pdfs/颞下颌关节重建的研究进展2022.pdf
+2022-12-29 18:01:18 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13810004133 文件路径为: F:/weipu_pdfs/骨痿膏方应用于骨质疏松性椎体骨折PKP术后的临床研究2015.pdf
+2022-12-29 18:01:38 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15169005301 文件路径为: F:/weipu_pdfs/青蒿素及其衍生物抗血管新生机制和临床应用研究进展2022.pdf
+2022-12-29 18:02:33 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/构建长期护理保险制度的政策议题2021.pdf
+2022-12-29 18:02:40 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/豆腐果苷对骨关节炎大鼠软骨和滑膜组织影响2022.pdf
+2022-12-29 18:04:50 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18990837256 文件路径为: F:/weipu_pdfs/中医药治疗慢性便秘研究进展2021.pdf
+2022-12-29 18:14:36 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13793188178 文件路径为: F:/weipu_pdfs/量化控制法指导髌骨粉碎性骨折术后功能锻炼的效果观察2022.pdf
+2022-12-29 18:15:37 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/困境与突围新时代背景下河北省教育养老的实践探索2021.pdf
+2022-12-29 18:15:47 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7107275053
+2022-12-29 18:18:50 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/自适应平衡康复训练装置对功能性踝关节不稳的疗效观察2022.pdf
+2022-12-29 18:20:17 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/地方性开放大学发展老年教育初探2021.pdf
+2022-12-29 18:23:24 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/从赋权到限权老年人智能手机使用研究2021.pdf
+2022-12-29 18:23:24 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/从赋权到限权老年人智能手机使用研究2021.pdf
+2022-12-29 18:23:24 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/从赋权到限权老年人智能手机使用研究2021.pdf
+2022-12-29 18:25:47 Thu connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7105932161
+2022-12-30 00:22:33 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13663879363 文件路径为: F:/weipu_pdfs/肠内营养支持对慢性心力衰竭合并营养不良的疗效观察2021.pdf
+2022-12-30 00:24:32 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/抖音短视频平台老龄网红群体媒介形象特征研究2021.pdf
+2022-12-30 01:01:47 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104444545
+2022-12-30 01:11:32 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /downloadpaper/api/v1/pdf/stream/2015/666438950?infos=RkZFSEVBRk5FREFNRlBGQkFPQUNBT0ZHRkFCRkZOQUZBT0FQQkxBQUFBQU5BSkJJQU9BRUZFQU1CT0FNRk1BR0FDQURGSEFEQUtGTEZNRkRGSEJKQUVBRUFDQU5CR0FEQUFBQUFDQUhBTEFCQU1BRkJKQUhBREFNQUdBT0FOQUJBREJKQUFCTEFEQkhCR0FIQUdBRUFFQkpBQ0FLQkVBR0FHQkdBR0FGQUpBSkFJQVBBRkFIQkpGQUZBRkxGTkFBQU9BQkFPQU1GSEFQRlBBRUZGQVBBRUZHQUNBTUFBRkJGRkZIQUVGSEZBRktBS0FGQU9BRkFPQkxBREJIQUo&clientID=cqvip4fd848bc-d089-4350-82b8-4e345a79cefa&fileName=%E4%B8%B4%E5%BA%8A%E5%AE%9E%E4%B9%A0%E6%8A%A4%E7%94%9F%E5%AF%B9%E5%8F%A9%E8%83%8C%E7%9F%A5%E8%AF%86%E7%9A%84%E8%AE%A4%E7%9F%A5%E6%83%85%E5%86%B5%E5%88%86%E6%9E%90.pdf&algorithm=0
+2022-12-30 01:25:02 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=666264250
+2022-12-30 01:30:32 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /downloadpaper/api/v1/pdf/stream/2015/666110985?infos=RkZFSEVBRklFQkFFRlBGTUFPQUNBT0ZERkNCTkZOQUlBT0FQQkxBRkFDQUZBSkJGQU9BRUZFQUpCTUFFRk1BTEFDQURGSEFHQUlGREZNRk9GSEJKQUVBQkFBQUZCR0FPQUFBQUFIQUFBQkFKQUJBTkJKQUhBREFKQUVBR0FOQU1BREJKQUFCT0FCQlBCR0FLQUdBRUFFQk1BQUFDQkVBTEFHQkdBR0FBQUxBREFKQUNBRkFIQkpGRkZDRkRGTkFOQU9BQkFPQUpGRkFIRlBBSkZGQVBBRUZEQUFBRUFBRk1GRkZIQUVGQ0ZDRkNBS0FJQU9BRkFPQk9BQkJQQUo&clientID=cqvip4fd848bc-d089-4350-82b8-4e345a79cefa&fileName=%E9%9B%BE%E5%8C%96%E5%90%B8%E5%85%A5%E8%8D%AF%E7%89%A9%E5%9C%A8%E5%91%BC%E5%90%B8%E7%A7%91%E6%82%A3%E8%80%85%E5%BA%94%E7%94%A8%E4%BD%93%E4%BC%9A.pdf&algorithm=0
+2022-12-30 09:54:37 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13327293152 文件路径为: F:/weipu_pdfs/中医外治法治疗类风湿性关节炎的系统评价2021.pdf
+2022-12-30 09:56:52 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15305189193 文件路径为: F:/weipu_pdfs/关节镜治疗膝关节骨创伤的临床疗效分析2021.pdf
+2022-12-30 09:59:28 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13001237623 文件路径为: F:/weipu_pdfs/三级康复医院临床信息系统设计2020.pdf
+2022-12-30 09:59:56 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104678297
+2022-12-30 10:02:55 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15730973435 文件路径为: F:/weipu_pdfs/中医药治疗类风湿关节炎研究进展2021.pdf
+2022-12-30 10:02:55 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13579429967 文件路径为: F:/weipu_pdfs/中医药治疗类风湿关节炎研究进展2021.pdf
+2022-12-30 10:10:37 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/公共图书馆举办老年大学推动老年教育发展的实践探研——以重庆图书馆老年大学为例2020.pdf
+2022-12-30 10:26:52 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13301119560 文件路径为: F:/weipu_pdfs/肉芽肿小叶性乳腺炎大鼠模型建立初探2021.pdf
+2022-12-30 10:26:52 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13301119560 文件路径为: F:/weipu_pdfs/肉芽肿小叶性乳腺炎大鼠模型建立初探2021.pdf
+2022-12-30 10:30:39 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/疫情中的转机基层老年教育均等化路径研究2020.pdf
+2022-12-30 10:31:54 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13954179079 文件路径为: F:/weipu_pdfs/基于居家养老模式的适老家具设计研究2020.pdf
+2022-12-30 10:32:01 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/中药五味骨疽拔毒散外敷治疗早期膝骨性关节炎临床观察2021.pdf
+2022-12-30 10:32:01 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13849889345 文件路径为: F:/weipu_pdfs/中药五味骨疽拔毒散外敷治疗早期膝骨性关节炎临床观察2021.pdf
+2022-12-30 10:34:01 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/微信平台及手机健康软件的联合应用方案在老年慢性阻塞性肺疾病患者延续干预中的应用2020.pdf
+2022-12-30 10:35:25 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104198712
+2022-12-30 10:37:04 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13452389495 文件路径为: F:/weipu_pdfs/当归四逆汤加减配合温针灸治疗寒湿痹阻型膝骨关节炎的临床观察2021.pdf
+2022-12-30 10:37:55 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/温针疗法对颞下颌关节紊乱综合征患者fricton指数的影响2021.pdf
+2022-12-30 10:37:59 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13840011224 文件路径为: F:/weipu_pdfs/郑洪新治疗幼年型类风湿关节炎经验总结2021.pdf
+2022-12-30 10:37:59 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13840011224 文件路径为: F:/weipu_pdfs/郑洪新治疗幼年型类风湿关节炎经验总结2021.pdf
+2022-12-30 10:41:27 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13704089520 文件路径为: F:/weipu_pdfs/ISOTC4关节轴承额定载荷标准的发展2021.pdf
+2022-12-30 10:42:05 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 17030801009 文件路径为: F:/weipu_pdfs/从脾治痹探讨2021.pdf
+2022-12-30 10:42:05 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13955109537 文件路径为: F:/weipu_pdfs/从脾治痹探讨2021.pdf
+2022-12-30 10:47:14 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7100269813
+2022-12-30 10:49:47 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老龄化背景下的长期护理保险模式选择与制度优化2020.pdf
+2022-12-30 11:04:19 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13193316737 文件路径为: F:/weipu_pdfs/乡村传统文化治理体系的现代性构建2020.pdf
+2022-12-30 11:07:17 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/韩国人口老龄化趋势应对措施及启示2020.pdf
+2022-12-30 11:08:10 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13683371884 文件路径为: F:/weipu_pdfs/高龄腹痛的综合诊治1例2020.pdf
+2022-12-30 11:10:26 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13819274197 文件路径为: F:/weipu_pdfs/视频联合Teach-back健康教育在全膝关节置换术后功能锻炼中的应用2021.pdf
+2022-12-30 11:10:44 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18000001178 文件路径为: F:/weipu_pdfs/蜂针六阳经输穴治疗类风湿关节炎的疗效观察2021.pdf
+2022-12-30 11:41:55 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7105074561
+2022-12-30 11:43:33 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18000000904 文件路径为: F:/weipu_pdfs/桃红四物汤合健脾丸对髋部骨折围手术期D-二聚体变化规律及与DVT形成的临床研究2021.pdf
+2022-12-30 11:45:46 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/压敏点恢刺法配合四子散外敷治疗颞下颌关节炎30例疗效观察2021.pdf
+2022-12-30 11:45:46 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/压敏点恢刺法配合四子散外敷治疗颞下颌关节炎30例疗效观察2021.pdf
+2022-12-30 11:53:39 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7104383025
+2022-12-30 11:56:27 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13014143200 文件路径为: F:/weipu_pdfs/老年慢性心力衰竭患者血清D-二聚体水平与心力衰竭的相关性分析2020.pdf
+2022-12-30 11:59:49 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13880771225 文件路径为: F:/weipu_pdfs/藏药五味甘露药浴颗粒对AA模型大鼠的分子作用机制研究2021.pdf
+2022-12-30 12:01:28 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18368570154 文件路径为: F:/weipu_pdfs/健康中国建设背景下老年人体育需求凸显研究2020.pdf
+2022-12-30 12:13:56 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15166616377 文件路径为: F:/weipu_pdfs/神经营养性骨关节病并滑膜软骨瘤病临床影像诊断价值2021.pdf
+2022-12-30 12:15:38 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/身痛逐瘀汤合脊柱脉冲治疗腰椎小关节骨性关节炎的临床观察2021.pdf
+2022-12-30 12:19:48 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于老年生活需求的APP应用设计2020.pdf
+2022-12-30 12:34:43 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7103888515
+2022-12-30 12:35:30 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13793188178 文件路径为: F:/weipu_pdfs/基于网络药理学的桃红四物汤治疗骨关节炎作用机制研究2021.pdf
+2022-12-30 12:45:20 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13920190627 文件路径为: F:/weipu_pdfs/手法松解治疗创伤或手术后轻型膝关节僵直的疗效观察2021.pdf
+2022-12-30 12:46:30 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/后稳定型全膝关节置换后动态关节松动治疗有利于早期功能恢复2021.pdf
+2022-12-30 12:46:30 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/后稳定型全膝关节置换后动态关节松动治疗有利于早期功能恢复2021.pdf
+2022-12-30 12:46:30 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/后稳定型全膝关节置换后动态关节松动治疗有利于早期功能恢复2021.pdf
+2022-12-30 12:46:46 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15087165996 文件路径为: F:/weipu_pdfs/髋关节强直的病因与治疗现状2021.pdf
+2022-12-30 12:51:24 Fri cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19441901800 文件路径为: F:/weipu_pdfs/基于矩阵式电刺激的膝关节康复装置的研制2021.pdf
+2022-12-30 12:53:44 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7100964641
+2022-12-30 12:55:18 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/基于湿痰瘀虚病机论治膝骨关节炎的研究进展2021.pdf
+2022-12-30 13:00:39 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jiangnan.webvpn.jingshi2015.com', port=8181): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=7101918065
+2022-12-30 13:00:46 Fri connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='awsdownload.cqvip.com', port=80): Read timed out. (read timeout=10)")': /downloadpaper/api/v1/pdf/stream/2021/7104228458?infos=RkVFQUVHRk5FQ0FHRk9GQUFQQUZBSUZHRkJCUEZNQUVBUEFJQk5BQUFCQUhBSUJKQVBBREZDQU1CUEFHRk5BSEFEQUVGQkFEQUxGQkZORkNGR0JPQUNBRUFBQURCSEFEQUdBQkFFQUdBQUFLQU1BQkFQQk9BQkFCQUtBSEFPQUFBREFFQlBBQ0JOQUNCSEJMQUZBQkFDQUdCUEFEQUtCSkFFQUJCQUFGQUJBSUFJQUVBTkFDQUdCTEZHRkJGTEZBQUNBSkFIQU1BS0ZHQVBGQ0FHRkNBSkFHRkFBREFNQU5GREZDRkJBR0ZCRkJGS0FIQUhBSkFEQU1CTkFDQkhBRQ&clientID=cqvip4fd848bc-d089-4350-82b8-4e345a79cefa&fileName=%E2%80%9C5A%E2%80%9D%E6%8A%A4%E7%90%86%E5%9C%A8%E9%AB%8B%E5%85%B3%E8%8A%82%E7%BD%AE%E6%8D%A2%E6%9C%AF%E6%82%A3%E8%80%85%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8.pdf&algorithm=0
+2023-01-04 14:25:19 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='sdu.webvpn.jingshi2015.com', port=8383): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=49557202
+2023-01-04 14:26:45 Wed cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/澳大利亚新南威尔士州公共图书馆的老年人服务与启示2014.pdf
+2023-01-04 14:26:49 Wed cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13983650956 文件路径为: F:/weipu_pdfs/重庆市西部4区县农村老年人生存质量现状调查与分析2014.pdf
+2023-01-04 14:27:40 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='sdu.webvpn.jingshi2015.com', port=8383): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=49688176
+2023-01-04 14:28:24 Wed connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='sdu.webvpn.jingshi2015.com', port=8383): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/Qikan/Article/Detail?id=49064410
+2023-01-05 14:26:43 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/MetalCorrosionRatePredictionofSmallSamplesUsinganEnsembleTechnique2023.pdf
+2023-01-05 14:26:59 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/ExperimentalandNumericalAssessmentoftheInfluenceofBottomholePressureDrawdownonTerrigenousReservoirPermeabilityandWellProductivity2023.pdf
+2023-01-05 14:27:46 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/Impactofcognition-relatedsinglenucleotidepolymorphismsonbrainimagingphenotypeinParkinsonsdisease2023.pdf
+2023-01-05 14:27:52 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/微渠多孔羟基磷灰石支架修复犬下颌骨大面积缺损后与种植体的骨结合2023.pdf
+2023-01-05 14:28:56 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19921040350 文件路径为: F:/weipu_pdfs/PurificationandimmunoglobulinEepitopesidentificationoflowmolecularweightgluteninanallergeninChinesewheat2023.pdf
+2023-01-05 14:29:34 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/NumericalSimulationandExperimentalStudyoftheStressFormationMechanismofFDMwithDifferentPrintingPaths2023.pdf
+2023-01-05 14:30:58 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/Neuroprotectiveeffectsofinsulin-likegrowthfactor-2in6-hydroxydopamine-inducedcellularandmousemodelsofParkinsonsdisease2023.pdf
+2023-01-05 14:37:19 Thu cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15011597943 文件路径为: F:/weipu_pdfs/加味芍甘附子汤对早期生长反应蛋白2调控胶原诱导性关节炎老年大鼠炎症的影响2022.pdf
+2023-01-05 14:39:41 Thu cur_identify.py 36 INFO 识别出号码长度过长, 为 13 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/美国CDC社区老年人跌倒风险自评表与跌倒功效量表在社区老年人跌倒风险评估中的比较研究2022.pdf
+2023-01-06 11:53:53 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年人智能技术提升的现实困境与突破路径2022.pdf
+2023-01-06 14:24:28 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/数字包容视域下的老年人数字鸿沟协同治理智慧实践与实践智慧2022.pdf
+2023-01-06 14:24:29 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/数字包容视域下的老年人数字鸿沟协同治理智慧实践与实践智慧2022.pdf
+2023-01-06 14:24:29 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/数字包容视域下的老年人数字鸿沟协同治理智慧实践与实践智慧2022.pdf
+2023-01-06 14:26:36 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年人信息素养的实证分析——基于上海市2399个样本的调查2022.pdf
+2023-01-06 14:26:40 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/智能时代老年人准备好了吗——基于2004名老年学员的调查分析2022.pdf
+2023-01-06 14:44:45 Fri cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/weipu_pdfs/老年教育情寄何方--依循生命与生活逻辑的思考2022.pdf
+2023-01-07 03:07:41 Sat connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='sdu.webvpn.jingshi2015.com', port=8383): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/
+2023-01-07 05:51:11 Sat connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /login?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTY3MzA0MTg3MiwiZXhwIjoxNjczMDQ1NDcyfQ.eyJ1c2VybmFtZSI6IjcxMDE0Mjg5In0.sK64IROxfw_xboU3VTp7i63I93a9dtcHynmXdlWDkN6X9PFgS8N6-S_J_oUJVP9FK6jdpqM6mbHfTStkDNjBWQ&url=/http/77726476706e69737468656265737421f3e45596693379467718c7af9758/
+2023-01-07 05:55:13 Sat connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='sdu.webvpn.jingshi2015.com', port=8383): Read timed out. (read timeout=20)")': /http/77726476706e69737468656265737421f3e45596693379467718c7af9758/
+2023-01-09 09:42:34 Mon connectionpool.py 812 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='awsdownload.cqvip.com', port=80): Read timed out. (read timeout=10)")': /downloadpaper/api/v1/pdf/stream/2022/7106910809?infos=RkVFQUVHRlBFSkFGRkdGTUFQQUZBSUZFRktCTUZFQUlBUEFJQk5BQ0FLQUVBQUJGQVBBREZDQU9CRUFGRkZBTEFEQUVGQkFCQUFGQ0ZGRk9GR0JPQUNBR0FMQURCUEFQQUdBQkFHQVBBSUFCQUlBSUFPQk9BQ0FFQUxBQUFGQVBBQkFGQlBBRkJHQUJCUEJIQUZBQkFDQUZCRUFCQUJCRkFIQUlCQUFHQUFBTEFFQUtBTkFEQUNCSkZORkNGREZNQUNBSkFIQU9BQkZGQUhGT0FHRkNBSkFFRkxBQUFFQUJGREZDRkJBRUZLRkNGQ0FMQUhBSkFEQU9CR0FCQlBBSQ&clientID=cqvip4fd848bc-d089-4350-82b8-4e345a79cefa&fileName=%E8%85%B9%E8%85%94%E9%95%9C%E6%89%8B%E6%9C%AF%E5%9C%A8%E5%BC%82%E4%BD%8D%E5%A6%8A%E5%A8%A0%E4%B8%AD%E7%9A%84%E7%96%97%E6%95%88%E5%8F%8A%E5%AF%B9%E5%8D%B5%E5%B7%A2%E5%8A%9F%E8%83%BD%E7%9A%84%E5%BD%B1%E5%93%8D%E7%A0%94%E7%A9%B6.pdf&algorithm=0
+2023-01-16 16:51:22 Mon cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/fontcolorred单核细胞font高密度脂蛋白胆固醇与高尿酸血症患病率的关联及性别差异研究_2022年02月20日.pdf
+2023-01-16 16:51:25 Mon cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13611176751 文件路径为: F:/yixuehui_pdfs/阿米巴肠炎合并艾滋病患者的临床特征分析_2022年01月15日.pdf
+2023-01-16 16:51:25 Mon cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13611176751 文件路径为: F:/yixuehui_pdfs/阿米巴肠炎合并艾滋病患者的临床特征分析_2022年01月15日.pdf
+2023-01-16 16:51:26 Mon cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/缺氧诱导因子-1ɑ在缺血性心脏病治疗中的研究进展_2022年01月15日.pdf
+2023-01-17 09:44:28 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13957192066 文件路径为: F:/yixuehui_pdfs/人工智能辅助大肠fontcolorred疾病font诊疗的研究现状和应用前景_2022年01月15日.pdf
+2023-01-17 09:44:33 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/单核细胞高密度脂蛋白胆固醇与高尿酸血症fontcolorred患病率font的关联及性别差异研究_2022年02月20日.pdf
+2023-01-17 11:17:08 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/中青年高血压及β受体阻滞剂的应用_2023年01月15日.pdf
+2023-01-17 11:17:25 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/深髓静脉征与脑小fontcolorred血管病font影像学标志物相关性及危险因素研究_2023年02月20日.pdf
+2023-01-17 11:17:34 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/早产儿支气管肺发育不良危险因素的Meta分析_2023年01月20日.pdf
+2023-01-17 11:17:36 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/新型fontcolorred冠状病毒font肺炎对脑卒中患者fontcolorred病死率font影响的Meta分析_2023年01月20日.pdf
+2023-01-17 11:17:36 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/新型fontcolorred冠状病毒font肺炎对脑卒中患者fontcolorred病死率font影响的Meta分析_2023年01月20日.pdf
+2023-01-17 11:17:37 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/特发性肺纤维化预后标志物的研究进展_2023年01月20日.pdf
+2023-01-17 11:17:50 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/高血压合并支气管哮喘：机制与管理_2023年01月20日.pdf
+2023-01-17 11:17:50 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/高血压合并支气管哮喘：机制与管理_2023年01月20日.pdf
+2023-01-17 11:18:00 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/智慧医疗背景下社区老年听力损失筛查软件开发及验证_2023年01月15日.pdf
+2023-01-17 11:18:00 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/智慧医疗背景下社区老年听力损失筛查软件开发及验证_2023年01月15日.pdf
+2023-01-17 11:18:00 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/智慧医疗背景下社区老年听力损失筛查软件开发及验证_2023年01月15日.pdf
+2023-01-17 11:27:50 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/中青年高血压及β受体阻滞剂的应用_2023年01月15日.pdf
+2023-01-17 11:28:02 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/深髓静脉征与脑小fontcolorred血管病font影像学标志物相关性及危险因素研究_2023年02月20日.pdf
+2023-01-17 11:28:05 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/早产儿支气管肺发育不良危险因素的Meta分析_2023年01月20日.pdf
+2023-01-17 11:28:10 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/新型fontcolorred冠状病毒font肺炎对脑卒中患者fontcolorred病死率font影响的Meta分析_2023年01月20日.pdf
+2023-01-17 11:28:10 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/新型fontcolorred冠状病毒font肺炎对脑卒中患者fontcolorred病死率font影响的Meta分析_2023年01月20日.pdf
+2023-01-17 11:28:11 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/特发性肺纤维化预后标志物的研究进展_2023年01月20日.pdf
+2023-01-17 11:28:22 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/高血压合并支气管哮喘：机制与管理_2023年01月20日.pdf
+2023-01-17 11:28:22 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/高血压合并支气管哮喘：机制与管理_2023年01月20日.pdf
+2023-01-17 11:28:27 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/智慧医疗背景下社区老年听力损失筛查软件开发及验证_2023年01月15日.pdf
+2023-01-17 11:28:27 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/智慧医疗背景下社区老年听力损失筛查软件开发及验证_2023年01月15日.pdf
+2023-01-17 11:28:27 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/智慧医疗背景下社区老年听力损失筛查软件开发及验证_2023年01月15日.pdf
+2023-01-17 11:28:33 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/手法治疗fontcolorred颈椎病中font枢镇痛机制研究进展_2023年01月15日.pdf
+2023-01-17 11:28:33 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/手法治疗fontcolorred颈椎病中font枢镇痛机制研究进展_2023年01月15日.pdf
+2023-01-17 11:28:33 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15515570382 文件路径为: F:/yixuehui_pdfs/手法治疗fontcolorred颈椎病中font枢镇痛机制研究进展_2023年01月15日.pdf
+2023-01-17 11:28:37 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/早期心房颤动筛查的成本效果分析研究进展_2023年01月05日.pdf
+2023-01-17 11:28:39 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/基于Delphi法构建fontcolorred帕金森病font社区规范管理方案_2023年01月05日.pdf
+2023-01-17 11:28:41 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/具有双通道通气和恒定泄气量功能的新型无创正压通气面罩治疗慢性阻塞性肺fontcolorred疾病急font性加重合并CO2潴留患者的临床效果研究_2023年01月20日.pdf
+2023-01-17 11:28:46 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/先天性左侧颈内动脉缺失继发帕金森综合征一例并文献复习_2023年01月20日.pdf
+2023-01-17 11:28:47 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/合并fontcolorred冠心病font的老年射血分数保留心力衰竭患者营养状态与预后的关系研究_2023年01月20日.pdf
+2023-01-17 11:28:47 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/合并fontcolorred冠心病font的老年射血分数保留心力衰竭患者营养状态与预后的关系研究_2023年01月20日.pdf
+2023-01-17 11:28:47 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/合并fontcolorred冠心病font的老年射血分数保留心力衰竭患者营养状态与预后的关系研究_2023年01月20日.pdf
+2023-01-17 11:29:01 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15810594665 文件路径为: F:/yixuehui_pdfs/中等剂量重组人促红素注射液每周单次与分次给药治疗维持性血液透析患者肾性贫血的安全性探讨研究_2023年02月20日.pdf
+2023-01-17 11:29:01 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15810594665 文件路径为: F:/yixuehui_pdfs/中等剂量重组人促红素注射液每周单次与分次给药治疗维持性血液透析患者肾性贫血的安全性探讨研究_2023年02月20日.pdf
+2023-01-17 11:29:50 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/单核细胞高密度脂蛋白胆固醇与高尿酸血症fontcolorred患病率font的关联及性别差异研究_2022年02月20日.pdf
+2023-01-17 11:29:53 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13611176751 文件路径为: F:/yixuehui_pdfs/阿米巴肠炎合并fontcolorred艾滋病患者font的临床特征分析_2022年01月15日.pdf
+2023-01-17 11:29:53 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13611176751 文件路径为: F:/yixuehui_pdfs/阿米巴肠炎合并fontcolorred艾滋病患者font的临床特征分析_2022年01月15日.pdf
+2023-01-17 11:29:57 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/缺氧诱导因子-1ɑ在缺血性fontcolorred心脏病font治疗中的研究进展_2022年01月15日.pdf
+2023-01-17 11:29:58 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/ABCA3基因变异所致儿童弥漫性肺间质fontcolorred病font随访4年1例_2022年02月02日.pdf
+2023-01-17 11:30:03 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/fontcolorred慢性病患者font积极度的研究进展_2022年01月06日.pdf
+2023-01-17 11:30:15 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15516644771 文件路径为: F:/yixuehui_pdfs/非侵入性神经调控技术在fontcolorred帕金森病font治疗中的应用现状及展望_2022年01月25日.pdf
+2023-01-17 11:30:15 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/非侵入性神经调控技术在fontcolorred帕金森病font治疗中的应用现状及展望_2022年01月25日.pdf
+2023-01-17 11:30:26 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13641000837 文件路径为: F:/yixuehui_pdfs/慢性阻塞性肺fontcolorred疾病font生物标志物研究中存在问题的探讨_2022年01月20日.pdf
+2023-01-17 11:30:26 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13641000837 文件路径为: F:/yixuehui_pdfs/慢性阻塞性肺fontcolorred疾病font生物标志物研究中存在问题的探讨_2022年01月20日.pdf
+2023-01-17 11:30:26 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/慢性阻塞性肺fontcolorred疾病font生物标志物研究中存在问题的探讨_2022年01月20日.pdf
+2023-01-17 11:30:26 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/慢性阻塞性肺fontcolorred疾病font生物标志物研究中存在问题的探讨_2022年01月20日.pdf
+2023-01-17 11:30:28 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13571999716 文件路径为: F:/yixuehui_pdfs/新型fontcolorred冠状病毒font肺炎疫苗有效性评价中的相关问题探讨_2022年01月06日.pdf
+2023-01-17 11:30:28 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13571999716 文件路径为: F:/yixuehui_pdfs/新型fontcolorred冠状病毒font肺炎疫苗有效性评价中的相关问题探讨_2022年01月06日.pdf
+2023-01-17 11:30:31 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/基于机器学习的阻塞性fontcolorred冠心病font验前概率模型：来自C-Strat研究_2022年02月01日.pdf
+2023-01-17 11:30:31 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/基于机器学习的阻塞性fontcolorred冠心病font验前概率模型：来自C-Strat研究_2022年02月01日.pdf
+2023-01-17 11:30:31 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/基于机器学习的阻塞性fontcolorred冠心病font验前概率模型：来自C-Strat研究_2022年02月01日.pdf
+2023-01-17 11:30:31 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 19717715579 文件路径为: F:/yixuehui_pdfs/基于机器学习的阻塞性fontcolorred冠心病font验前概率模型：来自C-Strat研究_2022年02月01日.pdf
+2023-01-17 11:30:32 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/预防性全脑照射治疗非小细胞肺癌的研究进展_2022年01月28日.pdf
+2023-01-17 11:30:38 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/自身炎症fontcolorred性疾病font之免疫肌动蛋白fontcolorred病font的研究进展_2022年02月02日.pdf
+2023-01-17 11:30:51 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/食管鳞癌环周切缘的临床意义分析_2022年01月25日.pdf
+2023-01-17 11:30:52 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/不同胰岛素注射方式治疗非昏迷高血糖危象患者的疗效研究_2022年02月20日.pdf
+2023-01-17 11:30:58 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18994392817 文件路径为: F:/yixuehui_pdfs/绿激光解剖性汽化切除术与选择性光汽化术治疗良性前列腺增生的效果与安全性比较_2022年01月25日.pdf
+2023-01-17 11:30:58 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 18994392817 文件路径为: F:/yixuehui_pdfs/绿激光解剖性汽化切除术与选择性光汽化术治疗良性前列腺增生的效果与安全性比较_2022年01月25日.pdf
+2023-01-17 11:31:00 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/营养饮食干预应用于社区fontcolorred糖尿病font管理的成本-效果评价_2022年01月15日.pdf
+2023-01-17 11:31:11 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15168860708 文件路径为: F:/yixuehui_pdfs/fontcolorred糖尿病患者font视网膜神经组织变性及微血管损伤研究_2022年01月25日.pdf
+2023-01-17 11:31:11 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 15168860708 文件路径为: F:/yixuehui_pdfs/fontcolorred糖尿病患者font视网膜神经组织变性及微血管损伤研究_2022年01月25日.pdf
+2023-01-17 11:31:11 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/fontcolorred糖尿病患者font视网膜神经组织变性及微血管损伤研究_2022年01月25日.pdf
+2023-01-17 11:31:12 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 14 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/腹泻合并胸腺瘤确诊为Good综合征1例_2022年01月25日.pdf
+2023-01-17 11:31:17 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 12 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/fontcolorred帕金森病患者font发生吞咽困难的危险因素研究_2022年02月20日.pdf
+2023-01-17 11:31:17 Tue cur_identify.py 32 INFO 恭喜你! 发现真实手机号一枚: 13000100009 文件路径为: F:/yixuehui_pdfs/fontcolorred帕金森病患者font发生吞咽困难的危险因素研究_2022年02月20日.pdf
+2023-01-17 11:31:18 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 16 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/治疗性健康教育对老年COPD患者生理心理状况的影响_2022年01月20日.pdf
+2023-01-17 11:31:19 Tue cur_identify.py 36 INFO 识别出号码长度过长, 为 15 位, 确认不是真手机号, 舍去!!,路径地址为: F:/yixuehui_pdfs/1859岁人群加强免疫新型fontcolorred冠状病毒font灭活疫苗的免疫原性及安全性观察_2022年01月25日.pdf

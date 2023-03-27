@@ -1,0 +1,47 @@
+[
+  {
+    "mode": "全库",
+    "keywords": "治疗",
+    "max_year": 2022,
+    "min_year": 2015,
+    "max_page": 300,
+    "page_size": 40,
+    "have_start": 1,
+    "have_end": 0,
+    "is_running": 0,
+    "level": 3,
+    "cur_year": 2022,
+    "spider_at": "win",
+    "owning_account": "6849_扬州大学"
+  },
+  {
+    "mode": "全库",
+    "keywords": "诊断",
+    "max_year": 2023,
+    "min_year": 2015,
+    "max_page": 300,
+    "page_size": 50,
+    "have_start": 0,
+    "have_end": 0,
+    "is_running": 0,
+    "level": 3,
+    "cur_year": 2022,
+    "spider_at": "linux",
+    "owning_account": "6849_杭州师范大学附属医院"
+  },
+  {
+    "mode": "全库",
+    "keywords": "术后",
+    "max_year": 2023,
+    "min_year": 2015,
+    "max_page": 300,
+    "page_size": 40,
+    "have_start": 0,
+    "have_end": 0,
+    "is_running": 0,
+    "level": 3,
+    "cur_year": 2022,
+    "spider_at": "linux",
+    "owning_account": "6849_扬州大学"
+  }
+]

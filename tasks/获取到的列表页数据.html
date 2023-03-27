@@ -1,0 +1,123 @@
+<form method="post" name="gridTableForm">
+    <div id="gridTable" class="search-result">
+<div class='toolbar'><div id="countPageDiv" class="result-con-r"><span class='pagerTitleCell'>共找到<em>1</em>条结果</span></div><div class='toolbar-col'>
+        <div class="checkcount">
+            <label class="checkAll"><input type="checkbox" name="selectCheckbox" id="selectCheckAll1" onclick="$(this).filenameClick()">全选</label>
+            <span>已选：</span>
+            <em title='点击查看所选文献' id='selectCount' name='selectCount' onclick='window.open(APPPATH + "/manage.html"+(GetQueryStringByName("subject")?"?subject="+GetQueryStringByName("subject"):""))'>0</em>
+            <a href="javascript:$.filenameClear();">清除</a>
+          </div>         
+          <ul class="dropdown-analysis-btns" id="batchOpsBox">
+			<li class="bulkdownload export"><a href="javascript:void(0)">批量下载</a></li>
+              <li>
+                <a href="javascript:void(0)">导出与分析</a><i class="icon-d"></i>
+                <ul>
+                  <li class="export">
+                    <a href="javascript:void(0)">导出文献</a>
+                    <i class="icon-r"></i>
+                    <ul class="secondUl">
+                      <li><a href="javascript:void(0)" exportType="GBTREFER">GB/T 7714-2015 格式引文</a></li>
+                      <li><a href="javascript:void(0)" exportType="elearning" >知网研学（原E-Study）</a></li>
+                      <li><a href="javascript:void(0)" exportType="REFER" >CAJ-CD 格式引文</a></li>
+                       <li><a href="javascript:void(0)" exportType="MLA" >MLA格式引文</a></li>
+                       <li><a href="javascript:void(0)" exportType="APA" >APA格式引文</a></li>
+                      <li><a href="javascript:void(0)" exportType="NEW" >查新（引文格式）</a></li>
+                      <li><a href="javascript:void(0)" exportType="newdefine" >查新（自定义引文格式）</a></li>
+                      <li><a href="javascript:void(0)" exportType="Refworks" >Refworks</a></li>
+                      <li><a href="javascript:void(0)" exportType="EndNote" >EndNote</a></li>
+                      <li><a href="javascript:void(0)" exportType="NoteExpress" >NoteExpress</a></li>
+                      <li><a href="javascript:void(0)" exportType="NodeFirst" >NoteFirst</a></li>
+                      <li><a href="javascript:void(0)" exportType="selfDefine">自定义</a></li>
+                    </ul>
+                  </li>
+                  <li id="analysisLi">
+                    <a href="javascript:void(0)">可视化分析</a><i class="icon-r"></i>
+                    <ul class="secondUl">
+                      <li id="anisys_select"><a href="javascript:void(0)">已选结果分析(<span>0</span>)</a></li>
+                      <li id="anisys_all"><a href="javascript:void(0)">全部检索结果分析</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+              </li>
+            </ul>
+          <ul class="change-list" id="DivDisplayMode"><li  title="详情" data-obj="result-piclist" data-mode="custommode"><i class="icon-detail"></i></li><li class="active" title="列表" data-obj="result-table-list" data-mode="listmode"><i class="icon-table"></i></li></ul><div class="statistic"><div id="id_grid_display_num"  class="page-show-count">显示<div class="sort" id="perPageDiv"><div class="sort-default"><span>20</span><i class="icon icon-sort"></i></div><ul class="sort-list"><li  data-val="10"><a href="javascript:void(0);">10</a></li><li data-val="20" class="cur"><a href="javascript:void(0);" >20</a></li> <li  data-val="50"><a href="javascript:void(0);" >50</a></li></ul></div></div></div><div class="order-group" id="sortList"><span> 排序：</span><ul class="order" id="orderList"><li data-sorttype="relevant%2c(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)"  data-k="RELEVANT"  data-sort="RELEVANT-%e7%9b%b8%e5%85%b3%e5%ba%a6%2frelevant%2c(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)" data-onlydesc="true">相关度</li><li class='descend cur' title='只在800万条记录以内有效' data-k="PT" data-sorttype="(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)" data-sort="PT-%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2f(%e5%8f%91%e8%a1%a8%e6%97%b6%e9%97%b4%2c%27time%27)" data-onlydesc="false">发表时间</li><li data-sorttype="(%e8%a2%ab%e5%bc%95%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)"  data-k="CITY"  data-sort="CITY-%e8%a2%ab%e5%bc%95%2f(%e8%a2%ab%e5%bc%95%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)" data-onlydesc="false">被引</li><li data-sorttype="(%e4%b8%8b%e8%bd%bd%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)"  data-k="DOWNLOAD"  data-sort="DOWNLOAD-%e4%b8%8b%e8%bd%bd%2f(%e4%b8%8b%e8%bd%bd%e9%a2%91%e6%ac%a1%2c%27INTEGER%27)" data-onlydesc="false">下载</li><li data-sorttype="relevant%2c(ffd%2c%27NUM1000%27)"  data-k="ALL"  data-sort="ALL-%e7%bb%bc%e5%90%88%2frelevant%2c(ffd%2c%27NUM1000%27)" data-onlydesc="true">综合</li></ul></div></div></div><table class="result-table-list"> <thead><tr><th></th><th>题名</th><th>作者</th><th>来源</th><th>发表时间</th><th>数据库</th><th>被引</th><th>下载</th><th>操作</th></tr></thead><tr  class="odd" >
+<td class="seq"><input class="cbItem" type=checkbox data-cur=1 name=CookieName  value="CJFDLAST2022!MGYI202208035!1!4"  onclick="$(this).filenameClick()"  >1</td>     
+      <td class="name" >
+        
+       <a class="fz14" href='/kns8/Detail?sfield=fn&QueryID=4&CurRec=1&recid=&FileName=MGYI202208035&DbName=CJFDLAST2022&DbCode=CJFD&yx=&pr=CJFT2022;&URLID=' target='_blank'>急性化脓性阑尾炎的手术治疗及术后抗<font class=Mark>感染</font>治疗临床体会</a>
+         
+        
+        
+      
+               
+         
+           
+           
+        
+        
+           
+        
+         
+		</td>
+      <td class="author">
+      <a class='KnowledgeNetLink' href='/kns8/Detail?sdb=CJFD&sfield=%e4%bd%9c%e8%80%85&skey=%e5%bc%a0%e6%b5%b7%e6%96%8c&scode=000048869364&acode=000048869364' target="knet">张海斌</a>   
+      </td>
+      <td class="source">     
+    
+      <a  target=_blank href='/kns8/Navi?DBCode=CJFD&BaseID=MGYI'>名医</a>     
+      
+      
+      
+     </td>
+      <td class="date">
+        2022-04-28
+      </td>        
+      <td class="data">
+	     期刊 
+      </td> 
+      <td class="quote">
+        
+      </td>
+      <td class="download">  
+         
+        <a class="downloadCnt" href='javascript:void(0);'>90</a>
+         
+      </td>
+        <td class="operat">
+            
+         <a href="/kns8/download?filename=sVDavc3aL9Ua4IDSUd2SHB1Ymh2Khp1UrF0Txw2YRtWa5InVMZ0SUhHOGJWc2I0Q14GcVZWYmVkcJVHawlzYKFTR3x0ZwB1ZwQ3KrkmeT5GeTlTV5VVeQ1UTRJkdxNzZ0E0NxYFNTFDeRZmYqZVQ3FEcGFTVUFjR&tablename=CJFDLAST2022" title="未登录" target=_blank class="downloadlink icon-notlogged"><i></i><b> 下载</b></a>
+        
+         
+         
+           
+         <a class="icon-html"  target="online_open" href='/kns8/Detail/Read?flag=html&domain=dbcode%3dCJFD%26filename%3dMGYI202208035' title="HTML阅读"><i></i></a>  
+            
+        
+           
+         <a class="icon-collect" title="收藏" data-dbname="CJFD" data-filename="MGYI202208035"><i></i></a>
+          
+             
+        <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i></a> 
+        
+      </td>            
+ 
+      </tr></table></td></tr></table><div class='pages'></div><input type="hidden" id="docstateinfo" name=id="docstateinfo" value="JD00PYrfAvzGtFgNNTfafk4Fg7e9vv3GyTPzwvb1+7WeENmvmcXSz7Gl/eIBpp4LkLLv2bHYVUyOSFm0Ii+m+kdhCWMvrceRCZbvwX68Bi0TbfHQrX5xKUq8ekGx2jWQZRxBK/xitdS71Q5jPiI40uouo32kFI58MDdv1gCyjSuZnT2CvsO/+jyG8Dj7N0nz9nG4j7GGgG+1jhZ/ruPejA=="/><input type="hidden" id="docprequery_server_url" name="docprequery_server_url" value="https://kns.cnki.net/docpre/api/inner/multi-statusex"/>
+    </div>
+    <input id="errorMsgHid" type="hidden" value="" />
+    <input id="HandlerIdHid" type="hidden" value="4" />
+    <input id="curPageHid" type="hidden" value="1" />
+    <input id="isSortHid" type="hidden" value="false" />
+    <input id="sqlVal" type="hidden" value="0645419CC2F0B23BC604FFC82ADF67C6E920108EDAD48468E8156BA693E89F481391D6F5096D7FFF3585B29E8209A884EFDF8EF1B43B4C7232E120D4832CCC8979F171B4C268EE675FFB969E7C6AF23B4B63CE6436EE93F3973DCB2E4950C92CBCE188BEB6A4E9E17C3978AE8787ED6BB56445D70910E6E32D9A03F3928F9AD8AADE2A90A8F00E2B29BD6E5A0BE025E88D8E778EC97D42EF1CF47C35B8A9D5473493D11B406E77A4FF28F5B34B8028FE85F57606D7A3FED75B27901EEF587583EBD4B63AC0E07735BE77F216B50090DEE5ABB766456B996D37EB8BDACA3A67E8126F111CF9D15B351A094210DB6B4638A21065F03B6F0B73BB4625BBECE66F8197909739D8FB4EB756DEF71864177DFA3CB468CFA6E8ABF7924234DED6B0DFD49D9269CBA4A2BF4075D517A61D094225D70C1B4C137DB9614758A5E097376F5F3E55A7063A4B7E437436D13FF3CC8FB435E131FFCD16FC30DD997098B4FC997D995E767E2712175BC05B960D3FEB5CAF12A13BD1CE3530AD72FC4DB93206996E216BC5DC294960A0CA05E986848E1E64FFC5A52BFCB41A97840A708E397F11EFF261E08F3A34094061AE8E8F819AF6A17A9E2176C3893C6DD3E3C06864C91989BDEF9790A38FAF2524B17743B30EBA4ADD550BF985F9C3097A608C697283CE37F8CB78BDC9EAA4874C3485E6F931B016EC41BFBC0EF91B2AD7E1B424E1DFB8FC8771DEA2458C5A7A4C9BF0192C101FD8EDDEE1BACB44C3E478361EF0D1B70FAD56BCF6870A6044D3A226611B9C1A43C6F9F7C021C98E0D5F778D72C87183F026071A730B8BB4FABF9F68FEC783AB1E6E79218B5D87FD1BB541817FB4F3C21DC849A803CB8A620A2EE00475BAF2CE6556638B7A949B446F39A1076DA15764A777BA6239447CB91F4CF513325366E167D268DDB75F288B5C13415CE62F5C431181C044A28CA502FF14439E5C6F63D419CB6DE1360DB01593FE765459299E442EE24917C199AB5178F38461F8C4EBBC95344C5F2AB60F379813A87E2E3AFE3021198B8222CEAB870D9A353786079961184D63977917C7DF8FE6AFBBC795A832BDD454D6E3CD22C3FF7A58808923DD6F464C12A9A88FBFD0C71458AB0E4C1D566315181A9578ECE93670E5CAF13CF2553F68E64726C131F4A48B42A9E7F09EFEBA51D1FDA6BA0ECA0B02B951ECC04548F1D4D08DB69D0EFDCE6793537BB8E59DC442631A9CDBA13878D7493AADA0CD868C1C1C3A6A6FA17C4109205A83F9C0C43E0D2551D0A8592EA99D20D4B78B4EEEE2D53A543701F620C7D6FF46E800B0CEF9B3D23ACD62C7CBEA25FC8BD74D5A0E5C86B9CF3FCACBDBE585AFF85F9689CBF5BCBD267C580361D5B93AA9BD5A1BB6122BB87C04AE227211FE675A4650814F2285261E5641683D65E0454E2597F6025BB4AA1A044D7B97F57394EA5EC878B80FC0A82F12E2D3D9E1BCB062A7ABB290F02116BDED95761A67CE2FDDE42BDDDF34F22E49A0406D724FEBC86B93F80BB52A8D34B8D2B24288ECBC3F90CCB1EF36085E77F1E2AE0AB411FE60A033E704A21469EA5CE4BB8AF6B1C1F1C5F1F084472D57F458CC39F0B2FE583D0795159E9E38BD1102F5D96DB0F828B66F41A702BB0AE59E40CF53BE7F6342EF208434CFFABF845AFD771B288D484BB79952159E6EA27658A6B6230557AF16E86C4AFDF973DBD5A3A2B979AD9037441409D22A954DC50CBCEA8EA5AC500C4BC8282DCE2626BD2B2CB4B1E33B2E1F92533F7F04C48D061907DBCE3E21FF0A77F09C1AE33E769962CD1EDE6B688590D569409EE9EEC4DF1074DCC97C43B0EDAF1C38B5B2784ABC803D9B3B4FC35F46CB1E275E7F83036FC6AFF2E624D4D2E6AE1C2D4CE3FF219FA90A935957E0DE1A386E4AAB5C9F9D1CECA909F5698BFA86C57B6A73D3C0F9FDB94128B7BB9FDD19D57E4C2C2F4127A1F127A96ABF248B26D8B6EF12A1EA97D064564D33D46E5CA71F53FA121A7E5C91ED2B08BE64A0E3D22BE26FC251C0BF4CF21674DE19AF410E3EDFBD9A4BBEA6C709A1E42B5C17E1EE7AA33EFB0F375BF0858D49210A71662313FA5B8E04E508A5E9425D49C3C5D12CB8DCADBF8A148BFA042BBB0218AAC403AAB9CECC45FD33CEC6797FC984BF91FF638AF6E1F09546F595CFC779D2D867282C63B78DC6A6ED3C1C3887462C84AC07C756C5A8D8A8B2EFD39C28A68D47091A3312461BC20085636F4B41F22D5B46861F3E557777CDCFDFE6CAB8ABECFECA3634D779C0F21185772C426BE383BD26E1715DAB5EC4AE4CAC877ED6899CBCB31546F9C6144399C7C0257BBCCBE0EBD2E90EA901840211FCBB1655CB66FD9C51E90432B273CC4CFF3F8DBEB24CDB0ED6017FE68A7F3E9156E1BA276526DE9599A66921F0E2C3ED466FDE0076DCDA6745F29D28E406BEE5FFB0D4C5FB5D72029BAE56BC22496567FF64341F89469703987DD9D700C08346782F57BA62479812820C862D3D5C604C5C26A76F1A7EC503EB4892BAEB25BB44E783FFB3F1B2F5BECB16A5B48F4D769C3DD5713D2B00AEF4870248A1D561623C9418C285CEE86E1C8DF4A73ED729D7789577456281B4F4D1EE3447E6F8391341BB8F15CF9712E73DBE149164B95748F35D6A4CB4492B8D082AB372E96FC29D1578B41D85F0B7A04EFCBE928642D5D2825F978805C43062C3DF3F0915B33F58A8D82BCC523F3C36B9BAEB9226A39549408AFD3119A8B39B8887038107EB5A623D59186BFFF562E624E1BC25A0C8AA6DD298AEC09B06802A77DFD11799D29506307693DAB2962B98EF9F25E785619D05BDE7073474E187D59D41F6A2E06CC292AD406C2991D9C5E58812A1431B46AB634D548433B1E437D745A013EF6657F9FC21BCD9EC53F62451A5C033ECCB30696599CD252747612332FAE4FA5C498619DB676F3C6C37910A63B7E50B278D64E5200C6905B604BCCFC71BDCD724C68AB74FE48CA5AB1C7F14211A538292081DE31416343D741BFD8FBA0A885DFEFC20EE2F113E1430284260EBCA365C866552DDB739078B97992F3F6BAD2A81FCEBCBB6B65B688B96DE1E0E1F5650AA89B924103A72B7C241728EB69B7CB7998177954E9DA00B57086DCFEA1BD26CD458EA33459ED027A30CA682DC968BC362CCF6B2897FEA1E278A" />
+    <input id="pathAnalysisHid" type="hidden" value="/KVisual/ArticleAnalysis/index?" />
+
+</form>
+
+<script type="text/javascript">
+    $(function () {
+        if ('True'=='False') {
+            $("#batchOpsBox .bulkdownload").css("display","none");
+        }
+    });
+   
+</script>

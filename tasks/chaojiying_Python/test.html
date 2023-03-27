@@ -1,0 +1,4841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/national_project/css/displaytag/site.css" type="text/css" rel="stylesheet">
+<link href="/national_project/css/displaytag/screen.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+	button {border-style:none;background-color:transparent;cursor:pointer;text-decoration:underline;}
+	table td {word-break:break-all;}
+	.projectHead {color:#FF9900;font-size:14px;height:26px;line-height:26px;background-image:url("/national_project/image/index_r5_c4-2.jpg");background-repeat:repeat-x;}
+</style>
+<script type="text/javascript" src="/national_project/js/prototype.js"></script>
+<script type="text/javascript">
+var openViewButtons;
+var teacherListButtons;
+var teacherListWindow;
+var subjectArray = new Array();
+var danweiArray = new Array();
+var stageDialog;
+
+window.onload = function() {
+
+		openViewButtons = document.getElementsByName("openViewButton");
+		if (openViewButtons) {
+			for (var i = 0; i < openViewButtons.length; i++) {
+				openViewButtons[i].projectId = openViewButtons[i].getAttribute("projectId");
+				openViewButtons[i].onclick = openProjectView;
+			}
+		}
+		teacherListButtons = document.getElementsByName("teacherListButton");
+		if (teacherListButtons) {
+			for (var i = 0; i < teacherListButtons.length; i++) {
+				teacherListButtons[i].projectId = teacherListButtons[i].getAttribute("projectId");
+				teacherListButtons[i].onclick = function() {
+					var openurl = "/national_project/projectTeacherList.do?requestType=PRINT&id=" + this.projectId;
+					if (teacherListWindow && !teacherListWindow.closed) {
+						teacherListWindow.location.assign(openurl);
+						teacherListWindow.focus();
+					} else {
+						teacherListWindow = window.open(openurl,"","top=0,left=0,height=600,width=800,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,location=no,status=no");
+					}
+				};
+			}
+		}
+		var defaultGroupRowValue = "";
+		var gongbuTable = document.getElementById("project").getElementsByTagName("tbody")[0];
+		var gongbuTableRows = gongbuTable.getElementsByTagName("tr");
+		var x = 0;
+		for (var i = 0; i < subjectArray.length; i++) {
+			if (defaultGroupRowValue != subjectArray[i].value) {
+				var tdId = "subjectTd" + i;
+				var tempTr = gongbuTable.insertRow(i + x);
+				var tempTd = tempTr.insertCell(tempTr.cells.length);
+				tempTd.id = tdId;
+				tempTd.colSpan = 12;
+				tempTd.className = "projectHead";
+				getGroupNameAndNum(tdId, subjectArray[i], "subject").call();
+				x++;
+			}
+			defaultGroupRowValue = subjectArray[i].value;
+		}
+		x = 0;
+		for (var i = 0; i < danweiArray.length; i++) {
+			if (defaultGroupRowValue != danweiArray[i].value) {
+				var tdId = "danweiTd" + i;
+				var tempTr = gongbuTable.insertRow(i + x);
+				var tempTd = tempTr.insertCell(tempTr.cells.length);
+				tempTd.id = tdId;
+				tempTd.colSpan = 14;
+				tempTd.className = "projectHead";
+				getGroupNameAndNum(tdId, danweiArray[i], "danwei").call();
+				x++;
+			}
+			defaultGroupRowValue = danweiArray[i].value;
+		}
+		stageDialog = window.parent.stageDialog;
+
+
+};
+window.onbeforeunload = function() {
+	if (teacherListWindow && !teacherListWindow.closed) {
+		teacherListWindow.close();
+	}
+};
+function openProjectView() {
+	window.open("/national_project/approval/projectView.do?id=" + this.projectId, "_blank", "height="+window.screen.height+",width="+window.screen.width+",toolbar=no,scrollbars=yes,menubar=no");
+}
+function addGroupRow(value, type) {
+	if (type == "danwei") {
+		danweiArray[danweiArray.length] = value;
+	}
+	if (type == "subject") {
+		subjectArray[subjectArray.length] = value;
+	}
+}
+function getGroupNameAndNum(tdId, object, type) {
+	return function() {
+	    var url = '/national_project/ajaxGongbuGroupNameAndNum.do';
+	    var pars = 'id=' + object.value + '&groupType=' + type + '&year=2022&gongbuCode='
+	    	+ '&name=&xmanager=&sdanwei='
+	    	+ '&parentSubjectId=&subjectId=&beian='
+	    	+ '&type=3&pici=&gongbu=3&scode='
+	    	+ '&groupName=' + object.name;
+	    var myAjax = new Ajax.Updater(tdId, url, {
+	        method :'post',
+	        parameters :pars
+	    });
+	};
+}
+function openStageView(stages) {
+	var tbodyObj = window.parent.stageDiv.getElementsByTagName("tbody")[0];
+	for (var x = 0; stages && x < stages.length; x++) {
+		var stage = stages[x];
+		var tempTr = tbodyObj.insertRow(tbodyObj.rows.length);
+		var indexTd = tempTr.insertCell(tempTr.cells.length);
+		var indexStartEndTime = tempTr.insertCell(tempTr.cells.length);
+		var indexDidian = tempTr.insertCell(tempTr.cells.length);
+		indexTd.innerHTML = (x + 1);
+		indexStartEndTime.innerHTML = (stage.starttime + "到" + stage.endtime);
+		indexDidian.innerHTML = (stage.didian);
+		tempTr.className = x % 2 ? "even" : "odd";
+	}
+	stageDialog.show();
+}
+</script>
+</head>
+<script type="text/javascript">
+	window.parent.codeImg.src='/national_project/CheckCodeImageServlet?r='+new Date().getTime();
+	window.parent. J_VCode.value="";
+</script>
+
+
+
+<div class="projectHead" style="width:100%;font-size:16pt;text-align:center;">2022年国家级继续医学教育基地项目表（共526项）</div>
+
+<table cellspacing="1" style="width:100%;border:0;align:center;border-color:#FFFFFF;" id="project" class="its" cellpadding="1">
+<thead>
+<tr>
+<th>项目编号</th>
+<th>基地名称<br>(申办单位)</th>
+<th>基地<br/>负责人</th>
+<th>联系<br/>电话</th>
+<th>项目名称</th>
+<th>项目<br/>负责人</th>
+<th>联系<br />电话</th>
+<th>举办期限<br />起止日期</th>
+<th>举办<br />地点</th>
+<th>授予学<br />员学分</th>
+<th>教学<br />对象</th>
+<th>拟招生<br />人数</th>
+<th>备注</th>
+<th>授课教师<br/>讲授题目</th></tr></thead>
+<tbody>
+<tr class="odd">
+<td style="width:8%;">
+	J1-22-01 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">唾液腺疾病诊治和唾液腺外科技术新进展</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-82195992</td>
+<td style="text-align:center;width:10%;">
+		2022/10/10-<br />2022/10/11
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">宁夏银川市</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="295333">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J1-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">口腔颌面锥形束CT临床应用的规范化培训</td>
+<td style="width:6%;">傅开元</td>
+<td style="width:8%;">010-82195324</td>
+<td style="text-align:center;width:10%;">
+		2022/06/13-<br />2022/06/15
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">30</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="319088">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J1-22-03 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">颞下颌关节紊乱病规范化诊断及治疗</td>
+<td style="width:6%;">傅开元</td>
+<td style="width:8%;">010-82195324</td>
+<td style="text-align:center;width:10%;">
+		2022/11/04-<br />2022/11/06
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">40</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="319096">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J1-22-06 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">上颌骨肿瘤的诊治及缺损重建</td>
+<td style="width:6%;">彭歆</td>
+<td style="width:8%;">010-82195210</td>
+<td style="text-align:center;width:10%;">
+		2022/08/13-<br />2022/08/14
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">宁夏银川市</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">40</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="321480">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J1-22-07 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">美学区域软硬组织增量技术及新技术进展</td>
+<td style="width:6%;">邱立新</td>
+<td style="width:8%;">13910564471</td>
+<td style="text-align:center;width:10%;">
+		2022/04/08-<br />2022/04/09
+		<br />2.0天&#47;期
+
+		<script type="text/javascript">
+			var stage320018 = [
+
+
+				{starttime:"2022-04-08",endtime:"2022-04-09",didian:"北京"}
+
+				,
+				{starttime:"2022-09-09",endtime:"2022-09-10",didian:"北京"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage320018)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分&#47;期
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">30&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="320018">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J1-22-08 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">口腔种植技术规范化培训班</td>
+<td style="width:6%;">邱立新</td>
+<td style="width:8%;">13910564471</td>
+<td style="text-align:center;width:10%;">
+		2022/04/04-<br />2022/04/07
+		<br />4.0天&#47;期
+
+		<script type="text/javascript">
+			var stage320023 = [
+
+
+				{starttime:"2022-04-04",endtime:"2022-04-07",didian:"北京"}
+
+				,
+				{starttime:"2022-09-05",endtime:"2022-09-08",didian:"北京"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage320023)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		8分&#47;期
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">30&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="320023">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J1-22-09 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">北京大学口腔医院正颌外科基础技术学习班</td>
+<td style="width:6%;">李自力</td>
+<td style="width:8%;">13901391680</td>
+<td style="text-align:center;width:10%;">
+		2022/05/14-<br />2022/05/16
+		<br />2.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		5分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="320383">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J1-22-10 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">北京大学口腔医院数字化正颌外科学习班</td>
+<td style="width:6%;">李自力</td>
+<td style="width:8%;">13901391680</td>
+<td style="text-align:center;width:10%;">
+		2022/10/15-<br />2022/10/16
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="320397">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J1-22-11 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">口腔颌面外科护理新技术与管理学习班</td>
+<td style="width:6%;">杨悦</td>
+<td style="width:8%;">010-82195158</td>
+<td style="text-align:center;width:10%;">
+		2022/09/17-<br />2022/09/18
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="299045">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J1-22-12 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">腭裂术后语音评价及治疗策略学习班</td>
+<td style="width:6%;">马莲</td>
+<td style="width:8%;">010-82195670</td>
+<td style="text-align:center;width:10%;">
+		2022/05/21-<br />2022/05/22
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">山东济南市</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">30</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="321335">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J1-22-13 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">2022年北京大学显微外科组织缺损修复与功能重建高级研修班</td>
+<td style="width:6%;">蔡志刚</td>
+<td style="width:8%;">010-82195159</td>
+<td style="text-align:center;width:10%;">
+		2022/09/09-<br />2022/09/11
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="321263">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J1-22-14 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">口腔数字医学技术临床应用</td>
+<td style="width:6%;">郭传瑸</td>
+<td style="width:8%;">010-62179977</td>
+<td style="text-align:center;width:10%;">
+		2022/08/07-<br />2022/08/08
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">福建厦门市</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="321642">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J1-22-15 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">牙槽外科理论与实用技术进阶</td>
+<td style="width:6%;">王恩博</td>
+<td style="width:8%;">010-82195398</td>
+<td style="text-align:center;width:10%;">
+		2022/12/02-<br />2022/12/03
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="321645">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J1-22-16 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">放射性粒子治疗口腔颌面-头颈部肿瘤系列学习班</td>
+<td style="width:6%;">张建国</td>
+<td style="width:8%;">010-82195246</td>
+<td style="text-align:center;width:10%;">
+		2022/06/18-<br />2022/06/19
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">30</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322407">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J1-22-17 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">头颈部恶性肿瘤综合序列治疗学习班</td>
+<td style="width:6%;">张杰</td>
+<td style="width:8%;">010-82195246</td>
+<td style="text-align:center;width:10%;">
+		2022/06/17-<br />2022/06/19
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">30</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="321165">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J1-22-18 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">2022年口腔颌面外科新进展学习班</td>
+<td style="width:6%;">张雷</td>
+<td style="width:8%;">010-82195980</td>
+<td style="text-align:center;width:10%;">
+		2022/06/17-<br />2022/06/19
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322531">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J1-22-19 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-01-01", name:"北京大学口腔医学院口腔颌面外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京大学口腔医学院口腔颌面外科</td>
+<td style="width:6%;">俞光岩</td>
+<td style="width:8%;">010-62179977-5295</td>
+<td style="width:8%">2022年北大口腔医院口腔颌面整形美容技术进展研修班</td>
+<td style="width:6%;">刘筱菁</td>
+<td style="width:8%;">010-82195301</td>
+<td style="text-align:center;width:10%;">
+		2022/11/18-<br />2022/11/18
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322608">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J10-22-01 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-03-01", name:"中山大学第一医院肾脏内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中山大学第一医院肾脏内科</td>
+<td style="width:6%;">陈崴</td>
+<td style="width:8%;">13924150966</td>
+<td style="width:8%">腹膜透析新进展学习班</td>
+<td style="width:6%;">陈崴</td>
+<td style="width:8%;">13924150966</td>
+<td style="text-align:center;width:10%;">
+		2022/08/11-<br />2022/08/14
+		<br />4.0天
+
+	</td>
+<td style="width:4%;">广东广州市</td>
+<td style="width:7%;">
+		8分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="293204">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J10-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-03-01", name:"中山大学第一医院肾脏内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中山大学第一医院肾脏内科</td>
+<td style="width:6%;">陈崴</td>
+<td style="width:8%;">13924150966</td>
+<td style="width:8%">全国肾科高级医生培训班（上半年）</td>
+<td style="width:6%;">陈崴</td>
+<td style="width:8%;">13924150966</td>
+<td style="text-align:center;width:10%;">
+		2022/04/18-<br />2022/04/21
+		<br />4.0天
+
+	</td>
+<td style="width:4%;">广东广州市</td>
+<td style="width:7%;">
+		8分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="293210">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J10-22-03 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-03-01", name:"中山大学第一医院肾脏内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中山大学第一医院肾脏内科</td>
+<td style="width:6%;">陈崴</td>
+<td style="width:8%;">13924150966</td>
+<td style="width:8%">中山肾脏病学国际论坛</td>
+<td style="width:6%;">陈崴</td>
+<td style="width:8%;">13924150966</td>
+<td style="text-align:center;width:10%;">
+		2022/08/12-<br />2022/08/15
+		<br />4.0天
+
+	</td>
+<td style="width:4%;">广东广州市</td>
+<td style="width:7%;">
+		8分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="293226">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J10-22-04 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-03-01", name:"中山大学第一医院肾脏内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中山大学第一医院肾脏内科</td>
+<td style="width:6%;">陈崴</td>
+<td style="width:8%;">13924150966</td>
+<td style="width:8%">全国肾科高级医生培训班（下半年)</td>
+<td style="width:6%;">陈崴</td>
+<td style="width:8%;">13924150966</td>
+<td style="text-align:center;width:10%;">
+		2022/06/01-<br />2022/06/18
+		<br />18.0天
+
+	</td>
+<td style="width:4%;">广东广州市</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="307140">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J11-22-01 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-01", name:"北京协和医院妇产科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京协和医院妇产科</td>
+<td style="width:6%;">郎景和</td>
+<td style="width:8%;">69156204</td>
+<td style="width:8%">葛秦生生殖内分泌学论坛第五届更年期相关问题研讨会</td>
+<td style="width:6%;">陈蓉</td>
+<td style="width:8%;">010-69156204</td>
+<td style="text-align:center;width:10%;">
+		2022/08/05-<br />2022/08/07
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">1000</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="305546">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J11-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-01", name:"北京协和医院妇产科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京协和医院妇产科</td>
+<td style="width:6%;">郎景和</td>
+<td style="width:8%;">010-65296201</td>
+<td style="width:8%">单孔腹腔镜学习班</td>
+<td style="width:6%;">刘海元</td>
+<td style="width:8%;">010-65296201</td>
+<td style="text-align:center;width:10%;">
+		2022/04/11-<br />2022/04/12
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="298894">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J11-22-03 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-01", name:"北京协和医院妇产科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京协和医院妇产科</td>
+<td style="width:6%;">郎景和</td>
+<td style="width:8%;">010-65296201</td>
+<td style="width:8%">妇科肿瘤手术学高级培训班</td>
+<td style="width:6%;">吴鸣</td>
+<td style="width:8%;">13801224549</td>
+<td style="text-align:center;width:10%;">
+		2022/04/01-<br />2022/04/03
+		<br />3.0天&#47;期
+
+		<script type="text/javascript">
+			var stage300679 = [
+
+
+				{starttime:"2022-04-01",endtime:"2022-04-03",didian:"北京"}
+
+				,
+				{starttime:"2022-07-01",endtime:"2022-07-03",didian:"北京"}
+
+				,
+				{starttime:"2022-10-14",endtime:"2022-10-16",didian:"北京"}
+
+				,
+				{starttime:"2022-12-23",endtime:"2022-12-25",didian:"北京"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage300679)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分&#47;期
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="300679">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J11-22-04 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-01", name:"北京协和医院妇产科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京协和医院妇产科</td>
+<td style="width:6%;">郎景和</td>
+<td style="width:8%;">010-65296201</td>
+<td style="width:8%">多学科在围产保健管理中的应用实践（技术）学习班</td>
+<td style="width:6%;">马良坤</td>
+<td style="width:8%;">13021961166</td>
+<td style="text-align:center;width:10%;">
+		2022/09/16-<br />2022/09/18
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业医务人员</td>
+<td style="width:6%;">600</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="303408">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J11-22-05 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-01", name:"北京协和医院妇产科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">北京协和医院妇产科</td>
+<td style="width:6%;">郎景和</td>
+<td style="width:8%;">010-65296201</td>
+<td style="width:8%">协和妇科肿瘤高峰论坛</td>
+<td style="width:6%;">向阳</td>
+<td style="width:8%;">13511050222</td>
+<td style="text-align:center;width:10%;">
+		2022/05/13-<br />2022/05/15
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="305756">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-01 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">多元供血区域扩张皮瓣的临床应用</td>
+<td style="width:6%;">李养群</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/04-<br />2022/11/04
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322089">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">晚期面瘫的动力性重建和整形外科综合治疗</td>
+<td style="width:6%;">李养群</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/06-<br />2022/11/06
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322101">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-03 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">男性外生殖器畸形和损伤的整形美容特色治疗</td>
+<td style="width:6%;">李养群</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/04-<br />2022/11/05
+		<br />1.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		3分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322105">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-04 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">面颈部综合整形美容</td>
+<td style="width:6%;">王太玲</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/05/14-<br />2022/05/14
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322248">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-05 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">先天性小耳畸形及外伤性耳廓缺损的个性化治疗</td>
+<td style="width:6%;">章庆国</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/05/07-<br />2022/05/07
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322249">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-06 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">眼睑与眶周年轻化治疗进展</td>
+<td style="width:6%;">王永前</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/09/24-<br />2022/09/24
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322256">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-07 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">数字化设计引导下的正颌外科</td>
+<td style="width:6%;">滕利</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/04/07-<br />2022/04/07
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">15</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322280">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-08 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">颅颌面美容外科</td>
+<td style="width:6%;">牛峰</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/09/10-<br />2022/09/10
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322309">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-09 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">先天性耳廓畸形的诊断及系统化治疗</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/27-<br />2022/11/27
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322323">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-10 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">微创拇指外翻畸形的外科治疗</td>
+<td style="width:6%;">赵延勇</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/13-<br />2022/11/13
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322324">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-11 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">内窥镜辅助假体隆乳术</td>
+<td style="width:6%;">栾杰</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/15-<br />2022/11/15
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322328">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-12 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">乳房再造的基本原则、基本技术与最新进展</td>
+<td style="width:6%;">栾杰</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/05/12-<br />2022/05/12
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322330">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-14 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">妇科整形</td>
+<td style="width:6%;">李强</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/16-<br />2022/11/16
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322393">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-15 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">显微外科学的基础理论及其在整形外科中的应用</td>
+<td style="width:6%;">范金财</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/10/22-<br />2022/10/22
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322391">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-17 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">两性畸形的整形外科治疗</td>
+<td style="width:6%;">李强</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/14-<br />2022/11/14
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322395">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-18 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">体表肿瘤的诊断</td>
+<td style="width:6%;">李强</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/15-<br />2022/11/15
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322396">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-19 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">外鼻畸形的矫正与外鼻缺损的修复外科学</td>
+<td style="width:6%;">范飞</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/05/20-<br />2022/05/20
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322397">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-20 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">颅面先天畸形和轮廓外科</td>
+<td style="width:6%;">唐晓军</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/10/17-<br />2022/10/17
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">30</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322398">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-21 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">微创整形美容外科</td>
+<td style="width:6%;">杨明勇</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/19-<br />2022/11/19
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322399">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-22 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">脂肪抽吸及脂肪移植相关技术</td>
+<td style="width:6%;">马桂娥</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/10-<br />2022/11/10
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322401">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-23 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">面颈部综合美容与脂肪移植</td>
+<td style="width:6%;">马继光</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/26-<br />2022/11/27
+		<br />1.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		3分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322402">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-24 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">外伤缝合与瘢痕防治一体化理念</td>
+<td style="width:6%;">王连召</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/05/18-<br />2022/05/18
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322405">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-27 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">颅颌面创伤新进展</td>
+<td style="width:6%;">傅继弟</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/05/13-<br />2022/05/13
+		<br />0.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		1分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322409">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-28 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">多学科团队协作在整形外科围术期护理中的实践</td>
+<td style="width:6%;">刘娜</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/09/22-<br />2022/09/23
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322406">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-29 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">建立颈前紧急气道模拟培训班</td>
+<td style="width:6%;">杨冬</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/05-<br />2022/11/05
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">30</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322411">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-30 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">困难气管插管新技术培训班</td>
+<td style="width:6%;">杨冬</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/09/24-<br />2022/09/25
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322413">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-31 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">数字化技术在颅颌面外科的应用</td>
+<td style="width:6%;">杨斌</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/08-<br />2022/11/08
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322415">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-32 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">第十二届北京国际整形美容外科会议</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/05/19-<br />2022/05/23
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">500</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322417">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-33 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">耳廓疾病的治疗</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/20-<br />2022/11/21
+		<br />1.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		3分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322312">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-34 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">瘢痕的综合治疗</td>
+<td style="width:6%;">范金财</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/11/05-<br />2022/11/05
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322348">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J12-22-35 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">扩张器技术在整形外科中的应用</td>
+<td style="width:6%;">范金财</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/10/29-<br />2022/10/29
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322358">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J12-22-36 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-07", name:"中国医学科学院整形外科医院整形外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院整形外科医院整形外科</td>
+<td style="width:6%;">蒋海越</td>
+<td style="width:8%;">010-88771513</td>
+<td style="width:8%">体形雕塑与脂肪移植学习班</td>
+<td style="width:6%;">李发成</td>
+<td style="width:8%;">010-88772048</td>
+<td style="text-align:center;width:10%;">
+		2022/06/06-<br />2022/06/06
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="322404">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-01 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">核医学大型设备新技术与质量控制</td>
+<td style="width:6%;">耿建华</td>
+<td style="width:8%;">010-87788523</td>
+<td style="text-align:center;width:10%;">
+		2022/07/23-<br />2022/07/23
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="303137">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第五届国际肿瘤缓和医疗高峰论坛</td>
+<td style="width:6%;">于雷</td>
+<td style="width:8%;">010-87788774</td>
+<td style="text-align:center;width:10%;">
+		2022/06/09-<br />2022/06/10
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="315441">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-03 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">安宁疗护新进展</td>
+<td style="width:6%;">何瑞仙</td>
+<td style="width:8%;">010-87788568</td>
+<td style="text-align:center;width:10%;">
+		2022/11/12-<br />2022/11/13
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316342">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-04 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">胸部肿瘤外科护理进展</td>
+<td style="width:6%;">刘燕</td>
+<td style="width:8%;">010-87787152</td>
+<td style="text-align:center;width:10%;">
+		2022/07/08-<br />2022/07/09
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316373">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-05 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第五届肿瘤精准诊疗高峰论坛暨第八届乳腺癌个体化治疗大会</td>
+<td style="width:6%;">徐兵河</td>
+<td style="width:8%;">010-87788826</td>
+<td style="text-align:center;width:10%;">
+		2022/08/06-<br />2022/08/07
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316850">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-06 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第 15 届全国抗肿瘤 GCP 培训班</td>
+<td style="width:6%;">李宁</td>
+<td style="width:8%;">010-87788177</td>
+<td style="text-align:center;width:10%;">
+		2022/06/14-<br />2022/06/14
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">1000</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316895">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-07 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第1届肿瘤合并出凝血障碍学习班</td>
+<td style="width:6%;">邢学忠</td>
+<td style="width:8%;">18601141437</td>
+<td style="text-align:center;width:10%;">
+		2022/07/23-<br />2022/07/23
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316896">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-08 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第11届肿瘤分子病理检测标准化应用及质量控制研讨会</td>
+<td style="width:6%;">应建明</td>
+<td style="width:8%;">010-87787515</td>
+<td style="text-align:center;width:10%;">
+		2022/09/10-<br />2022/09/13
+		<br />4.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		8分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">230</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316921">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-09 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">淋巴瘤和软组织肿瘤病理诊断和分子进展研讨会</td>
+<td style="width:6%;">冯晓莉</td>
+<td style="width:8%;">15810210014</td>
+<td style="text-align:center;width:10%;">
+		2022/10/23-<br />2022/10/24
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316922">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-10 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">全国细胞病理学诊断及技术高级研讨班</td>
+<td style="width:6%;">张智慧</td>
+<td style="width:8%;">010-87787580</td>
+<td style="text-align:center;width:10%;">
+		2022/08/13-<br />2022/08/15
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316923">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-11 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第四届国际骨与软组织肿瘤新进展高峰论坛</td>
+<td style="width:6%;">于胜吉</td>
+<td style="width:8%;">010-87787703</td>
+<td style="text-align:center;width:10%;">
+		2022/05/14-<br />2022/05/15
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">150</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316930">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-12 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">结直肠癌腹腔镜微创手术及加速康复外科学习班</td>
+<td style="width:6%;">郑朝旭</td>
+<td style="width:8%;">13701222472</td>
+<td style="text-align:center;width:10%;">
+		2022/09/01-<br />2022/09/02
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316936">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-13 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">妇科肿瘤高峰论坛暨第二十届妇科肿瘤临床诊治规范研讨会</td>
+<td style="width:6%;">吴令英</td>
+<td style="width:8%;">13910865483</td>
+<td style="text-align:center;width:10%;">
+		2022/08/26-<br />2022/08/28
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316928">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-14 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">浅表器官占位性病变的超声诊断</td>
+<td style="width:6%;">牛丽娟</td>
+<td style="width:8%;">010-87787543</td>
+<td style="text-align:center;width:10%;">
+		2022/07/09-<br />2022/07/09
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">150</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316925">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-15 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">肿瘤精确放疗靶区勾画学习班</td>
+<td style="width:6%;">李晔雄</td>
+<td style="width:8%;">13801103877</td>
+<td style="text-align:center;width:10%;">
+		2022/04/01-<br />2022/04/03
+		<br />2.5天&#47;期
+
+		<script type="text/javascript">
+			var stage316926 = [
+
+
+				{starttime:"2022-04-01",endtime:"2022-04-03",didian:"北京"}
+
+				,
+				{starttime:"2022-06-18",endtime:"2022-06-20",didian:"北京"}
+
+				,
+				{starttime:"2022-10-22",endtime:"2022-10-24",didian:"北京"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage316926)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		5分&#47;期
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">40&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316926">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-16 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第七届肿瘤分子影像精准诊疗与新技术论坛</td>
+<td style="width:6%;">郑容</td>
+<td style="width:8%;">010-87787073</td>
+<td style="text-align:center;width:10%;">
+		2022/07/10-<br />2022/07/11
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316932">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-17 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">肿瘤实验室检测研究新进展高峰论坛</td>
+<td style="width:6%;">崔巍</td>
+<td style="width:8%;">010-87787503</td>
+<td style="text-align:center;width:10%;">
+		2022/09/17-<br />2022/09/17
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316935">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-18 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">城市高危人群癌症筛查和早诊早治技术全国培训班</td>
+<td style="width:6%;">陈万青</td>
+<td style="width:8%;">010-87787039</td>
+<td style="text-align:center;width:10%;">
+		2022/06/07-<br />2022/06/08
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">广东深圳市</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316903">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-19 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">淮河流域早诊早治技术培训</td>
+<td style="width:6%;">陈万青</td>
+<td style="width:8%;">010-87788662</td>
+<td style="text-align:center;width:10%;">
+		2022/05/20-<br />2022/05/21
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">河南郑州市</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">150</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316907">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-20 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第二届肿瘤疾病编码、分组与绩效管理研讨班</td>
+<td style="width:6%;">魏文强</td>
+<td style="width:8%;">010-13011880657</td>
+<td style="text-align:center;width:10%;">
+		2022/04/01-<br />2022/04/02
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316914">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-21 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">肿瘤专科医院病案信息管理新进展学习班</td>
+<td style="width:6%;">樊美娜</td>
+<td style="width:8%;">13681273155</td>
+<td style="text-align:center;width:10%;">
+		2022/07/20-<br />2022/07/23
+		<br />4.0天
+
+	</td>
+<td style="width:4%;">广东深圳市</td>
+<td style="width:7%;">
+		8分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316919">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-22 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第3届肿瘤合并呼吸衰竭学习班</td>
+<td style="width:6%;">邢学忠</td>
+<td style="width:8%;">18601141437</td>
+<td style="text-align:center;width:10%;">
+		2022/06/25-<br />2022/06/25
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316902">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-23 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">2022年中国乳腺癌规范诊疗与质量控制大会</td>
+<td style="width:6%;">马飞</td>
+<td style="width:8%;">13910217780</td>
+<td style="text-align:center;width:10%;">
+		2022/10/15-<br />2022/10/16
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316953">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-24 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第二十五届全国临床肿瘤学大会</td>
+<td style="width:6%;">王洁</td>
+<td style="width:8%;">13910704669</td>
+<td style="text-align:center;width:10%;">
+		2022/09/22-<br />2022/09/25
+		<br />4.0天
+
+	</td>
+<td style="width:4%;">福建厦门市</td>
+<td style="width:7%;">
+		8分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">15000</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316954">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-25 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">结直肠癌NOSES手术高级研讨班</td>
+<td style="width:6%;">周海涛</td>
+<td style="width:8%;">010-87788026</td>
+<td style="text-align:center;width:10%;">
+		2022/07/23-<br />2022/07/24
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316948">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-26 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">泌尿肿瘤微创治疗研讨会</td>
+<td style="width:6%;">邢念增</td>
+<td style="width:8%;">010-87787170</td>
+<td style="text-align:center;width:10%;">
+		2022/06/04-<br />2022/06/05
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316951">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-27 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">泌尿肿瘤综合治疗论坛</td>
+<td style="width:6%;">邢念增</td>
+<td style="width:8%;">010-87787170</td>
+<td style="text-align:center;width:10%;">
+		2022/12/03-<br />2022/12/04
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316952">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-29 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">静脉治疗新进展学习班</td>
+<td style="width:6%;">张淑香</td>
+<td style="width:8%;">010-87788507</td>
+<td style="text-align:center;width:10%;">
+		2022/06/10-<br />2022/06/11
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316382">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-30 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">全国胸科麻醉及疼痛管理论坛</td>
+<td style="width:6%;">郑晖</td>
+<td style="width:8%;">010-87787024</td>
+<td style="text-align:center;width:10%;">
+		2022/08/19-<br />2022/08/20
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316949">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-31 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">2022京城肿瘤论坛</td>
+<td style="width:6%;">袁芃</td>
+<td style="width:8%;">13601270834</td>
+<td style="text-align:center;width:10%;">
+		2022/06/12-<br />2022/06/12
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316972">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-32 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第十一届甲状腺肿瘤规范化诊疗与进展高峰论坛</td>
+<td style="width:6%;">刘绍严</td>
+<td style="width:8%;">010-87787190</td>
+<td style="text-align:center;width:10%;">
+		2022/10/12-<br />2022/10/15
+		<br />4.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		8分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316975">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-33 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">颅底肿瘤学习班</td>
+<td style="width:6%;">万经海</td>
+<td style="width:8%;">13426261848</td>
+<td style="text-align:center;width:10%;">
+		2022/08/13-<br />2022/08/14
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316966">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-35 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">中国肿瘤输血医学大会</td>
+<td style="width:6%;">郑晖</td>
+<td style="width:8%;">010-87787011</td>
+<td style="text-align:center;width:10%;">
+		2022/07/09-<br />2022/07/11
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316967">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-36 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第十四届胸部肿瘤规范化诊疗高级论坛</td>
+<td style="width:6%;">薛奇</td>
+<td style="width:8%;">010-87788262</td>
+<td style="text-align:center;width:10%;">
+		2022/05/20-<br />2022/05/21
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">250</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316986">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-37 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">2022国际胸部肿瘤学术大会</td>
+<td style="width:6%;">薛奇</td>
+<td style="width:8%;">010-87788262</td>
+<td style="text-align:center;width:10%;">
+		2022/10/21-<br />2022/10/22
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">250</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316987">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-38 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">全国肿瘤预防与控制实践培训班</td>
+<td style="width:6%;">赵方辉</td>
+<td style="width:8%;">010-87788489</td>
+<td style="text-align:center;width:10%;">
+		2022/05/07-<br />2022/05/08
+		<br />2.0天&#47;期
+
+		<script type="text/javascript">
+			var stage316984 = [
+
+
+				{starttime:"2022-05-07",endtime:"2022-05-08",didian:"四川成都市"}
+
+				,
+				{starttime:"2022-06-11",endtime:"2022-06-12",didian:"甘肃兰州市"}
+
+				,
+				{starttime:"2022-08-06",endtime:"2022-08-07",didian:"云南昆明市"}
+
+				,
+				{starttime:"2022-09-17",endtime:"2022-09-18",didian:"新疆乌鲁木齐市"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage316984)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">四川成都市</td>
+<td style="width:7%;">
+		4分&#47;期
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316984">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-39 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">中国子宫颈癌防治研究进展学术研讨会</td>
+<td style="width:6%;">赵方辉</td>
+<td style="width:8%;">010-87788977</td>
+<td style="text-align:center;width:10%;">
+		2022/04/23-<br />2022/04/24
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316985">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-41 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">第七届全国抗肿瘤药物合理使用与质量控制高峰论坛</td>
+<td style="width:6%;">李国辉</td>
+<td style="width:8%;">010-87788573</td>
+<td style="text-align:center;width:10%;">
+		2022/04/16-<br />2022/04/17
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316988">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-43 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">癌症一级预防基层推广实施技术培训</td>
+<td style="width:6%;">张亚玮</td>
+<td style="width:8%;">010-87788012</td>
+<td style="text-align:center;width:10%;">
+		2022/04/11-<br />2022/04/12
+		<br />2.0天&#47;期
+
+		<script type="text/javascript">
+			var stage317017 = [
+
+
+				{starttime:"2022-04-11",endtime:"2022-04-12",didian:"北京"}
+
+				,
+				{starttime:"2022-07-25",endtime:"2022-07-26",didian:"北京"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage317017)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分&#47;期
+	</td>
+<td style="width:4%">疾病预防控制中心、社区卫生服务中心以及社区卫生服务站健康服务从业人员</td>
+<td style="width:6%;">120&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317017">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-46 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">肿瘤临床大数据真实世界研究方法学培训</td>
+<td style="width:6%;">张亚玮</td>
+<td style="width:8%;">010-87788012</td>
+<td style="text-align:center;width:10%;">
+		2022/05/29-<br />2022/05/31
+		<br />3.0天&#47;期
+
+		<script type="text/javascript">
+			var stage317016 = [
+
+
+				{starttime:"2022-05-29",endtime:"2022-05-31",didian:"北京"}
+
+				,
+				{starttime:"2022-08-21",endtime:"2022-08-23",didian:"北京"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage317016)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分&#47;期
+	</td>
+<td style="width:4%">肿瘤流行病科研工作者、临床医生</td>
+<td style="width:6%;">100&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317016">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-47 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">肿瘤登记技术与方法培训班</td>
+<td style="width:6%;">魏文强</td>
+<td style="width:8%;">010-87788661</td>
+<td style="text-align:center;width:10%;">
+		2022/09/19-<br />2022/09/20
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">120</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316994">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-48 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">腹部影像学学术会议</td>
+<td style="width:6%;">张红梅</td>
+<td style="width:8%;">010-87787529</td>
+<td style="text-align:center;width:10%;">
+		2022/05/20-<br />2022/05/21
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">从事肿瘤影像诊断的影像科医师或从事肿瘤外科、内科、放疗等肿瘤相关的专业专业技术人员</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317068">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-49 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">全国肿瘤影像大会</td>
+<td style="width:6%;">陈雁</td>
+<td style="width:8%;">010-87787529</td>
+<td style="text-align:center;width:10%;">
+		2022/08/09-<br />2022/08/10
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">从事肿瘤影像诊断的影像科医师或从事肿瘤外科、内科、放疗等肿瘤相关的专业专业技术人员</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317069">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J13-22-50 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">2022年放疗新进展论坛</td>
+<td style="width:6%;">惠周光</td>
+<td style="width:8%;">18611876792</td>
+<td style="text-align:center;width:10%;">
+		2022/04/23-<br />2022/04/23
+		<br />1.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		2分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316969">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J13-22-51 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-08", name:"中国医学科学院肿瘤医院"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院肿瘤医院</td>
+<td style="width:6%;">高树庚</td>
+<td style="width:8%;">010-87788177，13801185056</td>
+<td style="width:8%">2022年消化道肿瘤早期诊断与早期治疗进展培训班</td>
+<td style="width:6%;">王贵齐</td>
+<td style="width:8%;">13671229223</td>
+<td style="text-align:center;width:10%;">
+		2022/04/01-<br />2022/04/03
+		<br />3.0天&#47;期
+
+		<script type="text/javascript">
+			var stage316956 = [
+
+
+				{starttime:"2022-04-01",endtime:"2022-04-03",didian:"山东济南市"}
+
+				,
+				{starttime:"2022-05-06",endtime:"2022-05-08",didian:"四川成都市"}
+
+				,
+				{starttime:"2022-06-03",endtime:"2022-06-05",didian:"甘肃张掖市"}
+
+				,
+				{starttime:"2022-07-08",endtime:"2022-07-10",didian:"山东济南市"}
+
+				,
+				{starttime:"2022-08-12",endtime:"2022-08-14",didian:"河北石家庄市"}
+
+				,
+				{starttime:"2022-09-23",endtime:"2022-09-25",didian:"安徽安庆市"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage316956)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">山东济南市</td>
+<td style="width:7%;">
+		6分&#47;期
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">400&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316956">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J14-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">桡动脉途径冠脉介入规范化培训暨冠脉介入治疗进展</td>
+<td style="width:6%;">杨伟宪</td>
+<td style="width:8%;">010-88398080</td>
+<td style="text-align:center;width:10%;">
+		2022/07/15-<br />2022/07/19
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">150</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="305158">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J14-22-03 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">阜外右心与肺血管病论坛</td>
+<td style="width:6%;">柳志红</td>
+<td style="width:8%;">010-88398196</td>
+<td style="text-align:center;width:10%;">
+		2022/06/15-<br />2022/06/16
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="294526">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J14-22-04 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">冠心病介入治疗高级培训班</td>
+<td style="width:6%;">乔树宾</td>
+<td style="width:8%;">010-88398080</td>
+<td style="text-align:center;width:10%;">
+		2022/09/16-<br />2022/09/20
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">150</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="294631">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J14-22-05 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">急诊心脏病专业指南及进展研讨班</td>
+<td style="width:6%;">杨艳敏</td>
+<td style="width:8%;">010-88322801</td>
+<td style="text-align:center;width:10%;">
+		2022/04/29-<br />2022/04/30
+		<br />1.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		3分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">250</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="306429">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J14-22-06 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">2022阜外医院经食管及术中超声心动图精品培训班</td>
+<td style="width:6%;">王浩</td>
+<td style="width:8%;">010-88322636</td>
+<td style="text-align:center;width:10%;">
+		2022/04/12-<br />2022/04/16
+		<br />5.0天&#47;期
+
+		<script type="text/javascript">
+			var stage296453 = [
+
+
+				{starttime:"2022-04-12",endtime:"2022-04-16",didian:"北京"}
+
+				,
+				{starttime:"2022-06-06",endtime:"2022-06-10",didian:"北京"}
+
+				,
+				{starttime:"2022-09-05",endtime:"2022-09-09",didian:"北京"}
+
+				,
+				{starttime:"2022-12-12",endtime:"2022-12-16",didian:"北京"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage296453)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		10分&#47;期
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">6012&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="296453">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J14-22-07 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">心脏植入器械高级培训班</td>
+<td style="width:6%;">华伟</td>
+<td style="width:8%;">010-88398443</td>
+<td style="text-align:center;width:10%;">
+		2022/07/04-<br />2022/07/07
+		<br />4.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		8分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="304128">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J14-22-08 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">2022中国国际高血压大会暨阜外高血压年会</td>
+<td style="width:6%;">蔡军</td>
+<td style="width:8%;">010-88322161</td>
+<td style="text-align:center;width:10%;">
+		2022/07/08-<br />2022/07/10
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">2000</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="305131">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J14-22-10 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">复杂高危有指征患者 (Complex Higher-Risk and Indicated Pat ients, CHIP) 的合理化治疗教程</td>
+<td style="width:6%;">窦克非</td>
+<td style="width:8%;">13801032912</td>
+<td style="text-align:center;width:10%;">
+		2022/11/25-<br />2022/11/27
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="305339">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J14-22-12 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">第十二届全国心力衰竭高级研讨班</td>
+<td style="width:6%;">张健</td>
+<td style="width:8%;">010-88396887</td>
+<td style="text-align:center;width:10%;">
+		2022/05/26-<br />2022/05/29
+		<br />3.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		7分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">2000</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="307107">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J14-22-14 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">心肺运动理论与实践及慢病有效诊疗</td>
+<td style="width:6%;">孙兴国</td>
+<td style="width:8%;">13146992873</td>
+<td style="text-align:center;width:10%;">
+		2022/09/15-<br />2022/09/19
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="312343">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J14-22-15 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">老年心血管病高级研修班暨2022阜外老年心血管病论坛</td>
+<td style="width:6%;">党爱民</td>
+<td style="width:8%;">010-88322131</td>
+<td style="text-align:center;width:10%;">
+		2022/08/17-<br />2022/08/18
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">500</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="320057">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J14-22-16 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">全国基层心血管病综合风险管理</td>
+<td style="width:6%;">王增武</td>
+<td style="width:8%;">010-60866161</td>
+<td style="text-align:center;width:10%;">
+		2022/04/07-<br />2022/04/08
+		<br />2.0天&#47;期
+
+		<script type="text/javascript">
+			var stage320552 = [
+
+
+				{starttime:"2022-04-07",endtime:"2022-04-08",didian:"河北石家庄市"}
+
+				,
+				{starttime:"2022-06-23",endtime:"2022-06-24",didian:"北京"}
+
+				,
+				{starttime:"2022-08-18",endtime:"2022-08-19",didian:"江苏南京市"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage320552)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">河北石家庄市</td>
+<td style="width:7%;">
+		4分&#47;期
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">150&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="320552">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J14-22-18 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">阜外医院第七届先心病超声诊断培训班</td>
+<td style="width:6%;">逄坤静</td>
+<td style="width:8%;">010-88396923</td>
+<td style="text-align:center;width:10%;">
+		2022/05/13-<br />2022/05/15
+		<br />2.5天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		5分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="301615">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J14-22-19 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">外周血管疾病及顽固性高血压介入治疗培训班</td>
+<td style="width:6%;">蒋雄京</td>
+<td style="width:8%;">13601088445</td>
+<td style="text-align:center;width:10%;">
+		2022/06/24-<br />2022/06/26
+		<br />3.0天&#47;期
+
+		<script type="text/javascript">
+			var stage306088 = [
+
+
+				{starttime:"2022-06-24",endtime:"2022-06-26",didian:"北京"}
+
+				,
+				{starttime:"2022-12-23",endtime:"2022-12-25",didian:"北京"}
+
+			];
+		</script>
+		<br /><button type="button" onclick="openStageView(stage306088)">查看多期<br/>举办时间<br/>地点</button>
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		6分&#47;期
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100&#47;期</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="306088">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J14-22-20 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">心血管病围术期超声及疑难病例研讨会</td>
+<td style="width:6%;">朱振辉</td>
+<td style="width:8%;">010-88392367</td>
+<td style="text-align:center;width:10%;">
+		2022/10/22-<br />2022/10/23
+		<br />2.0天
+
+	</td>
+<td style="width:4%;">北京</td>
+<td style="width:7%;">
+		4分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="301834">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J14-22-21 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-09", name:"中国医学科学院阜外医院心内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院阜外医院心内科</td>
+<td style="width:6%;">杨跃进</td>
+<td style="width:8%;">010-88398080</td>
+<td style="width:8%">2022中国高血压年会</td>
+<td style="width:6%;">张宇清</td>
+<td style="width:8%;">010-60866601</td>
+<td style="text-align:center;width:10%;">
+		2022/09/22-<br />2022/09/25
+		<br />4.0天
+
+	</td>
+<td style="width:4%;">重庆</td>
+<td style="width:7%;">
+		8分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">500</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="325880">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J15-22-01 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478120</td>
+<td style="width:8%">性病流行病学与健康教育培训班</td>
+<td style="width:6%;">龚向东</td>
+<td style="width:8%;">025-85478048</td>
+<td style="text-align:center;width:10%;">
+		2022/08/16-<br />2022/08/18
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">甘肃兰州市</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316973">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J15-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478120</td>
+<td style="width:8%">2022年协和皮肤外科论坛</td>
+<td style="width:6%;">王焱</td>
+<td style="width:8%;">13851897979</td>
+<td style="text-align:center;width:10%;">
+		2022/04/16-<br />2022/04/18
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">江苏南京市</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316974">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J15-22-03 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478120</td>
+<td style="width:8%">瘢痕治疗进展及面部年轻化治疗培训班</td>
+<td style="width:6%;">吴信峰</td>
+<td style="width:8%;">025-85478028</td>
+<td style="text-align:center;width:10%;">
+		2022/06/10-<br />2022/06/12
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">江苏南京市</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316976">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J15-22-05 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478120</td>
+<td style="width:8%">2022年光医学诊治高峰论坛暨规范化培训学习班</td>
+<td style="width:6%;">陈崑</td>
+<td style="width:8%;">025-85478028</td>
+<td style="text-align:center;width:10%;">
+		2022/10/14-<br />2022/10/16
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">江苏南京市</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317005">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J15-22-06 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478120</td>
+<td style="width:8%">第十届全国性传播疾病防治学术研讨会</td>
+<td style="width:6%;">陈祥生</td>
+<td style="width:8%;">025-85478901</td>
+<td style="text-align:center;width:10%;">
+		2022/05/18-<br />2022/05/20
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">浙江杭州市</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">各省（自治区、直辖市）疾控中心、皮肤性病防治所、医院及各相关单位</td>
+<td style="width:6%;">300</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317983">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J15-22-07 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478120</td>
+<td style="width:8%">全国医学真菌基础与临床进展高峰论坛及诊疗新技术培训班</td>
+<td style="width:6%;">刘维达</td>
+<td style="width:8%;">13605178767</td>
+<td style="text-align:center;width:10%;">
+		2022/11/18-<br />2022/11/20
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">江苏南京市</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="318644">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J15-22-08 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478120</td>
+<td style="width:8%">麻风及其他分枝杆菌感染临床诊断与实验室检测技术学习班</td>
+<td style="width:6%;">王洪生</td>
+<td style="width:8%;">025-85478953</td>
+<td style="text-align:center;width:10%;">
+		2022/10/13-<br />2022/10/15
+		<br />2.5天
+
+	</td>
+<td style="width:4%;">江苏南京市</td>
+<td style="width:7%;">
+		5分
+	</td>
+<td style="width:4%">各省市县皮防所从事麻风病控制及检验相关人员</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="318899">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J15-22-10 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478120</td>
+<td style="width:8%">性病规范诊疗与新进展</td>
+<td style="width:6%;">王千秋</td>
+<td style="width:8%;">025-85478940</td>
+<td style="text-align:center;width:10%;">
+		2022/09/14-<br />2022/09/16
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">江苏南京市</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="321506">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J15-22-11 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478120</td>
+<td style="width:8%">全国皮肤激光与光子学习班</td>
+<td style="width:6%;">葛一平</td>
+<td style="width:8%;">025-85478000</td>
+<td style="text-align:center;width:10%;">
+		2022/08/23-<br />2022/08/27
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">江苏南京市</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">150</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317003">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J15-22-12 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-04-10", name:"中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">中国医学科学院皮肤病医院（中国医学科学院皮肤病研究所）</td>
+<td style="width:6%;">林彤</td>
+<td style="width:8%;">025-85478078</td>
+<td style="width:8%">性传播疾病实验室检测技术培训班</td>
+<td style="width:6%;">尹跃平</td>
+<td style="width:8%;">025-85478024</td>
+<td style="text-align:center;width:10%;">
+		2022/06/11-<br />2022/06/13
+		<br />3.0天
+
+	</td>
+<td style="width:4%;">四川成都市</td>
+<td style="width:7%;">
+		6分
+	</td>
+<td style="width:4%">从事性病检测的技术人员</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="319136">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J16-22-01 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-01", name:"复旦大学附属华山医院神经内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院神经内科</td>
+<td style="width:6%;">吕传真</td>
+<td style="width:8%;">021-52888155</td>
+<td style="width:8%">华山医院神经肌病学习班</td>
+<td style="width:6%;">赵重波</td>
+<td style="width:8%;">13701822316</td>
+<td style="text-align:center;width:10%;">
+		2022/11/23-<br />2022/11/27
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316904">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J16-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-01", name:"复旦大学附属华山医院神经内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院神经内科</td>
+<td style="width:6%;">吕传真</td>
+<td style="width:8%;">021-52888155</td>
+<td style="width:8%">脑血管病诊治新进展学习班</td>
+<td style="width:6%;">董强</td>
+<td style="width:8%;">021-52888155</td>
+<td style="text-align:center;width:10%;">
+		2022/10/20-<br />2022/10/24
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">150</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316977">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J16-22-03 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-01", name:"复旦大学附属华山医院神经内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院神经内科</td>
+<td style="width:6%;">吕传真</td>
+<td style="width:8%;">021-52888155</td>
+<td style="width:8%">痴呆与认知障碍诊治新进展学习班</td>
+<td style="width:6%;">郁金泰</td>
+<td style="width:8%;">021-52888163</td>
+<td style="text-align:center;width:10%;">
+		2022/08/24-<br />2022/08/28
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317059">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J16-22-04 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-01", name:"复旦大学附属华山医院神经内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院神经内科</td>
+<td style="width:6%;">吕传真</td>
+<td style="width:8%;">021-52888155</td>
+<td style="width:8%">出血性脑卒中病因诊断和影像学进展学习班暨脑出血治疗论坛</td>
+<td style="width:6%;">董强</td>
+<td style="width:8%;">021-52887145</td>
+<td style="text-align:center;width:10%;">
+		2022/11/23-<br />2022/11/27
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317127">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J16-22-05 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-01", name:"复旦大学附属华山医院神经内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院神经内科</td>
+<td style="width:6%;">吕传真</td>
+<td style="width:8%;">021-52888155</td>
+<td style="width:8%">临床神经免疫学新进展学习班</td>
+<td style="width:6%;">陈向军</td>
+<td style="width:8%;">021-52888159</td>
+<td style="text-align:center;width:10%;">
+		2022/08/18-<br />2022/08/22
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">200</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317157">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J16-22-06 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-01", name:"复旦大学附属华山医院神经内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院神经内科</td>
+<td style="width:6%;">吕传真</td>
+<td style="width:8%;">021-52888155</td>
+<td style="width:8%">脑深部电刺激规范化治疗</td>
+<td style="width:6%;">邬剑军</td>
+<td style="width:8%;">13391329019</td>
+<td style="text-align:center;width:10%;">
+		2022/11/09-<br />2022/11/13
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317195">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J16-22-07 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-01", name:"复旦大学附属华山医院神经内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院神经内科</td>
+<td style="width:6%;">吕传真</td>
+<td style="width:8%;">021-52888155</td>
+<td style="width:8%">周围神经规范化诊疗学习班</td>
+<td style="width:6%;">王毅</td>
+<td style="width:8%;">021-52887155</td>
+<td style="text-align:center;width:10%;">
+		2022/11/25-<br />2022/11/29
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317407">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J16-22-08 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-01", name:"复旦大学附属华山医院神经内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院神经内科</td>
+<td style="width:6%;">吕传真</td>
+<td style="width:8%;">021-52888155</td>
+<td style="width:8%">癫痫与睡眠障碍学习班</td>
+<td style="width:6%;">于欢</td>
+<td style="width:8%;">021-54602183</td>
+<td style="text-align:center;width:10%;">
+		2022/10/12-<br />2022/10/16
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317507">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J16-22-09 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-01", name:"复旦大学附属华山医院神经内科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院神经内科</td>
+<td style="width:6%;">吕传真</td>
+<td style="width:8%;">021-52888155</td>
+<td style="width:8%">帕金森病及其他运动障碍新进展</td>
+<td style="width:6%;">王坚</td>
+<td style="width:8%;">13321934789</td>
+<td style="text-align:center;width:10%;">
+		2022/11/04-<br />2022/11/08
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317196">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J17-22-01 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-02", name:"复旦大学附属华山医院抗生素研究所"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院抗生素研究所</td>
+<td style="width:6%;">汪复</td>
+<td style="width:8%;">021-52888186</td>
+<td style="width:8%">感染性疾病诊治新理论与新进展</td>
+<td style="width:6%;">王明贵</td>
+<td style="width:8%;">021-52888181</td>
+<td style="text-align:center;width:10%;">
+		2022/04/21-<br />2022/04/25
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">甘肃兰州市</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">60</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317453">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J17-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-02", name:"复旦大学附属华山医院抗生素研究所"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院抗生素研究所</td>
+<td style="width:6%;">汪复</td>
+<td style="width:8%;">021-52888186</td>
+<td style="width:8%">感染性疾病病原学诊断的新技术和新进展</td>
+<td style="width:6%;">胡付品</td>
+<td style="width:8%;">021-52888186</td>
+<td style="text-align:center;width:10%;">
+		2022/08/31-<br />2022/09/04
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317600">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J18-22-01 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">神经肌肉电生理技术学习班</td>
+<td style="width:6%;">田东</td>
+<td style="width:8%;">021-52888467</td>
+<td style="text-align:center;width:10%;">
+		2022/11/02-<br />2022/11/06
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">230</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316996">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J18-22-02 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">分娩性臂丛损伤暨周围神经新进展学习班</td>
+<td style="width:6%;">陈亮</td>
+<td style="width:8%;">13916457170</td>
+<td style="text-align:center;width:10%;">
+		2022/04/22-<br />2022/04/26
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">50</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317099">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J18-22-03 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">手外科显微外科及手外科新技术学习班</td>
+<td style="width:6%;">劳杰</td>
+<td style="width:8%;">13701770978</td>
+<td style="text-align:center;width:10%;">
+		2022/08/18-<br />2022/08/22
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">江苏无锡市</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317354">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J18-22-04 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">周围神经损伤诊治与手外科新技术学习班</td>
+<td style="width:6%;">劳杰</td>
+<td style="width:8%;">13701770978</td>
+<td style="text-align:center;width:10%;">
+		2022/11/10-<br />2022/11/14
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">广东深圳市</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317355">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J18-22-05 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">手部骨关节疾病诊治进展与手外科新技术学习班</td>
+<td style="width:6%;">赵新</td>
+<td style="width:8%;">13816131608</td>
+<td style="text-align:center;width:10%;">
+		2022/11/24-<br />2022/11/28
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">浙江宁波市</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317357">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J18-22-06 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">手部畸形与手外科新技术学习班</td>
+<td style="width:6%;">方有生</td>
+<td style="width:8%;">13701666126</td>
+<td style="text-align:center;width:10%;">
+		2022/09/22-<br />2022/09/26
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317358">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J18-22-07 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">臂丛神经损伤与肩关节疾病诊治及手外科新技术学习班</td>
+<td style="width:6%;">赵新</td>
+<td style="width:8%;">13816131608</td>
+<td style="text-align:center;width:10%;">
+		2022/10/13-<br />2022/10/17
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">100</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317356">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J18-22-08 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">肢体功能重建及手外科显微外科新技术学习班</td>
+<td style="width:6%;">王涛</td>
+<td style="width:8%;">13701645435</td>
+<td style="text-align:center;width:10%;">
+		2022/07/21-<br />2022/07/25
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">江西南昌市</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316851">查看</button></td></tr>
+<tr class="odd">
+<td style="width:8%;">
+	J18-22-09 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">上肢手功能康复学习班-脑对周围神经损伤重塑功能再现学习班</td>
+<td style="width:6%;">周俊明</td>
+<td style="width:8%;">021-52889341</td>
+<td style="text-align:center;width:10%;">
+		2022/07/20-<br />2022/07/24
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">江西南昌市</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">20</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="316856">查看</button></td></tr>
+<tr class="even">
+<td style="width:8%;">
+	J18-22-10 (国)
+
+	<script type="text/javascript">
+		var danwei = {value:"00-98-05-03", name:"复旦大学附属华山医院手外科显微外科"};
+		addGroupRow(danwei, "danwei");
+	</script>
+
+
+	</td>
+<td style="width:9%;">复旦大学附属华山医院手外科显微外科</td>
+<td style="width:6%;">顾玉东</td>
+<td style="width:8%;">021-52888200</td>
+<td style="width:8%">脑卒中脑外伤脑瘫后偏瘫的外科和康复综合治疗国际学习班</td>
+<td style="width:6%;">徐文东</td>
+<td style="width:8%;">13501961024</td>
+<td style="text-align:center;width:10%;">
+		2022/11/03-<br />2022/11/07
+		<br />5.0天
+
+	</td>
+<td style="width:4%;">上海</td>
+<td style="width:7%;">
+		10分
+	</td>
+<td style="width:4%">相关专业的继续教育对象</td>
+<td style="width:6%;">80</td>
+<td style="width:7%;"></td>
+<td style="width:7%;"><button name="teacherListButton" type="button" projectId="317466">查看</button></td></tr></tbody></table><span class="pagebanner"><div style="text-align:center"> 找到526条数据, 当前显示第1页/共4页. </div></span><span class="pagelinks"  id="pagelinks"><div style="text-align:center"> [第一页/ 上一页] <strong>1</strong>, <a href="/national_project/projectGongbuList.do?parentSubjectId=&amp;xmanager=&amp;scode=&amp;year=2022&amp;sdanwei=&amp;gongbuCode=&amp;gongbu=3&amp;beian=&amp;orderBy=danwei&amp;pageSize=150&amp;pici=&amp;type=3&amp;subjectId=&amp;checkCode=1&amp;d-1342871-p=2&amp;name=" title="Go to page 2">2</a>, <a href="/national_project/projectGongbuList.do?parentSubjectId=&amp;xmanager=&amp;scode=&amp;year=2022&amp;sdanwei=&amp;gongbuCode=&amp;gongbu=3&amp;beian=&amp;orderBy=danwei&amp;pageSize=150&amp;pici=&amp;type=3&amp;subjectId=&amp;checkCode=1&amp;d-1342871-p=3&amp;name=" title="Go to page 3">3</a>, <a href="/national_project/projectGongbuList.do?parentSubjectId=&amp;xmanager=&amp;scode=&amp;year=2022&amp;sdanwei=&amp;gongbuCode=&amp;gongbu=3&amp;beian=&amp;orderBy=danwei&amp;pageSize=150&amp;pici=&amp;type=3&amp;subjectId=&amp;checkCode=1&amp;d-1342871-p=4&amp;name=" title="Go to page 4">4</a> [ <a href="/national_project/projectGongbuList.do?parentSubjectId=&amp;xmanager=&amp;scode=&amp;year=2022&amp;sdanwei=&amp;gongbuCode=&amp;gongbu=3&amp;beian=&amp;orderBy=danwei&amp;pageSize=150&amp;pici=&amp;type=3&amp;subjectId=&amp;checkCode=1&amp;d-1342871-p=2&amp;name=">下一页</a>/ <a href="/national_project/projectGongbuList.do?parentSubjectId=&amp;xmanager=&amp;scode=&amp;year=2022&amp;sdanwei=&amp;gongbuCode=&amp;gongbu=3&amp;beian=&amp;orderBy=danwei&amp;pageSize=150&amp;pici=&amp;type=3&amp;subjectId=&amp;checkCode=1&amp;d-1342871-p=4&amp;name=">末页 </a>]</div></span>
+<div align="center" style="margin-top:10px;">
+	<span class="h3"> 版权所有(C)：中华医学会 010-21721279、010-21721281</span>
+</div>
+ <div align="center">
+     <span class="h3"> 网站技术支持：北京健康在线网络技术有限公司   400-780-2600</span>
+ </div>
+
+
+</html>

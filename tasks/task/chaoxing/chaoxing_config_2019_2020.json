@@ -1,0 +1,18 @@
+[
+  {
+    "platform": "机构",
+    "keywords": "医院",
+    "max_year": 2020,
+    "min_year": 2018,
+    "page_size": 50,
+    "have_start": 1,
+    "have_end": 0,
+    "max_page": 15,
+    "is_running": 0,
+    "level": 1,
+    "cur_year": 2020,
+    "spider_at": "win",
+    "owning_account": "6849_超星1",
+    "origin_moudle": "机构_医院_2022_糖尿病_中国继续医学教育"
+  }
+]
