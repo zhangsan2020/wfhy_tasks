@@ -1,1 +1,44 @@
-[{"mode": "全库", "keywords": "病", "max_year": 2023, "min_year": 2015, "page_size": 50, "have_start": 1, "have_end": 0, "max_page": 300, "is_running": 1, "level": 1, "cur_year": 2023, "spider_at": "win"}, {"mode": "全库", "keywords": "手术", "max_year": 2023, "min_year": 2015, "max_page": 300, "page_size": 100, "have_start": 1, "have_end": 0, "is_running": 1, "level": 2, "cur_year": 2021, "spider_at": "win"}, {"mode": "全库", "keywords": "症状", "max_year": 2023, "min_year": 2015, "max_page": 300, "page_size": 100, "have_start": 0, "have_end": 0, "is_running": 0, "level": 3, "cur_year": 2022, "spider_at": "win"}]
+[
+  {
+    "mode": "全库",
+    "keywords": "病",
+    "max_year": 2023,
+    "min_year": 2015,
+    "page_size": 50,
+    "have_start": 1,
+    "have_end": 0,
+    "max_page": 300,
+    "is_running": 1,
+    "level": 1,
+    "cur_year": 2023,
+    "spider_at": "win"
+  },
+  {
+    "mode": "全库",
+    "keywords": "手术",
+    "max_year": 2023,
+    "min_year": 2015,
+    "max_page": 300,
+    "page_size": 100,
+    "have_start": 1,
+    "have_end": 0,
+    "is_running": 1,
+    "level": 2,
+    "cur_year": 2021,
+    "spider_at": "win"
+  },
+  {
+    "mode": "全库",
+    "keywords": "症状",
+    "max_year": 2023,
+    "min_year": 2015,
+    "max_page": 300,
+    "page_size": 100,
+    "have_start": 0,
+    "have_end": 0,
+    "is_running": 0,
+    "level": 3,
+    "cur_year": 2022,
+    "spider_at": "win"
+  }
+]
