@@ -1,16 +1,13 @@
 # -*- coding:utf-8 -*-
-import copy
+
 import json
 import os
 import random
 import re
-from datetime import datetime
-from urllib.parse import urljoin
-
 import ddddocr
 from lxml import etree
 import time
-from task.zhiwang.zw_common import user_info, headers_list, min_limit
+from task.zhiwang.zw_common import user_info, headers_list
 from task.common.cur_identify import CurIdentify
 from task.common.useragent import useragent_pool
 from task.zhiwang.zw_login import ZwLogin
@@ -31,7 +28,6 @@ class ZwModules():
         self.main_task_path = './task/zhiwang/module_data/zw_tasks_config.json'
         # 子目录
         self.task_sub_dir = './task/zhiwang/module_data/{}'.format(self.module_dir)
-        self.dir_pdfs = 'E:/zhiwang_pdfs/'  # 末尾一定要加上 / , 否则将会自动使用\做填充, 路径会出现问题
         self.list_url = 'https://kns.cnki.net/kns8/Brief/GetGridTableHtml'
         self.identify = CurIdentify()
         self.userinfo = user_info
@@ -195,6 +191,7 @@ class ZwModules():
         # 第一个验证截图保存：verification_code_1.png
         with open(img, 'rb') as f:
             image = f.read()
+            f.close()
         try:
             res = ocr.classification(image)
         except:
@@ -318,12 +315,15 @@ class ZwModules():
             'QueryJson': self.queryjson,
         }
         res = self.session.post(modlue_url,data=params,headers = headers)
+        time.sleep(random.uniform(3,5))
 
+        with open('get_modules_error.html','w',encoding='utf-8') as f:
+            f.write(res.text)
+            f.close()
         if res.status_code == 200:
             html = etree.HTML(res.text)
             field = html.xpath('//dd[@tit="学科"][1]/@field')[0].strip()
             second_module_list = html.xpath('//dd[@tit="学科"]//li')
-            first_module = []
             for second_module in second_module_list:
                 self.second_module_info = {}
                 self.second_module_info['subject_name'] = second_module.xpath('./input/@text')[0].strip()
@@ -362,7 +362,10 @@ class ZwModules():
             'QueryJson': self.queryjson,
         }
         res = self.session.post(modlue_url,data=params,headers = headers)
-
+        time.sleep(random.uniform(3,5))
+        with open('get_modules_third_error.html','w',encoding='utf-8') as f:
+            f.write(res.text)
+            f.close()
         if res.status_code == 200:
             self.third_module_info = {'title_info':{}}
             html = etree.HTML(res.text)
@@ -398,57 +401,58 @@ class ZwModules():
         # # 获取子任务详情数据
 
         for i in range(3):
-            try:
-                    # 排队执行所有待抓取的任务
-                task_infos = self.get_task_infos()
-                print(task_infos)
-                if task_infos:
-                    for main_task_info in task_infos:
-                        self.all_modules = {}
-                        print(main_task_info)
-                        self.main_task_info = main_task_info
-                        json_path = '{}/{}_{}.json'.format(self.task_sub_dir,self.main_task_info['module_dir'],self.main_task_info['keywords'])
-                        print(json_path)
-                        if os.path.exists(json_path):
-                            print('当前子任务文件已存在')
+            # try:
+                # 排队执行所有待抓取的任务
+            task_infos = self.get_task_infos()
+            print(task_infos)
+            if task_infos:
+                for main_task_info in task_infos:
+                    self.all_modules = {}
+                    print(main_task_info)
+                    self.main_task_info = main_task_info
+                    json_path = '{}/{}_{}.json'.format(self.task_sub_dir,self.main_task_info['module_dir'],self.main_task_info['keywords'])
+                    print(json_path)
+                    if os.path.exists(json_path):
+                        print('当前子任务文件已存在')
 
-                            with open(json_path,'r',encoding='utf-8') as f:
-                                data = f.read()
-                            if data:
-                                print('当前子任务文件已存在,且存在数据, 程序将以此作为基础进行模块数据抓取!!')
-                                self.all_modules = json.loads(data)
-                            else:
-                                print('当前子任务文件已存在,但不存在数据')
-                        else:
-                            print('不存在子任务文件,即将从 零 开始获取子模块数据!!')
-
-                        self.update_task(self.main_task_info, module_ok='no')
-                        for year in range(self.main_task_info['max_year'],self.main_task_info['min_year'],-1):
-                            self.cur_year = str(year)
-                            if self.cur_year not in self.all_modules:
-                                print('开始抓取模块: {}_{}_{}年的模块数据'.format(self.main_task_info['module_dir'],self.main_task_info['keywords'],self.cur_year))
-                                time.sleep(random.uniform(5,10))
-                                self.all_modules[self.cur_year] = []
-                                self.get_modules()
-                            else:
-                                print('all_modules中已存在 {} 年数据, 不再重复抓取, 开始获取下一年模块数据'.format(self.cur_year))
-                                time.sleep(5)
-                                continue
-                        with open(json_path,'w',encoding='utf-8') as f:
-                            f.write(json.dumps(self.all_modules,ensure_ascii=False))
+                        with open(json_path,'r',encoding='utf-8') as f:
+                            data = f.read()
                             f.close()
-                        self.update_task(self.main_task_info, module_ok='yes')
-                    break
-                else:
-                    print('所有待抓取任务的子模块数据都已经获取完成!!')
-                    break
-            except Exception as e:
-                print('抓取时出现问题, 休息10~15分钟, 详情为: {}'.format(repr(e)))
-                print(f'error file:{e.__traceback__.tb_frame.f_globals["__file__"]}')
-                print(f"error line:{e.__traceback__.tb_lineno}")
-                time.sleep(random.uniform(600, 900))
-                self.update_task(self.main_task_info,module_ok='yes')
-                time.sleep(random.uniform(5,10))
+                        if data:
+                            print('当前子任务文件已存在,且存在数据, 程序将以此作为基础进行模块数据抓取!!')
+                            self.all_modules = json.loads(data)
+                        else:
+                            print('当前子任务文件已存在,但不存在数据')
+                    else:
+                        print('不存在子任务文件,即将从 零 开始获取子模块数据!!')
+
+                    self.update_task(self.main_task_info, module_ok='no')
+                    for year in range(self.main_task_info['max_year'],self.main_task_info['min_year'],-1):
+                        self.cur_year = str(year)
+                        if self.cur_year not in self.all_modules:
+                            print('开始抓取模块: {}_{}_{}年的模块数据'.format(self.main_task_info['module_dir'],self.main_task_info['keywords'],self.cur_year))
+                            time.sleep(random.uniform(5,10))
+                            self.all_modules[self.cur_year] = []
+                            self.get_modules()
+                        else:
+                            print('all_modules中已存在 {} 年数据, 不再重复抓取, 开始获取下一年模块数据'.format(self.cur_year))
+                            time.sleep(5)
+                            continue
+                    with open(json_path,'w',encoding='utf-8') as f:
+                        f.write(json.dumps(self.all_modules,ensure_ascii=False))
+                        f.close()
+                    self.update_task(self.main_task_info, module_ok='yes')
+                break
+            else:
+                print('所有待抓取任务的子模块数据都已经获取完成!!')
+                break
+            # except Exception as e:
+            #     print('抓取时出现问题, 休息10~15分钟, 详情为: {}'.format(repr(e)))
+            #     print(f'error file:{e.__traceback__.tb_frame.f_globals["__file__"]}')
+            #     print(f"error line:{e.__traceback__.tb_lineno}")
+            #     time.sleep(random.uniform(600, 900))
+            #     self.update_task(self.main_task_info,module_ok='yes')
+            #     time.sleep(random.uniform(5,10))
 
 
 # # 新增时的思路是: 获取数据库最大的日期与对应的title,锁定到具体在第几页, 然后倒着去获取数据
