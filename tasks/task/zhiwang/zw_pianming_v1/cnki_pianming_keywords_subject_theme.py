@@ -14,7 +14,7 @@ from task.zhiwang.zw_common import user_info, headers_list, min_limit
 from task.common.cur_identify import CurIdentify
 from ..zw_mongo import ZwMongo
 from task.zhiwang.redis_zw import ZwRedis
-from task.common.log import FrameLog
+# from task.common.log import FrameLog
 from task.common.useragent import useragent_pool
 from ..zw_login import ZwLogin
 
