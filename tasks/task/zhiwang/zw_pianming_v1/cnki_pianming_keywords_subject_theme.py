@@ -779,9 +779,50 @@ class ZwSpider():
             print('开始下载pdf文件......')
             try:
                 # item['pdf_url'] = 'https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDZHYX&filename=SZBB201808019&uniplatform=NZKPT&v=-VcQfQ2UntzmsOPlJT8_o7bI5XxaP3WR9xxFFoXzmHpGLpvvY9P9FSDkN_ddbncL'
-
+                print('这是初始pdf_url: ',self.item['pdf_url'])
                 res = self.session.get(self.item['pdf_url'], headers=headers_pdf, timeout=(10, 20))
-                time.sleep(random.uniform(0, 0.5))
+                # time.sleep(random.uniform(0, 0.5))
+                time.sleep(random.uniform(1,2))
+                if '本篇免费，下载阅读' in res.text:
+                    print('发现本篇免费, 下载阅读字眼')
+                    print('开始处理本篇免费, 下载阅读页数据')
+                    html = etree.HTML(res.text)
+                    cardorfee_data = html.xpath('//input[@id="CardOrFee"]/@value')
+                    if cardorfee_data:
+                        cardorfee = cardorfee_data[0]
+                    else:
+                        print('pdf下载时出现本篇免费, 但未获取到 cardorfee 参数, 设置为 4 ')
+                        cardorfee = 4
+                    downfilename_data = html.xpath('//input[@id="downfilename"]/@value')
+                    if downfilename_data:
+                        downfilename = downfilename_data[0]
+                    else:
+                        print('pdf下载时出现本篇免费, 但未获取到 downfilename 参数, 重新获取数据!!')
+                        continue
+                    new_pdf_url = 'https://bar.cnki.net/bar/Download/ConfimDownLoadDazong'
+                    new_pdf_headers = {
+                        # "Host": "bar.cnki.net",
+                        "Connection": "keep-alive",
+                        "Content-Length": "38",
+                        "Cache-Control": "max-age=0",
+                        "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+                        "sec-ch-ua-mobile": "?0",
+                        "sec-ch-ua-platform": "\"Windows\"",
+                        "Upgrade-Insecure-Requests": "1",
+                        "Origin": "https://bar.cnki.net",
+                        "Content-Type": "application/x-www-form-urlencoded",
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                        "Sec-Fetch-Site": "same-origin",
+                        "Sec-Fetch-Mode": "navigate",
+                        "Sec-Fetch-User": "?1",
+                        "Sec-Fetch-Dest": "document",
+                        "Referer": self.item['pdf_url'],
+                        "Accept-Encoding": "gzip, deflate, br",
+                        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"
+                    }
+                    data = {"CardOrFee":cardorfee,"downfilename":downfilename}
+                    res = self.session.post(new_pdf_url,data=data,headers=new_pdf_headers,timeout = (20,30))
                 if res.headers.get('Content-Length'):
                     if res.status_code == 200 and ('本篇支付' not in res.text) and int(
                             res.headers['Content-Length']) > min_limit:

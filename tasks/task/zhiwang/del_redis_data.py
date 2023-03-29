@@ -21,8 +21,8 @@ class ReDownPdf():
 
     def find_identify_data(self):
 
-        # fail_datas = self.col.find({'identify_status':'文件过小未下载'})
-        fail_datas = self.col.find({'identify_status':{'$ne':'识别成功'}})
+        fail_datas = self.col.find({'identify_status':'文件过小未下载'})
+        # fail_datas = self.col.find({'identify_status':{'$ne':'识别成功'}})
 
         # success_datas = self.col.find({'identify_status':'识别成功'})
         # success_titles = set()
@@ -39,7 +39,6 @@ class ReDownPdf():
             print(md5_str)
             status = self.redis_cli.sismember('zw_cnki',md5_str)
             print(status)
-            # continue
             if status:
                 del_status = self.redis_cli.srem('zw_cnki',md5_str)
                 print('删除状态为: ',del_status)

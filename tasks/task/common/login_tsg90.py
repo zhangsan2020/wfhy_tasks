@@ -813,7 +813,7 @@ class LoginTrun():
                     print('当前第 {} 次登录中华医学网失败, 继续登录!'.format(i))
                     time.sleep(2)
 
-            elif owning_account == '6849_福建医科大学':
+            elif owning_account == '6849_医学会_福建医科大学':
                 first_url = 'http://yiigle-meddata-com-cn.fjmu.hknsspj.cn/'
                 first_headers = {
                         # "Host": "yiigle-meddata-com-cn.fjmu.hknsspj.cn",
@@ -830,17 +830,17 @@ class LoginTrun():
                         "Accept-Language": "zh-CN,zh;q=0.9"
                     }
                 headers = {
-                        # "Host": "yiigle-meddata-com-cn.fjmu.hknsspj.cn",
-                        "Connection": "keep-alive",
-                        "Content-Length": "44",
-                        "Accept": "application/json, text/plain, */*",
-                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
-                        "Content-Type": "application/json",
-                        "Origin": "http://yiigle-meddata-com-cn.fjmu.hknsspj.cn",
-                        "Referer": "http://yiigle-meddata-com-cn.fjmu.hknsspj.cn/",
-                        "Accept-Encoding": "gzip, deflate",
-                        "Accept-Language": "zh-CN,zh;q=0.9"
-                    }
+                            "Host": "yiigle-meddata-com-cn.fjmu.hknsspj.cn",
+                            "Connection": "keep-alive",
+                            "Content-Length": "44",
+                            "Accept": "application/json, text/plain, */*",
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+                            "Content-Type": "application/json",
+                            "Origin": "http://yiigle-meddata-com-cn.fjmu.hknsspj.cn",
+                            "Referer": "http://yiigle-meddata-com-cn.fjmu.hknsspj.cn/",
+                            "Accept-Encoding": "gzip, deflate",
+                            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"
+                        }
                 data_login = {"condition": {"loginName": "", "password": ""}}
                 try:
                     res = self.session.post(first_url,headers=first_headers,json=data,timeout=(20,30))
