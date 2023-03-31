@@ -1,5 +1,4 @@
 import time
-
 import pymongo
 from ..common.common_data import mongo_main_info
 
@@ -21,7 +20,8 @@ class MongoStore():
         try:
             self.col.insert_one(item)
             print('插入mongo成功!!')
-        except:
+        except Exception as e:
+            print('出入mongo时出错: {}'.format(repr(e)))
             time.sleep(10)
             self.connect_(self.db,self.col)
             self.insert(item)

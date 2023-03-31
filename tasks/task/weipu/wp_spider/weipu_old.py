@@ -19,7 +19,7 @@ class WeiPu():
     def __init__(self):
 
         self.spider_at = 'win'
-        self.owning_account = '6849_vip'
+        self.owning_account = '6849_维普_98图书馆'
         self.login_obj = LoginTrun(self.owning_account)
         self.session = self.login_obj.login_page_turn(self.owning_account)
         self.identify = CurIdentify()

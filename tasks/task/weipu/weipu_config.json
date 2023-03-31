@@ -1,17 +1,1 @@
-[
-{
-    "platform": "参考文献",
-    "keywords": "医院",
-    "max_year": 2022,
-    "min_year": 2014,
-    "page_size": 100,
-    "have_start": 1,
-    "have_end": 0,
-    "max_page": 300,
-    "is_running": 0,
-    "level": 1,
-    "cur_year": 2022,
-    "spider_at": "win",
-    "owning_account": "6849_vip"
-  }
-]
+[{"platform": "机构", "keywords": "医院", "max_year": 2023, "min_year": 2014, "page_size": 100, "have_start": 1, "have_end": 0, "max_page": 300, "is_running": 1, "level": 1, "cur_year": 2023, "spider_at": "win", "owning_account": "6849_维普_98图书馆"}, {"platform": "机构", "keywords": "医学", "max_year": 2023, "min_year": 2014, "page_size": 100, "have_start": 1, "have_end": 0, "max_page": 300, "is_running": 1, "level": 1, "cur_year": 2023, "spider_at": "win", "owning_account": "6849_维普_98图书馆"}]

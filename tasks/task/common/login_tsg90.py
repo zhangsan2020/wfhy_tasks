@@ -489,6 +489,30 @@ class LoginTrun():
                         # if turn_status == 'selenium_success':
                         #     print('通过selenium跳转到 超星1 成功 且 已拿到cookie!!')
                         #     return self.session
+            elif owning_account == '6849_维普_98图书馆':
+                url = 'http://vp.vip.tsg211.com/'
+                headers = {
+                        # "Host": "vp.vip.tsg211.com",
+                        "Connection": "keep-alive",
+                        "Upgrade-Insecure-Requests": "1",
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+                        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                        "Referer": "http://www.90tsg.com/",
+                        "Accept-Encoding": "gzip, deflate",
+                        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"
+                    }
+                res = self.session.post(url,headers=headers,data=json.dumps(data))
+                # print(res.text)
+                print('这是请求状态: ',res.status_code)
+                if res.status_code == 200 and '维普期刊 中文期刊服务平台' in res.text:
+                    print('成功进入 维普中文期刊数据库 ,当前是 6849_维普_98图书馆 账号')
+                    return self.session
+                else:
+                    print('当前第 {} 次进入维普中文期刊数据库失败, 休息一下, 继续登录!'.format(i))
+                    time.sleep(random.uniform(5,10))
+                    if i >= 2:
+                        print('连续第 {} 次进入 维普中文期刊数据库 失败, 休息10~15min, 继续登录!'.format(i))
+                        time.sleep(random.uniform(600,900))
             elif owning_account == '6849_上海对外经贸大学':
                 url = 'https://dldx.jitui.me/http/77726476706e69737468656265737421e1fe4a9d297e6b41680199e29b5a2e/'
                 headers = {
@@ -860,7 +884,7 @@ class LoginTrun():
                     print('登录程序进入中华医学网出现问题, 账号为: 6849_福建医科大学, 休息一下, 重新发起请求!!')
                     time.sleep(random.uniform(5,10))
 
-            elif owning_account == '6849_南方科技大学':
+            elif owning_account == '6849_医学会_南方科技大学':
                 headers = {
                     "Host": "fjykdxnshfsfljsbhfkew883sdjfns.98tsg.com",
                     "Connection": "keep-alive",
@@ -874,6 +898,7 @@ class LoginTrun():
                     "Accept-Language": "zh-CN,zh;q=0.9"
                 }
                 data_login = {"condition": {"loginName": "", "password": ""}}
+                # http://fjykdxnshfsfljsbhfkew883sdjfns.98tsg.com/getCore/pcLogin
                 res = self.session.post('http://fjykdxnshfsfljsbhfkew883sdjfns.98tsg.com/getCore/pcLogin',
                                         data=json.dumps(data_login),
                                         headers=headers)
@@ -1098,8 +1123,8 @@ class LoginTrun():
                     print('账号 {} , 当前第 {} 次登录中华医学网失败, 继续登录!'.format(owning_account,i))
                     time.sleep(2)
 
-# login = LoginTrun('6849_超星1_西安交通大学')
-# login.login_page_turn('6849_超星1_西安交通大学')
+# login = LoginTrun('6849_维普_98图书馆')
+# login.login_page_turn('6849_维普_98图书馆')
 # login.selenium_login_chaoxing('超星期刊2')
 # login = LoginTrun('6849_南京医科大学')
 # # # login.login_page_turn('6849_超星3_华中科技大学')

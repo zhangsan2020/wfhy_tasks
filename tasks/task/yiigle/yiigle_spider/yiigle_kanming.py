@@ -22,8 +22,8 @@ class Yiigle():
         # self.owning_account = '6849_杭州师范大学附属医院'
         # self.owning_account = '6849_福建医科大学'
         # self.domain = 'fjykdxnshfsfljsbhfkew883sdjfns.98tsg.com'
-        self.owning_account = '6849_医学会_福建医科大学'
-        self.domain = 'yiigle-meddata-com-cn.fjmu.hknsspj.cn'
+        self.owning_account = '6849_医学会_南方科技大学'
+        self.domain = 'fjykdxnshfsfljsbhfkew883sdjfns.98tsg.com'
         self.identify = CurIdentify()
         self.login_obj = LoginTrun(self.owning_account)
         self.session, self.login_data = self.login_obj.login_page_turn(self.owning_account)
